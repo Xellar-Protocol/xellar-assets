@@ -7,10 +7,6 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-
-
-
-
 <!-- PROJECT LOGO -->
 
 <p align="center">
@@ -25,16 +21,11 @@
   
   </p>
 </p>
- 
-
 
 
 ## Add Assets
 
 Just create a pull request and feel free to add your assets to this repository. no additional fee required.
-
-
-
 
 <!-- CONTRIBUTING -->
 <!-- ## Contributing
@@ -47,19 +38,13 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request -->
 
-
-
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
-
-
 Project Link: [https://github.com/Xellar-Protocol/xellar-assets](https://github.com/Xellar-Protocol/xellar-assets)
-
-
 
 <!-- ACKNOWLEDGEMENTS -->
 <!-- ## Acknowledgements
@@ -67,10 +52,6 @@ Project Link: [https://github.com/Xellar-Protocol/xellar-assets](https://github.
 * []()
 * []()
 * []() -->
-
-
-
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -84,4 +65,5 @@ Project Link: [https://github.com/Xellar-Protocol/xellar-assets](https://github.
 [license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
 [license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555 -->
+
 [linkedin-url]: https://www.linkedin.com/company/xellar/
