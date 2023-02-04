@@ -1,1 +1,1 @@
-{"name":"ADAcash","id":"adacash","symbol":"adacash","description":"","links":"https://cashverse.io","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/adacash/logo.png"}
+{"name":"ADAcash","id":"adacash","symbol":"adacash","description":"","links":"https://cashverse.io","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/adacash/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x651a89fed302227d41425235f8e934502fb94c48"}}}

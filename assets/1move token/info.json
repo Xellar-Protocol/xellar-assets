@@ -1,1 +1,1 @@
-{"name":"1Move Token","id":"1move token","symbol":"1mt","description":"","links":"https://1move.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/1move token/logo.png"}
+{"name":"1Move Token","id":"1move token","symbol":"1mt","description":"","links":"https://1move.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/1move token/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x7c56d81ecb5e1d287a1e22b89b01348f07be3541"}}}

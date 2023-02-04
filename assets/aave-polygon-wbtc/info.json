@@ -1,1 +1,1 @@
-{"name":"Aave Polygon WBTC","id":"aave-polygon-wbtc","symbol":"amwbtc","description":"","links":"https://aave.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/aave-polygon-wbtc/logo.png"}
+{"name":"Aave Polygon WBTC","id":"aave-polygon-wbtc","symbol":"amwbtc","description":"","links":"https://aave.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/aave-polygon-wbtc/logo.png","detail_platform":{"polygon-pos":{"decimal_place":8,"contract_address":"0x5c2ed810328349100a66b82b78a1791b101c9d61"}}}

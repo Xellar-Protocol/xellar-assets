@@ -1,1 +1,1 @@
-{"name":"Aave yVault","id":"aave-yvault","symbol":"yvaave","description":"","links":"https://yearn.finance/vaults","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/aave-yvault/logo.png"}
+{"name":"Aave yVault","id":"aave-yvault","symbol":"yvaave","description":"","links":"https://yearn.finance/vaults","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/aave-yvault/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xd9788f3931ede4d5018184e198699dc6d66c1915"}}}

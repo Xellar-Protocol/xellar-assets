@@ -1,1 +1,1 @@
-{"name":"ACryptoS","id":"acryptos","symbol":"acs","description":"","links":"https://app.acryptos.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/acryptos/logo.png"}
+{"name":"ACryptoS","id":"acryptos","symbol":"acs","description":"","links":"https://app.acryptos.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/acryptos/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x4197c6ef3879a08cd51e5560da5064b773aa1d29"}}}

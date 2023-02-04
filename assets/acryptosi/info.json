@@ -1,1 +1,1 @@
-{"name":"ACryptoSI","id":"acryptosi","symbol":"acsi","description":"","links":"https://app.acsi.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/acryptosi/logo.png"}
+{"name":"ACryptoSI","id":"acryptosi","symbol":"acsi","description":"","links":"https://app.acsi.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/acryptosi/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x5b17b4d5e4009b5c43e3e3d63a5229f794cba389"}}}

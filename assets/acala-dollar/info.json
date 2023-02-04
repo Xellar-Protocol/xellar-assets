@@ -1,1 +1,1 @@
-{"name":"Acala Dollar (Karura)","id":"acala-dollar","symbol":"ausd","description":"","links":"https://acala.network/ausd","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/acala-dollar/logo.png"}
+{"name":"Acala Dollar (Karura)","id":"acala-dollar","symbol":"ausd","description":"","links":"https://acala.network/ausd","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/acala-dollar/logo.png","detail_platform":{"karura":{"decimal_place":12,"contract_address":"0x0000000000000000000100000000000000000081"}}}

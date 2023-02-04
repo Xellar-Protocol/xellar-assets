@@ -1,1 +1,1 @@
-{"name":"AmonD","id":"amond","symbol":"amon","description":"Direct Reward platform","links":"http://www.amond.cc/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/amond/logo.png"}
+{"name":"AmonD","id":"amond","symbol":"amon","description":"Direct Reward platform","links":"http://www.amond.cc/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/amond/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x00059ae69c1622a7542edc15e8d17b060fe307b6"}}}

@@ -1,1 +1,1 @@
-{"name":"AlgoStable","id":"algostable","symbol":"stbl","description":"","links":"https://www.algofi.org/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/algostable/logo.png"}
+{"name":"AlgoStable","id":"algostable","symbol":"stbl","description":"","links":"https://www.algofi.org/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/algostable/logo.png","detail_platform":{"algorand":{"decimal_place":6,"contract_address":"465865291"}}}

@@ -1,1 +1,1 @@
-{"name":"Aave Polygon USDC","id":"aave-polygon-usdc","symbol":"amusdc","description":"","links":"https://aave.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/aave-polygon-usdc/logo.png"}
+{"name":"Aave Polygon USDC","id":"aave-polygon-usdc","symbol":"amusdc","description":"","links":"https://aave.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/aave-polygon-usdc/logo.png","detail_platform":{"polygon-pos":{"decimal_place":6,"contract_address":"0x1a13f4ca1d028320a707d99520abfefca3998b7f"}}}

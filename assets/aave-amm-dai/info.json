@@ -1,1 +1,1 @@
-{"name":"Aave AMM DAI","id":"aave-amm-dai","symbol":"aammdai","description":"","links":"https://aave.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/aave-amm-dai/logo.png"}
+{"name":"Aave AMM DAI","id":"aave-amm-dai","symbol":"aammdai","description":"","links":"https://aave.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/aave-amm-dai/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x79be75ffc64dd58e66787e4eae470c8a1fd08ba4"}}}

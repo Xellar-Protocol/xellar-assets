@@ -1,1 +1,1 @@
-{"name":"20WETH-80BAL","id":"20weth-80bal","symbol":"20weth-80bal","description":"","links":"https://app.balancer.fi","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/20weth-80bal/logo.png"}
+{"name":"20WETH-80BAL","id":"20weth-80bal","symbol":"20weth-80bal","description":"","links":"https://app.balancer.fi","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/20weth-80bal/logo.png","detail_platform":{"polygon-pos":{"decimal_place":18,"contract_address":"0x3d468ab2329f296e1b9d8476bb54dd77d8c2320f"}}}
