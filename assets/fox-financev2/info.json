@@ -1,1 +1,1 @@
-{"name":"Fox Finance V2","id":"fox-financev2","symbol":"fox","description":"","links":"https://foxfinance.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/fox-financev2/logo.png"}
+{"name":"Fox Finance V2","id":"fox-financev2","symbol":"fox","description":"","links":"https://foxfinance.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/fox-financev2/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":9,"contract_address":"0x16a7460b9246ae508f18e87bda4e5b4c1ae8f112"}}}

@@ -1,1 +1,1 @@
-{"name":"Kalao","id":"kalao","symbol":"klo","description":"","links":"https://www.kalao.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/kalao/logo.png"}
+{"name":"Kalao","id":"kalao","symbol":"klo","description":"","links":"https://www.kalao.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/kalao/logo.png","detail_platform":{"avalanche":{"decimal_place":18,"contract_address":"0xb27c8941a7df8958a1778c0259f76d1f8b711c35"}}}

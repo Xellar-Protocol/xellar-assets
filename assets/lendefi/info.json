@@ -1,1 +1,1 @@
-{"name":"Lendefi","id":"lendefi","symbol":"ldfi","description":"","links":"https://lendefi.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/lendefi/logo.png"}
+{"name":"Lendefi","id":"lendefi","symbol":"ldfi","description":"","links":"https://lendefi.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/lendefi/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x8f1e60d84182db487ac235acc65825e50b5477a1"}}}

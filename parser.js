@@ -20,49 +20,78 @@ const downloadImage = async (url, image_path) => {
 
 }
 
-const sleeps = async () => await new Promise(r => setTimeout(r, 4000));
+const sleeps = async () => await new Promise(r => setTimeout(r, 5500));
 
 
 (async () => {
+    let constructJSON = [];
     const files = fs.readdirSync('./assets')
-    //12402
-    var latest = JSON.parse(fs.readFileSync('./record.json', 'utf8'));
-    for (var i = latest['latest_step'] ?? 0; i < files.length; i++) {
-        var record = JSON.parse(fs.readFileSync('./record.json', 'utf8'));
-        let coinData;
-        let tempError = record['errorList'];
-        try {
-            coinData = await doFetch(files[i])
-        } catch (e) {
-            console.log(`missing coin / token data ${files[i]}`)
-            console.log(e)
-            tempError.push({
-                "id": files[i]
-            })
-            fs.writeFileSync('./record.json', JSON.stringify({
-                "latest_step": i,
-                "errorList": tempError
-            }))
-            continue;
-        }
-        let { id, name, symbol, description, links, image, detail_platforms } = coinData;
-        fs.writeFileSync('./record.json', JSON.stringify({
-            "latest_step": i,
-            "errorList": tempError
-        }))
-        fs.writeFileSync(`./assets/${id}/info.json`, JSON.stringify({
-            "name": name,
-            "id": id,
-            "symbol": symbol,
-            "description": description.en.replace(/\s+/g, ' ').trim(),
-            "links": links.homepage[0],
-            "logo": `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${id}/logo.png`,
-            "detail_platform": detail_platforms
-        }));
-        console.log('\x1b[33m%s\x1b[0m', `done ${id} -> ${i}/${files.length}`);
-        await sleeps()
+    for (var i = 0; i < files.length; i++) {
+        var info = JSON.parse(fs.readFileSync(`./assets/${files[i]}/info.json`, 'utf8'));
+        constructJSON.push({
+            "id":info.id,
+            "name" : info.name,
+            "symbol" : info.symbol,
+            "detail_platform" : info.detail_platform
+        })
+        console.log('\x1b[33m%s\x1b[0m', `done ${files[i]} -> ${i}/${files.length}`);
     }
+    fs.writeFileSync('./tokenlist.json', JSON.stringify(constructJSON))
 })()
+
+
+// (async () => {
+//     // const files = fs.readdirSync('./assets')
+//     //12402
+//     var latest = JSON.parse(fs.readFileSync('./record.json', 'utf8'));
+//     const files = latest['errorList']
+
+//     for (var i = latest['latest_step'] ?? 0; i < files.length; i++) {
+//         var record = JSON.parse(fs.readFileSync('./record.json', 'utf8'));
+//         let coinData;
+//         let tempError = record['errorList'];
+//         let tempNotFound = record['notFound'];
+//         try {
+//             coinData = await doFetch(files[i].id)
+//         } catch (e) {
+//             console.log(`missing coin / token data ${files[i].id}`)
+//             console.log(e)
+//             tempError = tempError.filter((x) => x.id != files[i].id);
+//             fs.rmSync(`./assets/${files[i].id}`, { force: true, recursive: true })
+//             tempError.push({
+//                 "id": files[i].id
+//             })
+//             tempNotFound.push({
+//                 "id": files[i].id
+//             })
+//             fs.writeFileSync('./record.json', JSON.stringify({
+//                 "latest_step": i,
+//                 "errorList": tempError,
+//                 "notFound": tempNotFound
+//             }))
+//             await sleeps()
+//             continue;
+//         }
+//         tempError = tempError.filter((x) => x.id != files[i].id);
+//         let { id, name, symbol, description, links, image, detail_platforms } = coinData;
+//         fs.writeFileSync('./record.json', JSON.stringify({
+//             "latest_step": i,
+//             "errorList": tempError,
+//             "notFound": tempNotFound
+//         }))
+//         fs.writeFileSync(`./assets/${id}/info.json`, JSON.stringify({
+//             "name": name,
+//             "id": id,
+//             "symbol": symbol,
+//             "description": description.en.replace(/\s+/g, ' ').trim(),
+//             "links": links.homepage[0],
+//             "logo": `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${id}/logo.png`,
+//             "detail_platform": detail_platforms
+//         }));
+//         console.log('\x1b[33m%s\x1b[0m', `done ${id} -> ${i}/${files.length}`);
+//         await sleeps()
+//     }
+// })()
 
 async function doFetch(Coinid) {
     try {
