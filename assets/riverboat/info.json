@@ -1,1 +1,1 @@
-{"name":"RiverBoat","id":"riverboat","symbol":"rib","description":"","links":"https://seascape.finance/#/swap","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/riverboat/logo.png"}
+{"name":"RiverBoat","id":"riverboat","symbol":"rib","description":"","links":"https://seascape.finance/#/swap","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/riverboat/logo.png","detail_platform":{"moonriver":{"decimal_place":18,"contract_address":"0xbd90a6125a84e5c512129d622a75cdde176ade5e"}}}

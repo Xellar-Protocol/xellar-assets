@@ -1,1 +1,1 @@
-{"name":"Wrapped HOO","id":"wrapped-hoo","symbol":"whoo","description":"","links":"https://hoo.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-hoo/logo.png"}
+{"name":"Wrapped HOO","id":"wrapped-hoo","symbol":"whoo","description":"","links":"https://hoo.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-hoo/logo.png","detail_platform":{"hoo-smart-chain":{"decimal_place":18,"contract_address":"0x3eff9d389d13d6352bfb498bcf616ef9b1beac87"}}}

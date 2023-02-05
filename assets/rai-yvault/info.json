@@ -1,1 +1,1 @@
-{"name":"RAI yVault","id":"rai-yvault","symbol":"yvrai","description":"","links":"https://yearn.finance/vaults","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/rai-yvault/logo.png"}
+{"name":"RAI yVault","id":"rai-yvault","symbol":"yvrai","description":"","links":"https://yearn.finance/vaults","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/rai-yvault/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x873fb544277fd7b977b196a826459a69e27ea4ea"}}}

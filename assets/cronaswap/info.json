@@ -1,1 +1,1 @@
-{"name":"CronaSwap","id":"cronaswap","symbol":"crona","description":"AMM+DEX ecosystem.","links":"https://app.cronaswap.org","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/cronaswap/logo.png"}
+{"name":"CronaSwap","id":"cronaswap","symbol":"crona","description":"AMM+DEX ecosystem.","links":"https://app.cronaswap.org","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/cronaswap/logo.png","detail_platform":{"cronos":{"decimal_place":18,"contract_address":"0xadbd1231fb360047525bedf962581f3eee7b49fe"}}}

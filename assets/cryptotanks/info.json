@@ -1,1 +1,1 @@
-{"name":"CryptoTanks","id":"cryptotanks","symbol":"tank","description":"","links":"https://cryptotanks.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/cryptotanks/logo.png"}
+{"name":"CryptoTanks","id":"cryptotanks","symbol":"tank","description":"","links":"https://cryptotanks.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/cryptotanks/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x4444a19c8bb86e9bdbc023709a363bbce91af33e"}}}

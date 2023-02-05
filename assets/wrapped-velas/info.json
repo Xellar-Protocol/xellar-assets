@@ -1,1 +1,1 @@
-{"name":"Wrapped Velas","id":"wrapped-velas","symbol":"wvlx","description":"","links":"https://velas.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-velas/logo.png"}
+{"name":"Wrapped Velas","id":"wrapped-velas","symbol":"wvlx","description":"","links":"https://velas.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-velas/logo.png","detail_platform":{"velas":{"decimal_place":18,"contract_address":"0xc579d1f3cf86749e05cd06f7ade17856c2ce3126"}}}

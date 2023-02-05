@@ -1,1 +1,1 @@
-{"name":"FarmerDoge","id":"farmerdoge","symbol":"crop","description":"","links":"https://www.farmerdoge.net/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/farmerdoge/logo.png"}
+{"name":"FarmerDoge","id":"farmerdoge","symbol":"crop","description":"","links":"https://www.farmerdoge.net/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/farmerdoge/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0xee0736c93e98b2e9fbf11f47db19e7b68db71e94"}}}

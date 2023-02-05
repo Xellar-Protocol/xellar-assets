@@ -1,1 +1,1 @@
-{"name":"Pundi X","id":"pundi-x-2","symbol":"pundix","description":"","links":"https://pundix.com","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/pundi-x-2/logo.png"}
+{"name":"Pundi X","id":"pundi-x-2","symbol":"pundix","description":"","links":"https://pundix.com","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/pundi-x-2/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x0fd10b9899882a6f2fcb5c371e17e70fdee00c38"}}}

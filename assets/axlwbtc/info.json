@@ -1,1 +1,1 @@
-{"name":"axlWBTC","id":"axlwbtc","symbol":"axlwbtc","description":"","links":"https://axelarscan.io/assets","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/axlwbtc/logo.png"}
+{"name":"axlWBTC","id":"axlwbtc","symbol":"axlwbtc","description":"","links":"https://axelarscan.io/assets","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/axlwbtc/logo.png","detail_platform":{"evmos":{"decimal_place":8,"contract_address":"0xf5b24c0093b65408ace53df7ce86a02448d53b25"}}}

@@ -1,1 +1,1 @@
-{"name":"Fidu","id":"fidu","symbol":"fidu","description":"","links":"https://goldfinch.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/fidu/logo.png"}
+{"name":"Fidu","id":"fidu","symbol":"fidu","description":"","links":"https://goldfinch.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/fidu/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x6a445e9f40e0b97c92d0b8a3366cef1d67f700bf"}}}

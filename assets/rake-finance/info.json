@@ -1,1 +1,1 @@
-{"name":"Rake Finance","id":"rake-finance","symbol":"rak","description":"","links":"https://rake.finance","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/rake-finance/logo.png"}
+{"name":"Rake Finance","id":"rake-finance","symbol":"rak","description":"","links":"https://rake.finance","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/rake-finance/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xa8b0f154a688c22142e361707df64277e0a0be66"}}}

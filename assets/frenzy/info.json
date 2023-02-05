@@ -1,1 +1,1 @@
-{"name":"Frenzy","id":"frenzy","symbol":"fzy","description":"","links":"http://frenzy-singapore.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/frenzy/logo.png"}
+{"name":"Frenzy","id":"frenzy","symbol":"fzy","description":"","links":"http://frenzy-singapore.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/frenzy/logo.png","detail_platform":{"ethereum":{"decimal_place":8,"contract_address":"0x8720c8429b78df262360b0f39917a03f9b894746"}}}

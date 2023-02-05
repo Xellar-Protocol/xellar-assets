@@ -1,1 +1,1 @@
-{"name":"Safe Token","id":"safe","symbol":"safe","description":"","links":"https://gnosis-safe.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/safe/logo.png"}
+{"name":"Safe Token","id":"safe","symbol":"safe","description":"","links":"https://gnosis-safe.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/safe/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x5afe3855358e112b5647b952709e6165e1c1eeee"}}}

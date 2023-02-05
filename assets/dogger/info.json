@@ -1,1 +1,1 @@
-{"name":"Dogger","id":"dogger","symbol":"dogger","description":"","links":"https://dogger.wtf/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/dogger/logo.png"}
+{"name":"Dogger","id":"dogger","symbol":"dogger","description":"","links":"https://dogger.wtf/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/dogger/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xb3cc3d7e656893f22d2372b0ae57106f6b155cbe"}}}

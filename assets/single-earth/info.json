@@ -1,1 +1,1 @@
-{"name":"Single Earth","id":"single-earth","symbol":"merit","description":"","links":"https://www.single.earth/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/single-earth/logo.png"}
+{"name":"Single Earth","id":"single-earth","symbol":"merit","description":"","links":"https://www.single.earth/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/single-earth/logo.png","detail_platform":{"solana":{"decimal_place":9,"contract_address":"HjUMVG3yQK7uMTq1TerG6C8JzAjRvMdYCoX7ZUzKTgjH"}}}

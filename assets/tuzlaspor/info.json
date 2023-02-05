@@ -1,1 +1,1 @@
-{"name":"Tuzlaspor Token","id":"tuzlaspor","symbol":"tuzla","description":"","links":"https://www.bitexen.com/ieo/TUZLA","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tuzlaspor/logo.png"}
+{"name":"Tuzlaspor Token","id":"tuzlaspor","symbol":"tuzla","description":"","links":"https://www.bitexen.com/ieo/TUZLA","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tuzlaspor/logo.png","detail_platform":{"ethereum":{"decimal_place":2,"contract_address":"0x1e4ec900dd162ebaf6cf76cfe8a546f34d7a483d"}}}

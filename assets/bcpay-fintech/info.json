@@ -1,1 +1,1 @@
-{"name":"BCPAY FinTech","id":"bcpay-fintech","symbol":"bcpay","description":"","links":"https://bitcashpay.net/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/bcpay-fintech/logo.png"}
+{"name":"BCPAY FinTech","id":"bcpay-fintech","symbol":"bcpay","description":"","links":"https://bitcashpay.net/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/bcpay-fintech/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":8,"contract_address":"0x21f1ce0fcf1e9e39f8e79b7762801e8096d9f6cd"}}}

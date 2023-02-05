@@ -1,1 +1,1 @@
-{"name":"Nestree","id":"nestree","symbol":"egg","description":"","links":"https://www.nestree.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/nestree/logo.png"}
+{"name":"Nestree","id":"nestree","symbol":"egg","description":"","links":"https://www.nestree.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/nestree/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x65ccd72c0813ce6f2703593b633202a0f3ca6a0c"}}}

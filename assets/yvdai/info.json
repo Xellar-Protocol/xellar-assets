@@ -1,1 +1,1 @@
-{"name":"yvDAI","id":"yvdai","symbol":"yvdai","description":"Yearn Vault DAI token","links":"https://yearn.finance/vaults","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/yvdai/logo.png"}
+{"name":"yvDAI","id":"yvdai","symbol":"yvdai","description":"Yearn Vault DAI token","links":"https://yearn.finance/vaults","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/yvdai/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xda816459f1ab5631232fe5e97a05bbbb94970c95"}}}

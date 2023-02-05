@@ -1,1 +1,1 @@
-{"name":"DinoStep","id":"dinostep","symbol":"dns","description":"","links":"https://dinostep.app/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/dinostep/logo.png"}
+{"name":"DinoStep","id":"dinostep","symbol":"dns","description":"","links":"https://dinostep.app/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/dinostep/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x680891034831e06ba48bc5283412d41a5f675404"}}}

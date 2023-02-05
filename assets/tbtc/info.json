@@ -1,1 +1,1 @@
-{"name":"tBTC","id":"tbtc","symbol":"tbtc","description":"","links":"https://threshold.network/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tbtc/logo.png"}
+{"name":"tBTC","id":"tbtc","symbol":"tbtc","description":"","links":"https://threshold.network/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tbtc/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x18084fba666a33d37592fa2633fd49a74dd93a88"}}}

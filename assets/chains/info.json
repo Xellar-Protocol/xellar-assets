@@ -1,1 +1,1 @@
-{"name":"Chains","id":"chains","symbol":"cha","description":"","links":"https://chains.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/chains/logo.png"}
+{"name":"Chains","id":"chains","symbol":"cha","description":"","links":"https://chains.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/chains/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0xa037f4cb3d319876cdbe585c89663c246615c975"}}}

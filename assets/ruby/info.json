@@ -1,1 +1,1 @@
-{"name":"RUBY","id":"ruby","symbol":"ruby","description":"","links":"https://www.ruby.exchange/swap","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/ruby/logo.png"}
+{"name":"RUBY","id":"ruby","symbol":"ruby","description":"","links":"https://www.ruby.exchange/swap","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/ruby/logo.png","detail_platform":{"skale":{"decimal_place":18,"contract_address":"0x2b4e4899b53e8b7958c4591a6d02f9c0b5c50f8f"}}}

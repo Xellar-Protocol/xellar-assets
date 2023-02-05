@@ -1,1 +1,1 @@
-{"name":"DogeFi","id":"dogefi","symbol":"dogefi","description":"","links":"https://www.dogefi.club/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/dogefi/logo.png"}
+{"name":"DogeFi","id":"dogefi","symbol":"dogefi","description":"","links":"https://www.dogefi.club/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/dogefi/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x9b9087756eca997c5d595c840263001c9a26646d"}}}

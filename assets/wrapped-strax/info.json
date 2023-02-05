@@ -1,1 +1,1 @@
-{"name":"Wrapped Strax","id":"wrapped-strax","symbol":"wstrax","description":"","links":"http://stratisplatform.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-strax/logo.png"}
+{"name":"Wrapped Strax","id":"wrapped-strax","symbol":"wstrax","description":"","links":"http://stratisplatform.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-strax/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xa3c22370de5f9544f0c4de126b1e46ceadf0a51b"}}}

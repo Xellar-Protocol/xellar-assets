@@ -1,1 +1,1 @@
-{"name":"Saber","id":"saber","symbol":"sbr","description":"Cross-chain stablecoin exchange on Solana","links":"https://saber.so/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/saber/logo.png"}
+{"name":"Saber","id":"saber","symbol":"sbr","description":"Cross-chain stablecoin exchange on Solana","links":"https://saber.so/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/saber/logo.png","detail_platform":{"solana":{"decimal_place":6,"contract_address":"Saber2gLauYim4Mvftnrasomsv6NvAuncvMEZwcLpD1"}}}

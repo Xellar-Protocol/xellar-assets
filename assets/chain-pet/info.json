@@ -1,1 +1,1 @@
-{"name":"Chain Pet","id":"chain-pet","symbol":"cpet","description":"","links":"https://www.chainpet.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/chain-pet/logo.png"}
+{"name":"Chain Pet","id":"chain-pet","symbol":"cpet","description":"","links":"https://www.chainpet.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/chain-pet/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0xad326fd5bc8b962063ba51ff142086b4aa1987ec"}}}

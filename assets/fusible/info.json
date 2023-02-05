@@ -1,1 +1,1 @@
-{"name":"Fusible","id":"fusible","symbol":"fusii","description":"","links":"https://fusible.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/fusible/logo.png"}
+{"name":"Fusible","id":"fusible","symbol":"fusii","description":"","links":"https://fusible.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/fusible/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x3a50d6daacc82f17a2434184fe904fc45542a734"}}}

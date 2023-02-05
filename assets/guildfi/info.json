@@ -1,1 +1,1 @@
-{"name":"GuildFi","id":"guildfi","symbol":"gf","description":"","links":"https://guildfi.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/guildfi/logo.png"}
+{"name":"GuildFi","id":"guildfi","symbol":"gf","description":"","links":"https://guildfi.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/guildfi/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xaaef88cea01475125522e117bfe45cf32044e238"}}}

@@ -1,1 +1,1 @@
-{"name":"Shibavax","id":"shibavax","symbol":"shibx","description":"","links":"https://shibavax.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/shibavax/logo.png"}
+{"name":"Shibavax","id":"shibavax","symbol":"shibx","description":"","links":"https://shibavax.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/shibavax/logo.png","detail_platform":{"avalanche":{"decimal_place":18,"contract_address":"0x440abbf18c54b2782a4917b80a1746d3a2c2cce1"}}}

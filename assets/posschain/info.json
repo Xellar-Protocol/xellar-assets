@@ -1,1 +1,1 @@
-{"name":"Posschain","id":"posschain","symbol":"poss","description":"","links":"https://posschain.com","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/posschain/logo.png"}
+{"name":"Posschain","id":"posschain","symbol":"poss","description":"","links":"https://posschain.com","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/posschain/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x230f6e7904ffc156abd8adfd7556e56e2a358cb1"}}}

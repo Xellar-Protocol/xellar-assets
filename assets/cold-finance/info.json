@@ -1,1 +1,1 @@
-{"name":"Cold Finance","id":"cold-finance","symbol":"cold","description":"","links":"https://coldfinance.io","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/cold-finance/logo.png"}
+{"name":"Cold Finance","id":"cold-finance","symbol":"cold","description":"","links":"https://coldfinance.io","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/cold-finance/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":9,"contract_address":"0x9a6fda69fa9859b169ef17b600ce81c59cf16f01"}}}

@@ -1,1 +1,1 @@
-{"name":"Steaks Finance","id":"steaks-finance","symbol":"steak","description":"","links":"https://steaks.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/steaks-finance/logo.png"}
+{"name":"Steaks Finance","id":"steaks-finance","symbol":"steak","description":"","links":"https://steaks.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/steaks-finance/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xeed9e4f2450035d6426276a8aa2084966ee3b1bb"}}}

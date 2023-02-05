@@ -1,1 +1,1 @@
-{"name":"tMATIC","id":"tmatic","symbol":"tmatic","description":"","links":"https://www.tenderize.me/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tmatic/logo.png"}
+{"name":"tMATIC","id":"tmatic","symbol":"tmatic","description":"","links":"https://www.tenderize.me/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tmatic/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x2336c10a1d3100343fa9911a2c57b77c333599a3"}}}

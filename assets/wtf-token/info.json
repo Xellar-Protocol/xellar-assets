@@ -1,1 +1,1 @@
-{"name":"Fees.wtf","id":"wtf-token","symbol":"wtf","description":"","links":"https://fees.wtf/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wtf-token/logo.png"}
+{"name":"Fees.wtf","id":"wtf-token","symbol":"wtf","description":"","links":"https://fees.wtf/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wtf-token/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xa68dd8cb83097765263adad881af6eed479c4a33"}}}

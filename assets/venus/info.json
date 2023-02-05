@@ -1,1 +1,1 @@
-{"name":"Venus","id":"venus","symbol":"xvs","description":"","links":"https://venus.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/venus/logo.png"}
+{"name":"Venus","id":"venus","symbol":"xvs","description":"","links":"https://venus.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/venus/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0xcf6bb5389c92bdda8a3747ddb454cb7a64626c63"}}}

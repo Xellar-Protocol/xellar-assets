@@ -1,1 +1,1 @@
-{"name":"Fastswap (BSC)","id":"fastswap-bsc","symbol":"fast","description":"","links":"https://fastswap.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/fastswap-bsc/logo.png"}
+{"name":"Fastswap (BSC)","id":"fastswap-bsc","symbol":"fast","description":"","links":"https://fastswap.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/fastswap-bsc/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x2322afaac81697e770c19a58df587d8739777536"}}}

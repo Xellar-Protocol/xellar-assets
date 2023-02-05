@@ -1,1 +1,1 @@
-{"name":"Hintchain","id":"hintchain","symbol":"hint","description":"","links":"http://hintchain.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/hintchain/logo.png"}
+{"name":"Hintchain","id":"hintchain","symbol":"hint","description":"","links":"http://hintchain.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/hintchain/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x6ce21e5f5383c95691d243879a86a6025e0870c0"}}}

@@ -1,1 +1,1 @@
-{"name":"YAM v2","id":"yam-v2","symbol":"yamv2","description":"","links":"http://yam.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/yam-v2/logo.png"}
+{"name":"YAM v2","id":"yam-v2","symbol":"yamv2","description":"","links":"http://yam.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/yam-v2/logo.png","detail_platform":{"ethereum":{"decimal_place":24,"contract_address":"0xaba8cac6866b83ae4eec97dd07ed254282f6ad8a"}}}

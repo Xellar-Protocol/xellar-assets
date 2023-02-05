@@ -1,1 +1,1 @@
-{"name":"Vesper V-Dollar","id":"vesper-vdollar","symbol":"vusd","description":"","links":"https://vesper.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/vesper-vdollar/logo.png"}
+{"name":"Vesper V-Dollar","id":"vesper-vdollar","symbol":"vusd","description":"","links":"https://vesper.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/vesper-vdollar/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x677ddbd918637e5f2c79e164d402454de7da8619"}}}

@@ -1,1 +1,1 @@
-{"name":"Dwagon","id":"dwagon","symbol":"$dwagon","description":"","links":"https://dwagonweborn.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/dwagon/logo.png"}
+{"name":"Dwagon","id":"dwagon","symbol":"$dwagon","description":"","links":"https://dwagonweborn.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/dwagon/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xdf1a2f85f3af80e85d14ddaab2933c8caa09294a"}}}

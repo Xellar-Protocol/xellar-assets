@@ -1,1 +1,1 @@
-{"name":"LINK yVault","id":"link-yvault","symbol":"yvlink","description":"","links":"https://yearn.finance/vaults","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/link-yvault/logo.png"}
+{"name":"LINK yVault","id":"link-yvault","symbol":"yvlink","description":"","links":"https://yearn.finance/vaults","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/link-yvault/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x671a912c10bba0cfa74cfc2d6fba9ba1ed9530b2"}}}

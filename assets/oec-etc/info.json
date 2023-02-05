@@ -1,1 +1,1 @@
-{"name":"OEC ETC","id":"oec-etc","symbol":"etck","description":"","links":"https://www.okex.com/okexchain","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/oec-etc/logo.png"}
+{"name":"OEC ETC","id":"oec-etc","symbol":"etck","description":"","links":"https://www.okex.com/okexchain","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/oec-etc/logo.png","detail_platform":{"okex-chain":{"decimal_place":18,"contract_address":"0x99970778e2715bbc9cf8fb83d10dcbc2d2d551a3"}}}

@@ -1,1 +1,1 @@
-{"name":"NFT Crosschain","id":"nft-crosschain","symbol":"crc","description":"","links":"https://nftcrosschain.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/nft-crosschain/logo.png"}
+{"name":"NFT Crosschain","id":"nft-crosschain","symbol":"crc","description":"","links":"https://nftcrosschain.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/nft-crosschain/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x0ed30fe8fd51c593b077315a6cb60a9fb9b15155"}}}

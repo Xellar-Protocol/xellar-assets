@@ -1,1 +1,1 @@
-{"name":"Stand Cash","id":"stand-cash","symbol":"sac","description":"","links":"https://stand.cash/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/stand-cash/logo.png"}
+{"name":"Stand Cash","id":"stand-cash","symbol":"sac","description":"","links":"https://stand.cash/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/stand-cash/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xacd8f2523a4613eee78904354187c81bb05ae2b8"}}}

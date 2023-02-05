@@ -1,1 +1,1 @@
-{"name":"FitMax","id":"fitmax","symbol":"fitm","description":"","links":"https://fitmax.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/fitmax/logo.png"}
+{"name":"FitMax","id":"fitmax","symbol":"fitm","description":"","links":"https://fitmax.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/fitmax/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x41d52514f6ea0c90993ad36152072a144c12bdc7"}}}

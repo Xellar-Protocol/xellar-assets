@@ -1,1 +1,1 @@
-{"name":"ASPO World","id":"aspo-world","symbol":"aspo","description":"","links":"https://aspo.world/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/aspo-world/logo.png"}
+{"name":"ASPO World","id":"aspo-world","symbol":"aspo","description":"","links":"https://aspo.world/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/aspo-world/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x1a9b49e9f075c37fe5f86c916bac9deb33556d7e"}}}

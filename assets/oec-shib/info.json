@@ -1,1 +1,1 @@
-{"name":"OEC SHIB","id":"oec-shib","symbol":"shibk","description":"","links":"https://www.okex.com/okexchain","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/oec-shib/logo.png"}
+{"name":"OEC SHIB","id":"oec-shib","symbol":"shibk","description":"","links":"https://www.okex.com/okexchain","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/oec-shib/logo.png","detail_platform":{"okex-chain":{"decimal_place":18,"contract_address":"0xaa27badaa3c9ec9081b8f6c9cdd2bf375f143780"}}}

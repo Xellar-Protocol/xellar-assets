@@ -1,1 +1,1 @@
-{"name":"Firework Games","id":"firetoken","symbol":"fire","description":"","links":"https://www.firework.games/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/firetoken/logo.png"}
+{"name":"Firework Games","id":"firetoken","symbol":"fire","description":"","links":"https://www.firework.games/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/firetoken/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x0f0dd5e2c0e0c4a41f8908d73d36b8d142f6745a"}}}

@@ -1,1 +1,1 @@
-{"name":"Celo Euro","id":"celo-euro","symbol":"ceur","description":"","links":"https://celo.org/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/celo-euro/logo.png"}
+{"name":"Celo Euro","id":"celo-euro","symbol":"ceur","description":"","links":"https://celo.org/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/celo-euro/logo.png","detail_platform":{"celo":{"decimal_place":18,"contract_address":"0xd8763cba276a3738e6de85b4b3bf5fded6d6ca73"}}}

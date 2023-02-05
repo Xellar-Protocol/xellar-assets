@@ -1,1 +1,1 @@
-{"name":"Meta Pool","id":"meta-pool","symbol":"meta","description":"","links":"https://metapool.app/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/meta-pool/logo.png"}
+{"name":"Meta Pool","id":"meta-pool","symbol":"meta","description":"","links":"https://metapool.app/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/meta-pool/logo.png","detail_platform":{"aurora":{"decimal_place":24,"contract_address":"0xc21ff01229e982d7c8b8691163b0a3cb8f357453"}}}

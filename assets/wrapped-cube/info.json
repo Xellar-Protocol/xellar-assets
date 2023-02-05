@@ -1,1 +1,1 @@
-{"name":"Wrapped Cube","id":"wrapped-cube","symbol":"wcube","description":"","links":"https://www.cube.network/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-cube/logo.png"}
+{"name":"Wrapped Cube","id":"wrapped-cube","symbol":"wcube","description":"","links":"https://www.cube.network/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-cube/logo.png","detail_platform":{"cube":{"decimal_place":18,"contract_address":"0x9d3f61338d6eb394e378d28c1fd17d5909ac6591"}}}

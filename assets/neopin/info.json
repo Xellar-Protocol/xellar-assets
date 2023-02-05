@@ -1,1 +1,1 @@
-{"name":"Neopin","id":"neopin","symbol":"npt","description":"","links":"https://neopin.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/neopin/logo.png"}
+{"name":"Neopin","id":"neopin","symbol":"npt","description":"","links":"https://neopin.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/neopin/logo.png","detail_platform":{"klay-token":{"decimal_place":18,"contract_address":"0xe06597d02a2c3aa7a9708de2cfa587b128bd3815"}}}

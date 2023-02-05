@@ -1,1 +1,1 @@
-{"name":"PolkaWar","id":"polkawar","symbol":"pwar","description":"","links":"https://polkawar.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/polkawar/logo.png"}
+{"name":"PolkaWar","id":"polkawar","symbol":"pwar","description":"","links":"https://polkawar.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/polkawar/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x16153214e683018d5aa318864c8e692b66e16778"}}}

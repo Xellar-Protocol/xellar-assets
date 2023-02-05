@@ -1,1 +1,1 @@
-{"name":"Alpha Impact","id":"follow-token","symbol":"folo","description":"","links":"https://alphaimpact.fi/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/follow-token/logo.png"}
+{"name":"Alpha Impact","id":"follow-token","symbol":"folo","description":"","links":"https://alphaimpact.fi/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/follow-token/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xb2a63a5dd36c91ec2da59b188ff047f66fac122a"}}}

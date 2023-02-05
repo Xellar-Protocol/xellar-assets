@@ -1,1 +1,1 @@
-{"name":"PieDAO BTC++","id":"piedao-btc","symbol":"btc++","description":"","links":"http://btc.piedao.org","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/piedao-btc/logo.png"}
+{"name":"PieDAO BTC++","id":"piedao-btc","symbol":"btc++","description":"","links":"http://btc.piedao.org","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/piedao-btc/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x0327112423f3a68efdf1fcf402f6c5cb9f7c33fd"}}}

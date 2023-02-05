@@ -1,1 +1,1 @@
-{"name":"WINkLink BSC","id":"winklink-bsc","symbol":"win","description":"","links":"https://winklink.org/#/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/winklink-bsc/logo.png"}
+{"name":"WINkLink BSC","id":"winklink-bsc","symbol":"win","description":"","links":"https://winklink.org/#/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/winklink-bsc/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0xaef0d72a118ce24fee3cd1d43d383897d05b4e99"}}}

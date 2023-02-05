@@ -1,1 +1,1 @@
-{"name":"X-HASH","id":"x-hash","symbol":"xsh","description":"","links":"https://app.xhash.farm/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/x-hash/logo.png"}
+{"name":"X-HASH","id":"x-hash","symbol":"xsh","description":"","links":"https://app.xhash.farm/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/x-hash/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0xb30b27adb3b0a45e88385eb2bb144fad9120a420"}}}

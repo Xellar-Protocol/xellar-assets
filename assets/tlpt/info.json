@@ -1,1 +1,1 @@
-{"name":"tLPT","id":"tlpt","symbol":"tlpt","description":"","links":"https://www.tenderize.me/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tlpt/logo.png"}
+{"name":"tLPT","id":"tlpt","symbol":"tlpt","description":"","links":"https://www.tenderize.me/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tlpt/logo.png","detail_platform":{"arbitrum-one":{"decimal_place":18,"contract_address":"0xfac38532829fdd744373fdcd4708ab90fa0c4078"}}}

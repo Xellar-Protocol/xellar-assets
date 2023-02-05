@@ -1,1 +1,1 @@
-{"name":"Coinsbit Token","id":"coinsbit-token","symbol":"cnb","description":"","links":"https://coinsbit.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/coinsbit-token/logo.png"}
+{"name":"Coinsbit Token","id":"coinsbit-token","symbol":"cnb","description":"","links":"https://coinsbit.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/coinsbit-token/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xc538143202f3b11382d8606aae90a96b042a19db"}}}

@@ -1,1 +1,1 @@
-{"name":"VIP","id":"vip-token","symbol":"vip","description":"","links":"https://viptoken.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/vip-token/logo.png"}
+{"name":"VIP","id":"vip-token","symbol":"vip","description":"","links":"https://viptoken.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/vip-token/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":9,"contract_address":"0x6759565574de509b7725abb4680020704b3f404e"}}}

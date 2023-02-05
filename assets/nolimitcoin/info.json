@@ -1,1 +1,1 @@
-{"name":"NoLimitCoin","id":"nolimitcoin","symbol":"nlc","description":"","links":"http://www.nolimitcoin.org/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/nolimitcoin/logo.png"}
+{"name":"NoLimitCoin","id":"nolimitcoin","symbol":"nlc","description":"","links":"http://www.nolimitcoin.org/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/nolimitcoin/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":8,"contract_address":"0x6519cb1f694ccbcc72417570b364f2d051eefb9d"}}}

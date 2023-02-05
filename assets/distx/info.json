@@ -1,1 +1,1 @@
-{"name":"DistX","id":"distx","symbol":"distx","description":"","links":"https://www.distx.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/distx/logo.png"}
+{"name":"DistX","id":"distx","symbol":"distx","description":"","links":"https://www.distx.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/distx/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x4b4701f3f827e1331fb22ff8e2beac24b17eb055"}}}

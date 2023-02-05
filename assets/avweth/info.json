@@ -1,1 +1,1 @@
-{"name":"avWETH","id":"avweth","symbol":"avweth","description":"","links":"https://aave.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/avweth/logo.png"}
+{"name":"avWETH","id":"avweth","symbol":"avweth","description":"","links":"https://aave.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/avweth/logo.png","detail_platform":{"avalanche":{"decimal_place":18,"contract_address":"0x53f7c5869a859f0aec3d334ee8b4cf01e3492f21"}}}

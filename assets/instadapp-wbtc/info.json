@@ -1,1 +1,1 @@
-{"name":"Instadapp WBTC","id":"instadapp-wbtc","symbol":"iwbtc","description":"","links":"https://instadapp.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/instadapp-wbtc/logo.png"}
+{"name":"Instadapp WBTC","id":"instadapp-wbtc","symbol":"iwbtc","description":"","links":"https://instadapp.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/instadapp-wbtc/logo.png","detail_platform":{"ethereum":{"decimal_place":8,"contract_address":"0xec363faa5c4dd0e51f3d9b5d0101263760e7cdeb"}}}

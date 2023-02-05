@@ -1,1 +1,1 @@
-{"name":"HELLMOON","id":"hellmoon","symbol":"hmoon","description":"","links":"https://www.hellmoonlegends.com","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/hellmoon/logo.png"}
+{"name":"HELLMOON","id":"hellmoon","symbol":"hmoon","description":"","links":"https://www.hellmoonlegends.com","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/hellmoon/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":6,"contract_address":"0x46328f831cff23f44d65fa5e53a7217a660554aa"}}}

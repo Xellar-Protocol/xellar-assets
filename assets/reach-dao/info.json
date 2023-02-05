@@ -1,1 +1,1 @@
-{"name":"Reach DAO","id":"reach-dao","symbol":"$read","description":"","links":"https://reachdao.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/reach-dao/logo.png"}
+{"name":"Reach DAO","id":"reach-dao","symbol":"$read","description":"","links":"https://reachdao.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/reach-dao/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x271b446d0c2230f59a7c5cc4b61cb84d7e4bd0dd"}}}

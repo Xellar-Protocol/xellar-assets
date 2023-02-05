@@ -1,1 +1,1 @@
-{"name":"XUSD (BabelFish)","id":"xusd-babelfish","symbol":"xusd","description":"","links":"https://babelfish.money/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/xusd-babelfish/logo.png"}
+{"name":"XUSD (BabelFish)","id":"xusd-babelfish","symbol":"xusd","description":"","links":"https://babelfish.money/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/xusd-babelfish/logo.png","detail_platform":{"rootstock":{"decimal_place":18,"contract_address":"0xb5999795be0ebb5bab23144aa5fd6a02d080299f"}}}

@@ -1,1 +1,1 @@
-{"name":"Convergence","id":"convergence","symbol":"conv","description":"","links":"https://conv.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/convergence/logo.png"}
+{"name":"Convergence","id":"convergence","symbol":"conv","description":"","links":"https://conv.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/convergence/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xc834fa996fa3bec7aad3693af486ae53d8aa8b50"}}}

@@ -1,1 +1,1 @@
-{"name":"OEC UNI","id":"oec-uni","symbol":"unik","description":"","links":"https://www.okex.com/okexchain","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/oec-uni/logo.png"}
+{"name":"OEC UNI","id":"oec-uni","symbol":"unik","description":"","links":"https://www.okex.com/okexchain","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/oec-uni/logo.png","detail_platform":{"okex-chain":{"decimal_place":18,"contract_address":"0x59d226bb0a4d74274d4354ebb6a0e1a1aa5175b6"}}}

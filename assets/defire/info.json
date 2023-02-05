@@ -1,1 +1,1 @@
-{"name":"DeFIRE","id":"defire","symbol":"cwap","description":"","links":"https://defire.fi/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/defire/logo.png"}
+{"name":"DeFIRE","id":"defire","symbol":"cwap","description":"","links":"https://defire.fi/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/defire/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xe74dc43867e0cbeb208f1a012fc60dcbbf0e3044"}}}

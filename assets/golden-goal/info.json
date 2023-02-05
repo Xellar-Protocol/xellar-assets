@@ -1,1 +1,1 @@
-{"name":"Golden Goal","id":"golden-goal","symbol":"gdg","description":"","links":"https://gdgcoin.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/golden-goal/logo.png"}
+{"name":"Golden Goal","id":"golden-goal","symbol":"gdg","description":"","links":"https://gdgcoin.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/golden-goal/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xfd020998a1bb316dfe7b136fe59ae4b365d79978"}}}

@@ -1,1 +1,1 @@
-{"name":"TUSD yVault","id":"tusd-yvault","symbol":"yvtusd","description":"","links":"https://yearn.finance/vaults","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tusd-yvault/logo.png"}
+{"name":"TUSD yVault","id":"tusd-yvault","symbol":"yvtusd","description":"","links":"https://yearn.finance/vaults","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tusd-yvault/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xfd0877d9095789caf24c98f7cce092fa8e120775"}}}

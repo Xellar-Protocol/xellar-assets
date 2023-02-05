@@ -1,1 +1,1 @@
-{"name":"Heco-Peg Binance Coin","id":"heco-peg-bnb","symbol":"bnb","description":"","links":"https://www.binance.com/en","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/heco-peg-bnb/logo.png"}
+{"name":"Heco-Peg Binance Coin","id":"heco-peg-bnb","symbol":"bnb","description":"","links":"https://www.binance.com/en","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/heco-peg-bnb/logo.png","detail_platform":{"huobi-token":{"decimal_place":18,"contract_address":"0x4f99d10e16972ff2fe315eee53a95fc5a5870ce3"}}}

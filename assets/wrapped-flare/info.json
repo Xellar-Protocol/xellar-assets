@@ -1,1 +1,1 @@
-{"name":"Wrapped Flare","id":"wrapped-flare","symbol":"wflr","description":"","links":"https://flare.network/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-flare/logo.png"}
+{"name":"Wrapped Flare","id":"wrapped-flare","symbol":"wflr","description":"","links":"https://flare.network/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-flare/logo.png","detail_platform":{"flare-network":{"decimal_place":18,"contract_address":"0x1d80c49bbbcd1c0911346656b529df9e5c2f783d"}}}

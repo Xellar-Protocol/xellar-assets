@@ -1,1 +1,1 @@
-{"name":"sUSD yVault","id":"susd-yvault","symbol":"yvsusd","description":"","links":"https://yearn.finance/vaults","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/susd-yvault/logo.png"}
+{"name":"sUSD yVault","id":"susd-yvault","symbol":"yvsusd","description":"","links":"https://yearn.finance/vaults","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/susd-yvault/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xa5ca62d95d24a4a350983d5b8ac4eb8638887396"}}}

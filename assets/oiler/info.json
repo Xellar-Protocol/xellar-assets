@@ -1,1 +1,1 @@
-{"name":"Oiler","id":"oiler","symbol":"oil","description":"","links":"https://www.oiler.network/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/oiler/logo.png"}
+{"name":"Oiler","id":"oiler","symbol":"oil","description":"","links":"https://www.oiler.network/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/oiler/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x0275e1001e293c46cfe158b3702aade0b99f88a5"}}}

@@ -1,1 +1,1 @@
-{"name":"CryptoWolf","id":"cryptowolf","symbol":"cwolf","description":"","links":"https://www.cryptowolf.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/cryptowolf/logo.png"}
+{"name":"CryptoWolf","id":"cryptowolf","symbol":"cwolf","description":"","links":"https://www.cryptowolf.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/cryptowolf/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":null,"contract_address":"0x8c5921a9563e6d5dda95cb46b572bb1cc9b04a27"}}}

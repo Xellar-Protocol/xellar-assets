@@ -1,1 +1,1 @@
-{"name":"Signum","id":"signum","symbol":"signa","description":"","links":"https://signum.network/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/signum/logo.png"}
+{"name":"Signum","id":"signum","symbol":"signa","description":"","links":"https://signum.network/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/signum/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":8,"contract_address":"0x7b0e7e40ee4672599f7095d1ddd730b0805195ba"}}}

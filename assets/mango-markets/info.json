@@ -1,1 +1,1 @@
-{"name":"Mango","id":"mango-markets","symbol":"mngo","description":"","links":"https://mango.markets","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/mango-markets/logo.png"}
+{"name":"Mango","id":"mango-markets","symbol":"mngo","description":"","links":"https://mango.markets","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/mango-markets/logo.png","detail_platform":{"solana":{"decimal_place":6,"contract_address":"MangoCzJ36AjZyKwVj3VnYU4GTonjfVEnJmvvWaxLac"}}}

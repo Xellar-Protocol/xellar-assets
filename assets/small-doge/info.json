@@ -1,1 +1,1 @@
-{"name":"Small Doge","id":"small-doge","symbol":"sdog","description":"","links":"https://smalldogecoin.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/small-doge/logo.png"}
+{"name":"Small Doge","id":"small-doge","symbol":"sdog","description":"","links":"https://smalldogecoin.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/small-doge/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x537edd52ebcb9f48ff2f8a28c51fcdb9d6a6e0d4"}}}

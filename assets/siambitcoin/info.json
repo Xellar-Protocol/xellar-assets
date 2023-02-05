@@ -1,1 +1,1 @@
-{"name":"SiamBitcoin","id":"siambitcoin","symbol":"sbtc","description":"","links":"https://www.siambitcoin.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/siambitcoin/logo.png"}
+{"name":"SiamBitcoin","id":"siambitcoin","symbol":"sbtc","description":"","links":"https://www.siambitcoin.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/siambitcoin/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xb8e103b60a33597136ea9511f46b6dbeb643a3a5"}}}

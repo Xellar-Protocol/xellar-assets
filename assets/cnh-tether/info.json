@@ -1,1 +1,1 @@
-{"name":"CNH Tether","id":"cnh-tether","symbol":"cnht","description":"","links":"https://tether.to/en/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/cnh-tether/logo.png"}
+{"name":"CNH Tether","id":"cnh-tether","symbol":"cnht","description":"","links":"https://tether.to/en/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/cnh-tether/logo.png","detail_platform":{"ethereum":{"decimal_place":6,"contract_address":"0x6e109e9dd7fa1a58bc3eff667e8e41fc3cc07aef"}}}

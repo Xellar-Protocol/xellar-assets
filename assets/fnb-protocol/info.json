@@ -1,1 +1,1 @@
-{"name":"FNB Protocol","id":"fnb-protocol","symbol":"fnb","description":"","links":"https://fnbprotocol.io","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/fnb-protocol/logo.png"}
+{"name":"FNB Protocol","id":"fnb-protocol","symbol":"fnb","description":"","links":"https://fnbprotocol.io","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/fnb-protocol/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x47b28f365bf4cb38db4b6356864bde7bc4b35129"}}}

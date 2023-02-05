@@ -1,1 +1,1 @@
-{"name":"wanBTC","id":"wanbtc","symbol":"wanbtc","description":"","links":"https://www.wanchain.org/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wanbtc/logo.png"}
+{"name":"wanBTC","id":"wanbtc","symbol":"wanbtc","description":"","links":"https://www.wanchain.org/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wanbtc/logo.png","detail_platform":{"wanchain":{"decimal_place":8,"contract_address":"0x50c439b6d602297252505a6799d84ea5928bcfb6"}}}

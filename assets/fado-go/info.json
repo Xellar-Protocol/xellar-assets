@@ -1,1 +1,1 @@
-{"name":"FADO Go","id":"fado-go","symbol":"fado","description":"","links":"https://token.fadogo.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/fado-go/logo.png"}
+{"name":"FADO Go","id":"fado-go","symbol":"fado","description":"","links":"https://token.fadogo.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/fado-go/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x827d24bb2aad813fe6f49b798f44cce4c48bd478"}}}

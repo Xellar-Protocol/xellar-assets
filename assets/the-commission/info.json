@@ -1,1 +1,1 @@
-{"name":"The Commission","id":"the-commission","symbol":"cmsn","description":"","links":"https://thecommission.xyz/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/the-commission/logo.png"}
+{"name":"The Commission","id":"the-commission","symbol":"cmsn","description":"","links":"https://thecommission.xyz/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/the-commission/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xaeb813653bb20d5fa4798dc4fc63af9cad4f3f67"}}}

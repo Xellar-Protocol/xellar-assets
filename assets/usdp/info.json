@@ -1,1 +1,1 @@
-{"name":"USDP Stablecoin","id":"usdp","symbol":"usdp","description":"","links":"https://unit.xyz/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/usdp/logo.png"}
+{"name":"USDP Stablecoin","id":"usdp","symbol":"usdp","description":"","links":"https://unit.xyz/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/usdp/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x1456688345527be1f37e9e627da0837d6f08c925"}}}

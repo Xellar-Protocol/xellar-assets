@@ -1,1 +1,1 @@
-{"name":"Rodeo Coin","id":"rodeo-coin","symbol":"rodeo","description":"","links":"https://www.rodeocoin.net/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/rodeo-coin/logo.png"}
+{"name":"Rodeo Coin","id":"rodeo-coin","symbol":"rodeo","description":"","links":"https://www.rodeocoin.net/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/rodeo-coin/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0xf04cb10b76f1bf04b7954e2af5d1ec3f4d967a68"}}}

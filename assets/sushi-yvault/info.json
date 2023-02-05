@@ -1,1 +1,1 @@
-{"name":"SUSHI yVault","id":"sushi-yvault","symbol":"yvsushi","description":"","links":"https://yearn.finance/vaults","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/sushi-yvault/logo.png"}
+{"name":"SUSHI yVault","id":"sushi-yvault","symbol":"yvsushi","description":"","links":"https://yearn.finance/vaults","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/sushi-yvault/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x6d765cbe5bc922694afe112c140b8878b9fb0390"}}}

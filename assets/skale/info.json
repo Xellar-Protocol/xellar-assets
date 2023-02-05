@@ -1,1 +1,1 @@
-{"name":"SKALE","id":"skale","symbol":"skl","description":"","links":"https://skale.network/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/skale/logo.png"}
+{"name":"SKALE","id":"skale","symbol":"skl","description":"","links":"https://skale.network/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/skale/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x00c83aecc790e8a4453e5dd3b0b4b3680501a7a7"}}}

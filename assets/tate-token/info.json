@@ -1,1 +1,1 @@
-{"name":"Tate Token","id":"tate-token","symbol":"topg","description":"","links":"https://tatetoken.net/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tate-token/logo.png"}
+{"name":"Tate Token","id":"tate-token","symbol":"topg","description":"","links":"https://tatetoken.net/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tate-token/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x8f1d278c438242653ee0bdd9dbd5a7f29cd046bf"}}}

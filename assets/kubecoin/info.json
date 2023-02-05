@@ -1,1 +1,1 @@
-{"name":"KubeCoin","id":"kubecoin","symbol":"kube","description":"","links":"https://www.kubecoin.org","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/kubecoin/logo.png"}
+{"name":"KubeCoin","id":"kubecoin","symbol":"kube","description":"","links":"https://www.kubecoin.org","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/kubecoin/logo.png","detail_platform":{"cardano":{"decimal_place":6,"contract_address":"a26022096c6a8052987dabbfa94849ab7886cf0bb7840044e017d5be"}}}

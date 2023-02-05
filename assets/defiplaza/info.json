@@ -1,1 +1,1 @@
-{"name":"DefiPlaza","id":"defiplaza","symbol":"dfp2","description":"","links":"https://defiplaza.net","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/defiplaza/logo.png"}
+{"name":"DefiPlaza","id":"defiplaza","symbol":"dfp2","description":"","links":"https://defiplaza.net","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/defiplaza/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x2f57430a6ceda85a67121757785877b4a71b8e6d"}}}

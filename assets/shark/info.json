@@ -1,1 +1,1 @@
-{"name":"Shark","id":"shark","symbol":"shark","description":"","links":"https://www.sharkswap.xyz/swap","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/shark/logo.png"}
+{"name":"Shark","id":"shark","symbol":"shark","description":"","links":"https://www.sharkswap.xyz/swap","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/shark/logo.png","detail_platform":{"sx-network":{"decimal_place":18,"contract_address":"0x7dc31a2fcbfbad1ed4519111fd33f78316bcbc81"}}}

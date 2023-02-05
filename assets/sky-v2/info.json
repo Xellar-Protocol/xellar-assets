@@ -1,1 +1,1 @@
-{"name":"SkyToken","id":"sky-v2","symbol":"sky","description":"","links":"http://skytokenfoundation.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/sky-v2/logo.png"}
+{"name":"SkyToken","id":"sky-v2","symbol":"sky","description":"","links":"http://skytokenfoundation.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/sky-v2/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x090fc4d5436d98e13473c4d6109de6a18bcfb0d4"}}}

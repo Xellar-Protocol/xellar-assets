@@ -1,1 +1,1 @@
-{"name":"HBARX","id":"hbarx","symbol":"hbarx","description":"","links":"https://hedera.staderlabs.com/lt/hedera","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/hbarx/logo.png"}
+{"name":"HBARX","id":"hbarx","symbol":"hbarx","description":"","links":"https://hedera.staderlabs.com/lt/hedera","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/hbarx/logo.png","detail_platform":{"hedera-hashgraph":{"decimal_place":0,"contract_address":"0.0.834116"}}}

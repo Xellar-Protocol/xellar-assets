@@ -1,1 +1,1 @@
-{"name":"ASTA","id":"asta","symbol":"asta","description":"","links":"http://www.astaplatform.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/asta/logo.png"}
+{"name":"ASTA","id":"asta","symbol":"asta","description":"","links":"http://www.astaplatform.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/asta/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xf2ddae89449b7d26309a5d54614b1fc99c608af5"}}}

@@ -1,1 +1,1 @@
-{"name":"OEC Chainlink","id":"oec-chainlink","symbol":"linkk","description":"","links":"https://www.okex.com/okexchain","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/oec-chainlink/logo.png"}
+{"name":"OEC Chainlink","id":"oec-chainlink","symbol":"linkk","description":"","links":"https://www.okex.com/okexchain","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/oec-chainlink/logo.png","detail_platform":{"okex-chain":{"decimal_place":18,"contract_address":"0xbeb67de6cc5af652b2d9b0235750ed70f5a2cb0d"}}}

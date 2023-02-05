@@ -1,1 +1,1 @@
-{"name":"Token Swap","id":"tp-swap","symbol":"tp","description":"DEX Based on Whitecoin Ecosystem","links":"https://tokenswap.info/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tp-swap/logo.png"}
+{"name":"Token Swap","id":"tp-swap","symbol":"tp","description":"DEX Based on Whitecoin Ecosystem","links":"https://tokenswap.info/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tp-swap/logo.png","detail_platform":{"":{"decimal_place":8,"contract_address":"XWCCekBFDevzTR2wbuerzethXPgdgVAWrh9yQ"}}}

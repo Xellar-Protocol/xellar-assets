@@ -1,1 +1,1 @@
-{"name":"FM Gallery","id":"fm-gallery","symbol":"fmg","description":"","links":"https://fmg.art/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/fm-gallery/logo.png"}
+{"name":"FM Gallery","id":"fm-gallery","symbol":"fmg","description":"","links":"https://fmg.art/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/fm-gallery/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x2991341d28eaea277785d20e1d878d478c7ba4c7"}}}

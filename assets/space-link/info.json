@@ -1,1 +1,1 @@
-{"name":"Space Link","id":"space-link","symbol":"splink","description":"","links":"https://www.spacelink.army/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/space-link/logo.png"}
+{"name":"Space Link","id":"space-link","symbol":"splink","description":"","links":"https://www.spacelink.army/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/space-link/logo.png","detail_platform":{"ethereum":{"decimal_place":9,"contract_address":"0x56a41eef4aba11292c58b39f61dabc82ed22c79b"}}}

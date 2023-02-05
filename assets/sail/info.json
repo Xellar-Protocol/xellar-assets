@@ -1,1 +1,1 @@
-{"name":"SAIL","id":"sail","symbol":"sail","description":"","links":"https://www.solanasail.com","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/sail/logo.png"}
+{"name":"SAIL","id":"sail","symbol":"sail","description":"","links":"https://www.solanasail.com","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/sail/logo.png","detail_platform":{"solana":{"decimal_place":6,"contract_address":"6kwTqmdQkJd8qRr9RjSnUX9XJ24RmJRSrU1rsragP97Y"}}}

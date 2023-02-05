@@ -1,1 +1,1 @@
-{"name":"Snowdog","id":"snowdog","symbol":"sdog","description":"","links":"https://www.snowdogdao.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/snowdog/logo.png"}
+{"name":"Snowdog","id":"snowdog","symbol":"sdog","description":"","links":"https://www.snowdogdao.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/snowdog/logo.png","detail_platform":{"avalanche":{"decimal_place":9,"contract_address":"0xde9e52f1838951e4d2bb6c59723b003c353979b6"}}}

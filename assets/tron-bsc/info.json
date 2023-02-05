@@ -1,1 +1,1 @@
-{"name":"TRON (BSC)","id":"tron-bsc","symbol":"trx","description":"","links":"https://tron.network","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tron-bsc/logo.png"}
+{"name":"TRON (BSC)","id":"tron-bsc","symbol":"trx","description":"","links":"https://tron.network","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tron-bsc/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x85eac5ac2f758618dfa09bdbe0cf174e7d574d5b"}}}

@@ -1,1 +1,1 @@
-{"name":"RewardsCoin","id":"rewardscoin","symbol":"rwsc","description":"","links":"https://rwsctreasurehunt.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/rewardscoin/logo.png"}
+{"name":"RewardsCoin","id":"rewardscoin","symbol":"rwsc","description":"","links":"https://rwsctreasurehunt.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/rewardscoin/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":9,"contract_address":"0xb44c00a75d63eb9c12ec97add741e554ebc2f4bd"}}}

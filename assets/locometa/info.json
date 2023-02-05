@@ -1,1 +1,1 @@
-{"name":"LocoMeta","id":"locometa","symbol":"loco","description":"","links":"https://locometa.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/locometa/logo.png"}
+{"name":"LocoMeta","id":"locometa","symbol":"loco","description":"","links":"https://locometa.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/locometa/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x723ef00502e76e8501101de1b25ef146c4b571ca"}}}

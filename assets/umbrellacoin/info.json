@@ -1,1 +1,1 @@
-{"name":"Umbrella Coin","id":"umbrellacoin","symbol":"umc","description":"","links":"https://www.unitymatrixcommons.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/umbrellacoin/logo.png"}
+{"name":"Umbrella Coin","id":"umbrellacoin","symbol":"umc","description":"","links":"https://www.unitymatrixcommons.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/umbrellacoin/logo.png","detail_platform":{"ethereum":{"decimal_place":6,"contract_address":"0x190fb342aa6a15eb82903323ae78066ff8616746"}}}

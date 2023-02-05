@@ -1,1 +1,1 @@
-{"name":"KLEX","id":"klex","symbol":"klex","description":"","links":"https://www.klex.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/klex/logo.png"}
+{"name":"KLEX","id":"klex","symbol":"klex","description":"","links":"https://www.klex.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/klex/logo.png","detail_platform":{"klay-token":{"decimal_place":18,"contract_address":"0x45e8f078ad64b4de6ea287abfbdbb3183f80b721"}}}

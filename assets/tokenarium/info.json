@@ -1,1 +1,1 @@
-{"name":"Tokenarium","id":"tokenarium","symbol":"tknrm","description":"","links":"https://tokenarium.online/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tokenarium/logo.png"}
+{"name":"Tokenarium","id":"tokenarium","symbol":"tknrm","description":"","links":"https://tokenarium.online/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tokenarium/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0xd6f97d97edfa1a4ea8be15714386455b19a67524"}}}

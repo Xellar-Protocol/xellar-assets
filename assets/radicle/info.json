@@ -1,1 +1,1 @@
-{"name":"Radicle","id":"radicle","symbol":"rad","description":"","links":"https://radicle.xyz/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/radicle/logo.png"}
+{"name":"Radicle","id":"radicle","symbol":"rad","description":"","links":"https://radicle.xyz/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/radicle/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x31c8eacbffdd875c74b94b077895bd78cf1e64a3"}}}

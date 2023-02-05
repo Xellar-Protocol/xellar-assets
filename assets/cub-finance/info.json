@@ -1,1 +1,1 @@
-{"name":"Cub Finance","id":"cub-finance","symbol":"cub","description":"","links":"https://cubdefi.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/cub-finance/logo.png"}
+{"name":"Cub Finance","id":"cub-finance","symbol":"cub","description":"","links":"https://cubdefi.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/cub-finance/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x50d809c74e0b8e49e7b4c65bb3109abe3ff4c1c1"}}}

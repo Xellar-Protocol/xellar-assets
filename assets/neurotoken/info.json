@@ -1,1 +1,1 @@
-{"name":"Neuro NTK","id":"neurotoken","symbol":"ntk","description":"","links":"https://neuromation.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/neurotoken/logo.png"}
+{"name":"Neuro NTK","id":"neurotoken","symbol":"ntk","description":"","links":"https://neuromation.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/neurotoken/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x69beab403438253f13b6e92db91f7fb849258263"}}}

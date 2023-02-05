@@ -1,1 +1,1 @@
-{"name":"Instadapp ETH","id":"instadapp-eth","symbol":"ieth","description":"","links":"https://instadapp.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/instadapp-eth/logo.png"}
+{"name":"Instadapp ETH","id":"instadapp-eth","symbol":"ieth","description":"","links":"https://instadapp.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/instadapp-eth/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xc383a3833a87009fd9597f8184979af5edfad019"}}}

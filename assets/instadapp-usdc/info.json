@@ -1,1 +1,1 @@
-{"name":"Instadapp USDC","id":"instadapp-usdc","symbol":"iusdc","description":"","links":"https://instadapp.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/instadapp-usdc/logo.png"}
+{"name":"Instadapp USDC","id":"instadapp-usdc","symbol":"iusdc","description":"","links":"https://instadapp.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/instadapp-usdc/logo.png","detail_platform":{"ethereum":{"decimal_place":6,"contract_address":"0xc8871267e07408b89aa5aecc58adca5e574557f8"}}}

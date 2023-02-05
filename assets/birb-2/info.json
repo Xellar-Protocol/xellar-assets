@@ -1,1 +1,1 @@
-{"name":"Birb","id":"birb-2","symbol":"birb","description":"","links":"https://birb.com","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/birb-2/logo.png"}
+{"name":"Birb","id":"birb-2","symbol":"birb","description":"","links":"https://birb.com","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/birb-2/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x2e8799f0a26d8a9f37a0b4747fa534f039c2d234"}}}

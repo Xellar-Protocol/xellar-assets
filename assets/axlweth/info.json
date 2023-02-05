@@ -1,1 +1,1 @@
-{"name":"axlWETH","id":"axlweth","symbol":"axlweth","description":"","links":"https://axelarscan.io/assets","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/axlweth/logo.png"}
+{"name":"axlWETH","id":"axlweth","symbol":"axlweth","description":"","links":"https://axelarscan.io/assets","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/axlweth/logo.png","detail_platform":{"evmos":{"decimal_place":18,"contract_address":"0x50de24b3f0b3136c50fa8a3b8ebc8bd80a269ce5"}}}

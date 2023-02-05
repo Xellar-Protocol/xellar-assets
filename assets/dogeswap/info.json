@@ -1,1 +1,1 @@
-{"name":"Dogeswap","id":"dogeswap","symbol":"doges","description":"","links":"https://www.doge-swap.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/dogeswap/logo.png"}
+{"name":"Dogeswap","id":"dogeswap","symbol":"doges","description":"","links":"https://www.doge-swap.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/dogeswap/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xb4fbed161bebcb37afb1cb4a6f7ca18b977ccb25"}}}

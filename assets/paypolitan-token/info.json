@@ -1,1 +1,1 @@
-{"name":"Paypolitan","id":"paypolitan-token","symbol":"epan","description":"","links":"https://paypolitan.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/paypolitan-token/logo.png"}
+{"name":"Paypolitan","id":"paypolitan-token","symbol":"epan","description":"","links":"https://paypolitan.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/paypolitan-token/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x72630b1e3b42874bf335020ba0249e3e9e47bafc"}}}

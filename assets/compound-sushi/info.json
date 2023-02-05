@@ -1,1 +1,1 @@
-{"name":"cSUSHI","id":"compound-sushi","symbol":"csushi","description":"","links":"https://compound.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/compound-sushi/logo.png"}
+{"name":"cSUSHI","id":"compound-sushi","symbol":"csushi","description":"","links":"https://compound.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/compound-sushi/logo.png","detail_platform":{"ethereum":{"decimal_place":8,"contract_address":"0x4b0181102a0112a2ef11abee5563bb4a3176c9d7"}}}

@@ -1,1 +1,1 @@
-{"name":"Brokkr","id":"brokkr","symbol":"bro","description":"","links":"https://brokkr.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/brokkr/logo.png"}
+{"name":"Brokkr","id":"brokkr","symbol":"bro","description":"","links":"https://brokkr.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/brokkr/logo.png","detail_platform":{"avalanche":{"decimal_place":18,"contract_address":"0x65031e28cb0e8cc21ae411f9dd22c9b1bd260ce4"}}}

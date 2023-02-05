@@ -1,1 +1,1 @@
-{"name":"Dragonchain","id":"dragonchain","symbol":"drgn","description":"","links":"https://dragonchain.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/dragonchain/logo.png"}
+{"name":"Dragonchain","id":"dragonchain","symbol":"drgn","description":"","links":"https://dragonchain.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/dragonchain/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x419c4db4b9e25d6db2ad9691ccb832c8d9fda05e"}}}

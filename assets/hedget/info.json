@@ -1,1 +1,1 @@
-{"name":"Hedget","id":"hedget","symbol":"hget","description":"","links":"https://www.hedget.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/hedget/logo.png"}
+{"name":"Hedget","id":"hedget","symbol":"hget","description":"","links":"https://www.hedget.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/hedget/logo.png","detail_platform":{"ethereum":{"decimal_place":6,"contract_address":"0x7968bc6a03017ea2de509aaa816f163db0f35148"}}}

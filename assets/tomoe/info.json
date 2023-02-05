@@ -1,1 +1,1 @@
-{"name":"TomoChain ERC-20","id":"tomoe","symbol":"tomoe","description":"","links":"https://tomochain.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tomoe/logo.png"}
+{"name":"TomoChain ERC-20","id":"tomoe","symbol":"tomoe","description":"","links":"https://tomochain.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tomoe/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x05d3606d5c81eb9b7b18530995ec9b29da05faba"}}}

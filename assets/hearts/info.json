@@ -1,1 +1,1 @@
-{"name":"Hearts","id":"hearts","symbol":"heart","description":"","links":"https://market.mintheroes.xyz/claim","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/hearts/logo.png"}
+{"name":"Hearts","id":"hearts","symbol":"heart","description":"","links":"https://market.mintheroes.xyz/claim","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/hearts/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x710aa623c2c881b0d7357bcf9aeedf660e606c22"}}}

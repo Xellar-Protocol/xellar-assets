@@ -1,1 +1,1 @@
-{"name":"Raise","id":"hero-token","symbol":"raise","description":"","links":"https://raise.it/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/hero-token/logo.png"}
+{"name":"Raise","id":"hero-token","symbol":"raise","description":"","links":"https://raise.it/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/hero-token/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x10ba8c420e912bf07bedac03aa6908720db04e0c"}}}

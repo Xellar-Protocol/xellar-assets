@@ -1,1 +1,1 @@
-{"name":"MoneySwap","id":"moneyswap","symbol":"mswap","description":"","links":"https://www.moneyswap.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/moneyswap/logo.png"}
+{"name":"MoneySwap","id":"moneyswap","symbol":"mswap","description":"","links":"https://www.moneyswap.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/moneyswap/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0xdd5a149740c055bdcdc5c066888f739dbe0bf2d0"}}}

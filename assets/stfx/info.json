@@ -1,1 +1,1 @@
-{"name":"STFX","id":"stfx","symbol":"stfx","description":"","links":"https://www.stfx.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/stfx/logo.png"}
+{"name":"STFX","id":"stfx","symbol":"stfx","description":"","links":"https://www.stfx.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/stfx/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x9343e24716659a3551eb10aff9472a2dcad5db2d"}}}

@@ -1,1 +1,1 @@
-{"name":"Pomeranian","id":"pomeranian","symbol":"pom","description":"","links":"https://pomarmy.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/pomeranian/logo.png"}
+{"name":"Pomeranian","id":"pomeranian","symbol":"pom","description":"","links":"https://pomarmy.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/pomeranian/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x79a9b1e4298ac4a544608ff7715460b92b936c43"}}}

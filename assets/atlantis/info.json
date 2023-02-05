@@ -1,1 +1,1 @@
-{"name":"Atlantis","id":"atlantis","symbol":"atlas","description":"","links":"https://atlantis.autoshark.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/atlantis/logo.png"}
+{"name":"Atlantis","id":"atlantis","symbol":"atlas","description":"","links":"https://atlantis.autoshark.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/atlantis/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":9,"contract_address":"0xcf87ccf958d728f50d8ae5e4f15bc4ca5733cdf5"}}}

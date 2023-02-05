@@ -1,1 +1,1 @@
-{"name":"Spot","id":"spot","symbol":"spot","description":"","links":"https://www.spot.cash/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/spot/logo.png"}
+{"name":"Spot","id":"spot","symbol":"spot","description":"","links":"https://www.spot.cash/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/spot/logo.png","detail_platform":{"ethereum":{"decimal_place":9,"contract_address":"0xc1f33e0cf7e40a67375007104b929e49a581bafe"}}}

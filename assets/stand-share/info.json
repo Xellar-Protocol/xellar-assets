@@ -1,1 +1,1 @@
-{"name":"Stand Share","id":"stand-share","symbol":"sas","description":"","links":"https://stand.cash/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/stand-share/logo.png"}
+{"name":"Stand Share","id":"stand-share","symbol":"sas","description":"","links":"https://stand.cash/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/stand-share/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x4c38d0e726b6c86f64c1b281348e725973542043"}}}

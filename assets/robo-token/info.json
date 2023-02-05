@@ -1,1 +1,1 @@
-{"name":"Robo","id":"robo-token","symbol":"robo","description":"","links":"https://robo.so/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/robo-token/logo.png"}
+{"name":"Robo","id":"robo-token","symbol":"robo","description":"","links":"https://robo.so/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/robo-token/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x6fc2f1044a3b9bb3e43a43ec8f840843ed753061"}}}

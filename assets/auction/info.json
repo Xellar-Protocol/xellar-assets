@@ -1,1 +1,1 @@
-{"name":"Bounce","id":"auction","symbol":"auction","description":"","links":"https://bounce.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/auction/logo.png"}
+{"name":"Bounce","id":"auction","symbol":"auction","description":"","links":"https://bounce.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/auction/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0xa9b1eb5908cfc3cdf91f9b8b3a74108598009096"}}}

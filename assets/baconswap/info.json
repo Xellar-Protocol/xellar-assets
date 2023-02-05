@@ -1,1 +1,1 @@
-{"name":"BaconSwap","id":"baconswap","symbol":"bacon","description":"","links":"https://www.baconswap.org/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/baconswap/logo.png"}
+{"name":"BaconSwap","id":"baconswap","symbol":"bacon","description":"","links":"https://www.baconswap.org/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/baconswap/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x175ab41e2cedf3919b2e4426c19851223cf51046"}}}

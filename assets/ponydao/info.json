@@ -1,1 +1,1 @@
-{"name":"PonyDAO","id":"ponydao","symbol":"pnyd","description":"","links":"https://ponyfinance.xyz/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/ponydao/logo.png"}
+{"name":"PonyDAO","id":"ponydao","symbol":"pnyd","description":"","links":"https://ponyfinance.xyz/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/ponydao/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x71921c08586295b0b68e44a78a2dca1e3f259721"}}}

@@ -1,1 +1,1 @@
-{"name":"Wrapped Astar","id":"wrapped-astar","symbol":"wastr","description":"","links":"https://astar.network/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-astar/logo.png"}
+{"name":"Wrapped Astar","id":"wrapped-astar","symbol":"wastr","description":"","links":"https://astar.network/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-astar/logo.png","detail_platform":{"astar":{"decimal_place":18,"contract_address":"0xaeaaf0e2c81af264101b9129c00f4440ccf0f720"}}}

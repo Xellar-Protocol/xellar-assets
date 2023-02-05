@@ -1,1 +1,1 @@
-{"name":"Pappay","id":"pappay","symbol":"pappay","description":"","links":"https://www.pappay.net","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/pappay/logo.png"}
+{"name":"Pappay","id":"pappay","symbol":"pappay","description":"","links":"https://www.pappay.net","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/pappay/logo.png","detail_platform":{"binance-smart-chain":{"decimal_place":18,"contract_address":"0x8c88699ef5ada1e5bedff7a4590aa346abd3536d"}}}
