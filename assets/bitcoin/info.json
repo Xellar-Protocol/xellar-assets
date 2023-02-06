@@ -1,1 +1,142 @@
-{"name":"Bitcoin","id":"bitcoin","symbol":"btc","description":"Bitcoin is the first successful internet money based on peer-to-peer technology; whereby no central bank or authority is involved in the transaction and production of the Bitcoin currency. It was created by an anonymous individual/group under the name, Satoshi Nakamoto. The source code is available publicly as an open source project, anybody can look at it and be part of the developmental process. Bitcoin is changing the way we see money as we speak. The idea was to produce a means of exchange, independent of any central authority, that could be transferred electronically in a secure, verifiable and immutable way. It is a decentralized peer-to-peer internet currency making mobile payment easy, very low transaction fees, protects your identity, and it works anywhere all the time with no central authority and banks. Bitcoin is designed to have only 21 million BTC ever created, thus making it a deflationary currency. Bitcoin uses the <a href=\"https://www.coingecko.com/en?hashing_algorithm=SHA-256\">SHA-256</a> hashing algorithm with an average transaction confirmation time of 10 minutes. Miners today are mining Bitcoin using ASIC chip dedicated to only mining Bitcoin, and the hash rate has shot up to peta hashes. Being the first successful online cryptography currency, Bitcoin has inspired other alternative currencies such as <a href=\"https://www.coingecko.com/en/coins/litecoin\">Litecoin</a>, <a href=\"https://www.coingecko.com/en/coins/peercoin\">Peercoin</a>, <a href=\"https://www.coingecko.com/en/coins/primecoin\">Primecoin</a>, and so on. The cryptocurrency then took off with the innovation of the turing-complete smart contract by <a href=\"https://www.coingecko.com/en/coins/ethereum\">Ethereum</a> which led to the development of other amazing projects such as <a href=\"https://www.coingecko.com/en/coins/eos\">EOS</a>, <a href=\"https://www.coingecko.com/en/coins/tron\">Tron</a>, and even crypto-collectibles such as <a href=\"https://www.coingecko.com/buzz/ethereum-still-king-dapps-cryptokitties-need-1-billion-on-eos\">CryptoKitties</a>.","links":"http://www.bitcoin.org","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/bitcoin/logo.png","detail_platform":{"":{"decimal_place":null,"contract_address":""}}}
+{
+  "name": "Bitcoin",
+  "id": "bitcoin",
+  "symbol": "btc",
+  "description": "Bitcoin is the first successful internet money based on peer-to-peer technology; whereby no central bank or authority is involved in the transaction and production of the Bitcoin currency. It was created by an anonymous individual/group under the name, Satoshi Nakamoto. The source code is available publicly as an open source project, anybody can look at it and be part of the developmental process. Bitcoin is changing the way we see money as we speak. The idea was to produce a means of exchange, independent of any central authority, that could be transferred electronically in a secure, verifiable and immutable way. It is a decentralized peer-to-peer internet currency making mobile payment easy, very low transaction fees, protects your identity, and it works anywhere all the time with no central authority and banks. Bitcoin is designed to have only 21 million BTC ever created, thus making it a deflationary currency. Bitcoin uses the <a href=\"https://www.coingecko.com/en?hashing_algorithm=SHA-256\">SHA-256</a> hashing algorithm with an average transaction confirmation time of 10 minutes. Miners today are mining Bitcoin using ASIC chip dedicated to only mining Bitcoin, and the hash rate has shot up to peta hashes. Being the first successful online cryptography currency, Bitcoin has inspired other alternative currencies such as <a href=\"https://www.coingecko.com/en/coins/litecoin\">Litecoin</a>, <a href=\"https://www.coingecko.com/en/coins/peercoin\">Peercoin</a>, <a href=\"https://www.coingecko.com/en/coins/primecoin\">Primecoin</a>, and so on. The cryptocurrency then took off with the innovation of the turing-complete smart contract by <a href=\"https://www.coingecko.com/en/coins/ethereum\">Ethereum</a> which led to the development of other amazing projects such as <a href=\"https://www.coingecko.com/en/coins/eos\">EOS</a>, <a href=\"https://www.coingecko.com/en/coins/tron\">Tron</a>, and even crypto-collectibles such as <a href=\"https://www.coingecko.com/buzz/ethereum-still-king-dapps-cryptokitties-need-1-billion-on-eos\">CryptoKitties</a>.",
+  "links": "http://www.bitcoin.org",
+  "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/bitcoin/logo.png",
+  "detail_platform": {
+    "ethereum": {
+      "decimal_place": 8,
+      "contract_address": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+    },
+    "polygon-pos": {
+      "decimal_place": 8,
+      "contract_address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6"
+    },
+    "tomochain": {
+      "decimal_place": 8,
+      "contract_address": "0x503b2ddc059b81788fd1239561596614b27faade"
+    },
+    "fantom": {
+      "decimal_place": 8,
+      "contract_address": "0x321162cd933e2be498cd2267a90534a804051b11"
+    },
+    "avalanche": {
+      "decimal_place": 8,
+      "contract_address": "0x50b7545627a5162f82a992c33b87adc75187b218"
+    },
+    "harmony-shard-0": {
+      "decimal_place": 8,
+      "contract_address": "0x3095c7557bcb296ccc6e363de01b760ba031f2d9"
+    },
+    "moonriver": {
+      "decimal_place": 8,
+      "contract_address": "0x6ab6d61428fde76768d7b45d8bfeec19c6ef91a8"
+    },
+    "sora": {
+      "decimal_place": 18,
+      "contract_address": "0x002c48630dcb8c75cc36162cbdbc8ff27b843973b951ba9b6e260f869d45bcdc"
+    },
+    "celo": {
+      "decimal_place": 18,
+      "contract_address": "0xd629eb00deced2a080b7ec630ef6ac117e614f1b"
+    },
+    "boba": {
+      "decimal_place": 8,
+      "contract_address": "0xdc0486f8bf31df57a952bcd3c1d3e166e3d9ec8b"
+    },
+    "cronos": {
+      "decimal_place": 8,
+      "contract_address": "0x062e66477faf219f25d27dced647bf57c3107d52"
+    },
+    "metis-andromeda": {
+      "decimal_place": 18,
+      "contract_address": "0xa5b55ab1daf0f8e1efc0eb1931a957fd89b918f4"
+    },
+    "aurora": {
+      "decimal_place": 8,
+      "contract_address": "0xf4eb217ba2454613b15dbdea6e5f22276410e89e"
+    },
+    "optimistic-ethereum": {
+      "decimal_place": 8,
+      "contract_address": "0x68f180fcce6836688e9084f035309e29bf0a2095"
+    },
+    "xdai": {
+      "decimal_place": 8,
+      "contract_address": "0x8e5bbbb09ed1ebde8674cda39a0c169401db4252"
+    },
+    "fuse": {
+      "decimal_place": 8,
+      "contract_address": "0x33284f95ccb7b948d9d352e1439561cf83d8d00d"
+    },
+    "meter": {
+      "decimal_place": 8,
+      "contract_address": "0xc1f6c86abee8e2e0b6fd5bd80f0b51fef783635c"
+    },
+    "moonbeam": {
+      "decimal_place": 8,
+      "contract_address": "0x922d641a426dcffaef11680e5358f34d97d112e1"
+    },
+    "telos": {
+      "decimal_place": 18,
+      "contract_address": "0xf390830df829cf22c53c8840554b98eafc5dcbc2"
+    },
+    "syscoin": {
+      "decimal_place": 8,
+      "contract_address": "0xc9baa8cfdde8e328787e29b4b078abf2dadc2055"
+    },
+    "milkomeda-cardano": {
+      "decimal_place": 8,
+      "contract_address": "0x6ab6d61428fde76768d7b45d8bfeec19c6ef91a8"
+    },
+    "energi": {
+      "decimal_place": 8,
+      "contract_address": "0x29a791703e5a5a8d1578f8611b4d3691377cebc0"
+    },
+    "conflux": {
+      "decimal_place": 18,
+      "contract_address": "0x1f545487c62e5acfea45dcadd9c627361d1616d8"
+    },
+    "astar": {
+      "decimal_place": 8,
+      "contract_address": "0xad543f18cff85c77e140e3e5e3c3392f6ba9d5ca"
+    },
+    "kava": {
+      "decimal_place": 8,
+      "contract_address": "0x818ec0a7fe18ff94269904fced6ae3dae6d6dc0b"
+    },
+    "cube": {
+      "decimal_place": 18,
+      "contract_address": "0x040ea5c10e6ba4badb6c433a365ccc4968697230"
+    },
+    "velas": {
+      "decimal_place": 8,
+      "contract_address": "0x639a647fbe20b6c8ac19e48e2de44ea792c62c5c"
+    },
+    "klay-token": {
+      "decimal_place": 8,
+      "contract_address": "0xdcbacf3f7a069922e677912998c8d57423c37dfa"
+    },
+    "step-network": {
+      "decimal_place": 8,
+      "contract_address": "0xb44a9b6905af7c801311e8f4e76932ee959c663c"
+    },
+    "hydra": {
+      "decimal_place": null,
+      "contract_address": "27a459ac47204f1e7fc5c48ffeafa990af244e13"
+    },
+    "near-protocol": {
+      "decimal_place": null,
+      "contract_address": "2260fac5e5542a773aa44fbcfedf7c193bc2c599.factory.bridge.near"
+    },
+    "arbitrum-one": {
+      "decimal_place": 8,
+      "contract_address": "0x2f2a2543b76a4166549f7aab2e75bef0aefc5b0f"
+    },
+    "binance-smart-chain": {
+      "decimal_place": 18,
+      "contract_address": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c"
+    }
+  }
+}
