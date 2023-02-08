@@ -34,8 +34,6 @@ const findNative = (input) => {
     const files = fs.readdirSync('./assets')
     for (var i = 0; i < files.length; i++) {
         var info = JSON.parse(fs.readFileSync(`./assets/${files[i]}/info.json`, 'utf8'));
-        var isNative = findNative(info.id);
-        var detailPlatforms = info.detail_platform;
 
         constructJSON.push({
             "id": info.id,
@@ -43,7 +41,7 @@ const findNative = (input) => {
             "symbol": info.symbol,
             "logo": info.logo,
             "is_native": findNative(info.id),
-            "detail_platform": detailPlatforms
+            "detail_platform": info.detail_platform
         })
         console.log('\x1b[33m%s\x1b[0m', `done ${files[i]} -> ${i}/${files.length}`);
     }
