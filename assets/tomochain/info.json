@@ -1,1 +1,19 @@
-{"name":"TomoChain","id":"tomochain","symbol":"tomo","description":"Tomochain is an innovative solution to the scalability problem with the Ethereum blockchain. Tomochain plans to support horizontal scaling via adding more second layer blockchains with good performance integrated with Ethereum for backup and atomic cross-chain transfer. Tomochain is envisioned to be a network of chains that supports instant confirmation, and near zero transaction fee which will be an ideal solution for decentralized apps, token issuances and token integrations for small and big businesses.","links":"https://tomochain.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tomochain/logo.png","detail_platform":{"":{"decimal_place":null,"contract_address":""}}}
+{
+  "name": "TomoChain",
+  "id": "tomochain",
+  "symbol": "TOMO",
+  "description": "Tomochain is an innovative solution to the scalability problem with the Ethereum blockchain. Tomochain plans to support horizontal scaling via adding more second layer blockchains with good performance integrated with Ethereum for backup and atomic cross-chain transfer. Tomochain is envisioned to be a network of chains that supports instant confirmation, and near zero transaction fee which will be an ideal solution for decentralized apps, token issuances and token integrations for small and big businesses.",
+  "links": "https://tomochain.com/",
+  "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tomochain/logo.png",
+  "detail_platform": {
+    "native": {},
+    "tomochain": {
+      "decimal_place": 18,
+      "contract_address": "0xb1f66997a5760428d3a87d68b90bfe0ae64121cc"
+    },
+    "ethereum": {
+      "decimal_place": 18,
+      "contract_address": "0x05d3606d5c81eb9b7b18530995ec9b29da05faba"
+    }
+  }
+}

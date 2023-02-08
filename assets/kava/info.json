@@ -1,1 +1,20 @@
-{"name":"Kava","id":"kava","symbol":"kava","description":"Kava is a cross-chain DeFi Hub for decentralized financial services and applications. The Kava DeFi Hub operates like a decentralized bank for digital assets connecting users with products like stablecoins, loans, and interest-bearing accounts so that they can do more and earn more with their digital assets.","links":"https://www.kava.io/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/kava/logo.png","detail_platform":{"":{"decimal_place":null,"contract_address":""}}}
+{
+  "name": "Kava",
+  "id": "kava",
+  "symbol": "KAVA",
+  "description": "Kava is a cross-chain DeFi Hub for decentralized financial services and applications. The Kava DeFi Hub operates like a decentralized bank for digital assets connecting users with products like stablecoins, loans, and interest-bearing accounts so that they can do more and earn more with their digital assets.",
+  "links": "https://www.kava.io/",
+  "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/kava/logo.png",
+  "detail_platform": {
+    "native": {},
+    "kava": {
+      "decimal_place": 18,
+      "contract_address": "0xc86c7c0efbd6a49b35e8714c5f59d99de09a225b"
+    },
+    "binancecoin": { "decimal_place": null, "contract_address": "KAVA-10C" },
+    "energi": {
+      "decimal_place": 18,
+      "contract_address": "0x241ebdfdfbed02c6e727562777c902e54eee53c3"
+    }
+  }
+}

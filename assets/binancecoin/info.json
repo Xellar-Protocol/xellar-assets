@@ -1,1 +1,79 @@
-{"name":"BNB","id":"binancecoin","symbol":"bnb","description":"Binance Coin is the cryptocurrency of the <a href=\"https://www.coingecko.com/en/exchanges/binance\">Binance</a> platform. It is a trading platform exclusively for cryptocurrencies. The name \"Binance\" is a combination of binary and finance. Thus, the startup name shows that only cryptocurrencies can be traded against each other. It is not possible to trade crypto currencies against Fiat. The platform achieved an enormous success within a very short time and is focused on worldwide market with Malta headquarters. The cryptocurrency currently has a daily trading volume of 1.5 billion - 2 billion US dollars and is still increasing. In total, there will only be 200 million BNBs. Binance uses the <a href=\"https://www.coingecko.com/en/coins/all?asset_platform_id=279\">ERC20 token standard</a> from <a href=\"https://www.coingecko.com/en/coins/ethereum\">Ethereum</a> and has distributed it as follow: 50% sold on ICO, 40% to the team and 10% to Angel investors. The coin can be used to pay fees on Binance. These include trading fees, transaction fees, listing fees and others. Binance gives you a huge discount when fees are paid in BNB. The schedule of BNB fees discount is as follow: In the first year, 50% discount on all fees, second year 25% discount, third year 12.5% discount, fourth year 6.75 % discount, and from the fifth year onwards there is no discount. This structure is used to incentivize users to buy BNB and do trades within Binance. Binance announced in a buyback plan that it would buy back up to 100 million BNB in Q1 2018. The coins are then burned. This means that they are devaluated to increase the value of the remaining coins. This benefits investors. In the future, the cryptocurrency will remain an asset on the trading platform and will be used as gas. Other tokens that are issued by exchanges include <a href=\"https://www.coingecko.com/en/coins/bibox-token\">Bibox Token</a>, <a href=\"https://www.coingecko.com/en/coins/okb\">OKB</a>, <a href=\"https://www.coingecko.com/en/coins/huobi-token\">Huobi Token</a>, and more.","links":"https://www.binance.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/binancecoin/logo.png","detail_platform":{"":{"decimal_place":null,"contract_address":""},"ethereum":{"decimal_place":18,"contract_address":"0xb8c77482e45f1f44de1745f52c74426c631bdd52"}}}
+{
+  "name": "BNB",
+  "id": "binancecoin",
+  "symbol": "bnb",
+  "description": "Binance Coin is the cryptocurrency of the <a href=\"https://www.coingecko.com/en/exchanges/binance\">Binance</a> platform. It is a trading platform exclusively for cryptocurrencies. The name \"Binance\" is a combination of binary and finance. Thus, the startup name shows that only cryptocurrencies can be traded against each other. It is not possible to trade crypto currencies against Fiat. The platform achieved an enormous success within a very short time and is focused on worldwide market with Malta headquarters. The cryptocurrency currently has a daily trading volume of 1.5 billion - 2 billion US dollars and is still increasing. In total, there will only be 200 million BNBs. Binance uses the <a href=\"https://www.coingecko.com/en/coins/all?asset_platform_id=279\">ERC20 token standard</a> from <a href=\"https://www.coingecko.com/en/coins/ethereum\">Ethereum</a> and has distributed it as follow: 50% sold on ICO, 40% to the team and 10% to Angel investors. The coin can be used to pay fees on Binance. These include trading fees, transaction fees, listing fees and others. Binance gives you a huge discount when fees are paid in BNB. The schedule of BNB fees discount is as follow: In the first year, 50% discount on all fees, second year 25% discount, third year 12.5% discount, fourth year 6.75 % discount, and from the fifth year onwards there is no discount. This structure is used to incentivize users to buy BNB and do trades within Binance. Binance announced in a buyback plan that it would buy back up to 100 million BNB in Q1 2018. The coins are then burned. This means that they are devaluated to increase the value of the remaining coins. This benefits investors. In the future, the cryptocurrency will remain an asset on the trading platform and will be used as gas. Other tokens that are issued by exchanges include <a href=\"https://www.coingecko.com/en/coins/bibox-token\">Bibox Token</a>, <a href=\"https://www.coingecko.com/en/coins/okb\">OKB</a>, <a href=\"https://www.coingecko.com/en/coins/huobi-token\">Huobi Token</a>, and more.",
+  "links": "https://www.binance.com/",
+  "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/binancecoin/logo.png",
+  "detail_platform": {
+    "native": {},
+    "ethereum": {
+      "decimal_place": 18,
+      "contract_address": "0xb8c77482e45f1f44de1745f52c74426c631bdd52"
+    },
+    "binance-smart-chain": {
+      "decimal_place": 18,
+      "contract_address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    },
+    "harmony-shard-0": {
+      "decimal_place": 18,
+      "contract_address": "0x673d2ec54e0a6580fc7e098295b70e3ce0350d03"
+    },
+    "fantom": {
+      "decimal_place": 18,
+      "contract_address": "0xd67de0e0a0fd7b15dc8348bb9be742f3c5850454"
+    },
+    "theta": {
+      "decimal_place": 18,
+      "contract_address": "0xdff772186ace9b5513fb46d7b05b36efa0a4a20d"
+    },
+    "avalanche": {
+      "decimal_place": 18,
+      "contract_address": "0x264c1383ea520f73dd837f915ef3a732e204a493"
+    },
+    "polygon-pos": {
+      "decimal_place": 18,
+      "contract_address": "0xa649325aa7c5093d12d6f98eb4378deae68ce23f"
+    },
+    "moonriver": {
+      "decimal_place": 18,
+      "contract_address": "0x2bf9b864cdc97b08b6d79ad4663e71b8ab65c45c"
+    },
+    "fuse": {
+      "decimal_place": 18,
+      "contract_address": "0x6acb34b1df86e254b544189ec32cf737e2482058"
+    },
+    "meter": {
+      "decimal_place": 18,
+      "contract_address": "0xf8bbb44e6fd13632d36fe09eb61820f9a44f5d74"
+    },
+    "telos": {
+      "decimal_place": 18,
+      "contract_address": "0x2c78f1b70ccf63cdee49f9233e9faa99d43aa07e"
+    },
+    "shiden network": {
+      "decimal_place": 18,
+      "contract_address": "0x332730a4f6e03d9c55829435f10360e13cfa41ff"
+    },
+    "elastos": {
+      "decimal_place": 18,
+      "contract_address": "0x51b85f3889c7ea8f6d5edebfbadada0fdce236c9"
+    },
+    "milkomeda-cardano": {
+      "decimal_place": 18,
+      "contract_address": "0xfbdd194376de19a88118e84e279b977f165d01b8"
+    },
+    "energi": {
+      "decimal_place": 18,
+      "contract_address": "0xc3c19ee91cf3c1f7fbf3716a09d21dc35de0bd6d"
+    },
+    "conflux": {
+      "decimal_place": 18,
+      "contract_address": "0x94bd7a37d2ce24cc597e158facaa8d601083ffec"
+    },
+    "velas": {
+      "decimal_place": 18,
+      "contract_address": "0x65e66a61d0a8f1e686c2d6083ad611a10d84d97a"
+    }
+  }
+}
