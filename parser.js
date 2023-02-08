@@ -36,12 +36,7 @@ const findNative = (input) => {
         var info = JSON.parse(fs.readFileSync(`./assets/${files[i]}/info.json`, 'utf8'));
         var isNative = findNative(info.id);
         var detailPlatforms = info.detail_platform;
-        if (isNative) {
-            detailPlatforms = {
-                ...detailPlatforms,
-                "native": {}
-            }
-        }
+
         constructJSON.push({
             "id": info.id,
             "name": info.name,
