@@ -6,7 +6,6 @@
   "links": "https://www.kava.io/",
   "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/kava/logo.png",
   "detail_platform": {
-    "native": {},
     "kava": {
       "decimal_place": 18,
       "contract_address": "0xc86c7c0efbd6a49b35e8714c5f59d99de09a225b"

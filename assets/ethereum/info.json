@@ -7,7 +7,9 @@
   "links": "https://www.ethereum.org/",
   "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/ethereum/logo.png",
   "detail_platform": {
-    "native": {},
+    "native": {
+      "network_id": "ethereum"
+    },
     "ethereum": {
       "decimal_place": 18,
       "contract_address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
