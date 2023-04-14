@@ -24,12 +24,13 @@ const downloadImage = async (url, image_path) => {
 const sleeps = async () => await new Promise(r => setTimeout(r, 5500));
 
 const findNative = (input) => {
-    let nativeList = ['ethereum', 'binancecoin', 'matic-network', 'avalanche-2', 'fantom', 'tomochain', 'harmony', 'moonbeam', 'moonriver', 'kucoin-shares', 'kava'];
+    let nativeList = ['ethereum', 'binancecoin', 'matic-network', 'avalanche-2', 'fantom', 'tomochain', 'harmony', 'moonbeam', 'moonriver', 'kucoin-shares', 'kava', 'arbitrum'];
     return !isEmpty(nativeList.filter((x) => x == input))
 }
 
 
-(async () => {
+
+const constructTokenList = () => {
     let constructJSON = [];
     const files = fs.readdirSync('./assets')
     for (var i = 0; i < files.length; i++) {
@@ -46,11 +47,12 @@ const findNative = (input) => {
         console.log('\x1b[33m%s\x1b[0m', `done ${files[i]} -> ${i}/${files.length}`);
     }
     fs.writeFileSync('./tokenlist.json', JSON.stringify(constructJSON))
-})()
+}
 
 
 
-const fetchAllTokenDetailData = async () => {
+
+const fetchAllErrorTokenDetailData = async () => {
     // const files = fs.readdirSync('./assets')
 
     var latest = JSON.parse(fs.readFileSync('./record.json', 'utf8'));
@@ -148,7 +150,7 @@ const fetchAllTokens = async () => {
                 console.log('missing coin / token data')
                 continue;
             }
-            let { id, name, symbol, description, links, image, detail_platform } = coinData.data;
+            let { id, name, symbol, description, links, image, detail_platforms } = coinData.data;
             //CMC
             // let coinData = await axios.get(`https://pro-api.coinmarketcap.com/v2/cryptocurrency/info?id=${obj[i]['id']}`, { headers: { "X-CMC_PRO_API_KEY": "161bfd50-6175-4e3c-87cc-8202a5882e44" } })
             // let { data } = coinData.data;
@@ -158,15 +160,28 @@ const fetchAllTokens = async () => {
                 "latest_step": i,
                 "errorList": tempError
             }))
-            fs.writeFileSync(`./assets/${id}/info.json`, JSON.stringify({
-                "name": name,
-                "id": id,
-                "symbol": symbol,
-                "description": description.en.replace(/\s+/g, ' ').trim(),
-                "links": links.homepage[0],
-                "logo": `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${id}/logo.png`,
-                "detail_platform": detail_platform
-            }));
+
+            try {
+                fs.writeFileSync(`./assets/${id}/info.json`, JSON.stringify({
+                    "name": name,
+                    "id": id,
+                    "symbol": symbol,
+                    "description": description.en.replace(/\s+/g, ' ').trim(),
+                    "links": links.homepage[0],
+                    "logo": `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${id}/logo.png`,
+                    "detail_platform": detail_platforms
+                }));
+            } catch (e) {
+                fs.writeFileSync(`./assets/${id}/info.json`, JSON.stringify({
+                    "name": name,
+                    "id": id,
+                    "symbol": symbol,
+                    "description": description.en,
+                    "links": links.homepage[0],
+                    "logo": `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${id}/logo.png`,
+                    "detail_platform": detail_platforms
+                }));
+            }
             try {
                 await downloadImage(image.large, `./assets/${id}/logo.png`);
             } catch (e) {
@@ -181,3 +196,15 @@ const fetchAllTokens = async () => {
     });
 
 }
+
+
+
+(async () => {
+    // STEP //
+    // 
+    // get idlist.json
+    // fetchAllTokens
+    // fetchAllErrorTokenDetailData -->> fill error data
+    // constructTokenList
+    fetchAllTokens();
+})()
