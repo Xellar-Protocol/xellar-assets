@@ -7,9 +7,7 @@
   "links": "http://fantom.foundation",
   "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/fantom/logo.png",
   "detail_platform": {
-    "native": {
-      "network_id": "fantom"
-    },
+    "native": { "network_id": "fantom" },
     "fantom": {
       "decimal_place": 18,
       "contract_address": "0x21be370d5312f44cb42ce377bc9b8a0cef1a4c83"

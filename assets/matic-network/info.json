@@ -1,1 +1,43 @@
-{"name":"Polygon","id":"matic-network","symbol":"matic","description":"Polygon (Previously Matic Network) is the first well-structured, easy-to-use platform for Ethereum scaling and infrastructure development. Its core component is Polygon SDK, a modular, flexible framework that supports building multiple types of applications. Using Polygon, one can create Optimistic Rollup chains, ZK Rollup chains, stand alone chains or any other kind of infra required by the developer. Polygon effectively transforms Ethereum into a full-fledged multi-chain system (aka Internet of Blockchains). This multi-chain system is akin to other ones such as Polkadot, Cosmos, Avalanche etc with the advantages of Ethereum’s security, vibrant ecosystem and openness. Nothing will change for the existing ecosystem built on the Plasma-POS chain. With Polygon, new features are being built around the existing proven technology to expand the ability to cater to diverse needs from the developer ecosystem. Polygon will continue to develop the core technology so that it can scale to a larger ecosystem. The $MATIC token will continue to exist and will play an increasingly important role, securing the system and enabling governance.","links":"https://polygon.technology/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/matic-network/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0"},"polygon-pos":{"decimal_place":18,"contract_address":"0x0000000000000000000000000000000000001010"},"harmony-shard-0":{"decimal_place":18,"contract_address":"0x301259f392b551ca8c592c9f676fcd2f9a0a84c5"},"binance-smart-chain":{"decimal_place":18,"contract_address":"0xcc42724c6683b7e57334c4e856f4c9965ed682bd"},"moonriver":{"decimal_place":18,"contract_address":"0x682f81e57eaa716504090c3ecba8595fb54561d8"},"sora":{"decimal_place":18,"contract_address":"0x009134d5c7b7fda8863985531f456f89bef5fbd76684a8acdb737b3e451d0877"},"moonbeam":{"decimal_place":18,"contract_address":"0x3405a1bd46b85c5c029483fbecf2f3e611026e45"},"energi":{"decimal_place":18,"contract_address":"0x98997e1651919faeacee7b96afbb3dfd96cb6036"}}}
+{
+  "name": "Polygon",
+  "id": "matic-network",
+  "symbol": "matic",
+  "description": "Polygon (Previously Matic Network) is the first well-structured, easy-to-use platform for Ethereum scaling and infrastructure development. Its core component is Polygon SDK, a modular, flexible framework that supports building multiple types of applications. Using Polygon, one can create Optimistic Rollup chains, ZK Rollup chains, stand alone chains or any other kind of infra required by the developer. Polygon effectively transforms Ethereum into a full-fledged multi-chain system (aka Internet of Blockchains). This multi-chain system is akin to other ones such as Polkadot, Cosmos, Avalanche etc with the advantages of Ethereum’s security, vibrant ecosystem and openness. Nothing will change for the existing ecosystem built on the Plasma-POS chain. With Polygon, new features are being built around the existing proven technology to expand the ability to cater to diverse needs from the developer ecosystem. Polygon will continue to develop the core technology so that it can scale to a larger ecosystem. The $MATIC token will continue to exist and will play an increasingly important role, securing the system and enabling governance.",
+  "links": "https://polygon.technology/",
+  "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/matic-network/logo.png",
+  "detail_platform": {
+    "native": { "network_id": "polygon-pos" },
+    "ethereum": {
+      "decimal_place": 18,
+      "contract_address": "0x7d1afa7b718fb893db30a3abc0cfc608aacfebb0"
+    },
+    "polygon-pos": {
+      "decimal_place": 18,
+      "contract_address": "0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270"
+    },
+    "harmony-shard-0": {
+      "decimal_place": 18,
+      "contract_address": "0x301259f392b551ca8c592c9f676fcd2f9a0a84c5"
+    },
+    "binance-smart-chain": {
+      "decimal_place": 18,
+      "contract_address": "0xcc42724c6683b7e57334c4e856f4c9965ed682bd"
+    },
+    "moonriver": {
+      "decimal_place": 18,
+      "contract_address": "0x682f81e57eaa716504090c3ecba8595fb54561d8"
+    },
+    "sora": {
+      "decimal_place": 18,
+      "contract_address": "0x009134d5c7b7fda8863985531f456f89bef5fbd76684a8acdb737b3e451d0877"
+    },
+    "moonbeam": {
+      "decimal_place": 18,
+      "contract_address": "0x3405a1bd46b85c5c029483fbecf2f3e611026e45"
+    },
+    "energi": {
+      "decimal_place": 18,
+      "contract_address": "0x98997e1651919faeacee7b96afbb3dfd96cb6036"
+    }
+  }
+}
