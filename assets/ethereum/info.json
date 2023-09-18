@@ -8,13 +8,9 @@
   "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/ethereum/logo.png",
   "detail_platform": {
     "native": {
-      "network_id": "ethereum"
-    },
-     "native": {
+      "network_id": "ethereum",
+      "network_id": "optimistic-ethereum",
       "network_id": "arbitrum-one"
-    },
-     "native": {
-      "network_id": "optimistic-ethereum"
     },
     "ethereum": {
       "decimal_place": 18,
