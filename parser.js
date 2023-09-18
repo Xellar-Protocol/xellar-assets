@@ -52,6 +52,22 @@ const constructTokenList = ({
                     tempNative
                 ];
             }
+
+            const isHaveNative = _.has(info.detail_platform, 'native')
+            if (isHaveNative) {
+
+                Object.keys(info.detail_platform).forEach(function (key, index) {
+                    if (key != 'native') {
+                        info.detail_platform[key] = {
+                            ...info.detail_platform[key],
+                            wrapped: true
+                        }
+                    }
+                });
+
+            }
+
+
             constructJSON.push({
                 "id": info.id,
                 "name": info.name,
@@ -63,6 +79,7 @@ const constructTokenList = ({
             console.log('\x1b[33m%s\x1b[0m', `done ${files[i]} -> ${i}/${files.length}`);
         } catch (e) {
             console.log(e)
+            continue;
         }
     }
     fs.writeFileSync(`./${fileName}`, JSON.stringify(constructJSON))
