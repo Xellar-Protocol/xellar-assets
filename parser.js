@@ -139,6 +139,10 @@ const fetchAllErrorTokenDetailData = async () => {
         console.log('\x1b[33m%s\x1b[0m', `done ${id} -> ${i}/${files.length}`);
         await sleeps()
     }
+    
+    constructTokenList({
+        fileName: "tokenlist2.json"
+    })
 }
 
 async function doFetch(Coinid) {
@@ -234,7 +238,7 @@ const fetchAllTokens = async () => {
             console.log('\x1b[33m%s\x1b[0m', `done -> ${i}/${obj.length}`);
         }
 
-
+        await fetchAllErrorTokenDetailData();
     });
 
 }
@@ -242,7 +246,7 @@ const fetchAllTokens = async () => {
 
 const getIdList = async () => {
     const result = await axios.get('https://api.coingecko.com/api/v3/coins/list');
-    fs.writeFileSync('./idlist.json', JSON.stringify(result.data));
+    await fs.writeFileSync('./idlist.json', JSON.stringify(result.data));
 }
 
 
@@ -253,14 +257,8 @@ const getIdList = async () => {
     // get idlist.json
     // fetchAllTokens
     // fetchAllErrorTokenDetailData -->> fill error data
-    getIdList().then(async () => {
-        await fetchAllTokens();
-        await fetchAllErrorTokenDetailData();
-        constructTokenList({
-            fileName: "tokenlist2.json"
-        })
-    })
-
+    await getIdList()
+    await fetchAllTokens();
 })()
 
 
