@@ -253,11 +253,12 @@ const getIdList = async () => {
     // get idlist.json
     // fetchAllTokens
     // fetchAllErrorTokenDetailData -->> fill error data
-    // getIdList().then(() => {
-    //     fetchAllTokens();
-    // })
-    constructTokenList({
-        fileName: "tokenlist2.json"
+    getIdList().then(async () => {
+        await fetchAllTokens();
+        await fetchAllErrorTokenDetailData();
+        constructTokenList({
+            fileName: "tokenlist2.json"
+        })
     })
 
 })()
