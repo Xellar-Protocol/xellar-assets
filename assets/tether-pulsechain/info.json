@@ -1,0 +1,1 @@
+{"name":"Bridged Tether (PulseChain)","id":"tether-pulsechain","symbol":"usdt","description":"","links":"https://pulsechain.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tether-pulsechain/logo.png","detail_platform":{"pulsechain":{"decimal_place":6,"contract_address":"0x0cb6f5a34ad42ec934882a05265a7d5f59b51a2f"}}}

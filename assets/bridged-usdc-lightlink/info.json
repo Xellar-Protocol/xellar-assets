@@ -1,0 +1,1 @@
+{"name":"Bridged USDC (Lightlink)","id":"bridged-usdc-lightlink","symbol":"usdc.e","description":"","links":"https://www.circle.com/en/usdc","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/bridged-usdc-lightlink/logo.png","detail_platform":{"lightlink":{"decimal_place":6,"contract_address":"0x18fb38404dadee1727be4b805c5b242b5413fa40"}}}
