@@ -29,28 +29,75 @@ const downloadImage = async (url, image_path) => {
 
 const sleeps = async () => await new Promise(r => setTimeout(r, 5500));
 
+const nativeCurrency = {
+    'ethereum': [
+        {
+            "network_id": "ethereum"
+        },
+        {
+            "network_id": "optimistic-ethereum"
+        },
+        {
+            "network_id": "arbitrum-one"
+        }
+    ],
+    'binancecoin': [
+        {
+            "network_id": "binance-smart-chain"
+        }
+    ],
+    'matic-network': [
+        {
+            "network_id": "polygon-pos"
+        }
+    ],
+    'avalanche-2': [
+        {
+            "network_id": "avalanche"
+        }
+    ],
+    'fantom': [
+        {
+            "network_id": "fantom"
+        }
+    ],
+}
+
+const wrappedNative = {
+    "wrapped-fantom": "fantom",
+    "wrapped-avax": "avalanche-2",
+    "wmatic": "matic-network",
+    "wbnb": "binancecoin",
+    "weth": "ethereum"
+}
+
 const findNativeByID = (input) => {
     let nativeList = ['ethereum', 'binancecoin', 'matic-network', 'avalanche-2', 'fantom'];
     //'tomochain', 'harmony', 'moonbeam', 'moonriver', 'kucoin-shares', 'kava',
     return !isEmpty(nativeList.filter((x) => x == input))
 }
 
-
-
 const constructTokenList = ({
     fileName = 'tokenlist.json'
 }) => {
     let constructJSON = [];
+    let nativeCurrencyIndex = {}
     const files = fs.readdirSync('./assets')
     for (var i = 0; i < files.length; i++) {
         try {
             var info = JSON.parse(fs.readFileSync(`./assets/${files[i]}/info.json`, 'utf8'));
             let isNative = findNativeByID(info.id)
-            let tempNative = info.detail_platform['native'] ?? {};
+            let tempNative = nativeCurrency[info.id] ?? [];
             if (isNative) {
-                info.detail_platform['native'] = [
-                    tempNative
-                ];
+                info.detail_platform['native'] = tempNative;
+                nativeCurrencyIndex[info.id] = i;
+            }
+
+            if (wrappedNative[info.id]) {
+                constructJSON[nativeCurrencyIndex[wrappedNative[info.id]]]['detail_platform'] = {
+                    ...constructJSON[nativeCurrencyIndex[wrappedNative[info.id]]]['detail_platform'],
+                    ...info.detail_platform
+                }
             }
 
             const isHaveNative = _.has(info.detail_platform, 'native')
