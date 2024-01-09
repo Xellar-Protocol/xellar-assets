@@ -2,8 +2,18 @@ const fs = require('fs')
 const axios = require('axios');
 const { resolve } = require('path');
 const { isEmpty, _ } = require('lodash');
+const { default: axiosRetry } = require('axios-retry');
 
-
+axiosRetry(axios, { 
+    retries: 10,
+    retryDelay: (retryCount) => {
+        console.log('\x1b[31m%s\x1b[0m',`retry attempt: ${retryCount} || with delay: 10 seconds`);
+        return 10000;
+    },
+    retryCondition: (error) => {
+        return error.response.status === 503 || error.response.status === 429;
+    }
+});
 
 const exeptionList = [
     "ethereum",
@@ -27,7 +37,7 @@ const downloadImage = async (url, image_path) => {
 
 }
 
-const sleeps = async () => await new Promise(r => setTimeout(r, 5500));
+const sleeps = async () => await new Promise(r => setTimeout(r, 10000));
 
 const nativeCurrency = {
     'ethereum': [
@@ -63,6 +73,8 @@ const nativeCurrency = {
     ],
 }
 
+const supportedNetwork = ["ethereum", "polygon-pos", "binance-smart-chain", "avalanche", "fantom", "optimistic-ethereum", "arbitrum-one"]
+
 const wrappedNative = {
     "wrapped-fantom": "fantom",
     "wrapped-avax": "avalanche-2",
@@ -86,6 +98,13 @@ const constructTokenList = ({
     for (var i = 0; i < files.length; i++) {
         try {
             var info = JSON.parse(fs.readFileSync(`./assets/${files[i]}/info.json`, 'utf8'));
+            let tokenNetwork = Object.keys(info.detail_platform)
+            let intersection = supportedNetwork.filter(x => tokenNetwork.includes(x));
+            if (intersection.length == 0) {
+                console.log('\x1b[33m%s\x1b[0m', `skip due to not supported network ${files[i]} -> ${i}/${files.length}`);
+                continue;
+            }
+
             let isNative = findNativeByID(info.id)
             let tempNative = nativeCurrency[info.id] ?? [];
             if (isNative) {
@@ -132,16 +151,13 @@ const constructTokenList = ({
     fs.writeFileSync(`./${fileName}`, JSON.stringify(constructJSON))
 }
 
-
-
-
 const fetchAllErrorTokenDetailData = async () => {
     // const files = fs.readdirSync('./assets')
 
     var latest = JSON.parse(fs.readFileSync('./record.json', 'utf8'));
     const files = latest['errorList']
 
-    for (var i = latest['latest_step'] ?? 0; i < files.length; i++) {
+    for (var i = 0; i < files.length; i++) {
         var record = JSON.parse(fs.readFileSync('./record.json', 'utf8'));
         let coinData;
         let tempError = record['errorList'];
@@ -186,7 +202,7 @@ const fetchAllErrorTokenDetailData = async () => {
         console.log('\x1b[33m%s\x1b[0m', `done ${id} -> ${i}/${files.length}`);
         await sleeps()
     }
-    
+
     constructTokenList({
         fileName: "tokenlist2.json"
     })
@@ -215,13 +231,10 @@ async function doFetch(Coinid) {
 const fetchAllTokens = async () => {
     fs.readFile('./idlist.json', 'utf8', async function (err, data) {
         const obj = JSON.parse(data);
-
-
-        let count = 0;
-        let queryParam = [];
-
         var latest = JSON.parse(fs.readFileSync('./record.json', 'utf8'));
+
         for (var i = latest['latest_step'] ?? 0; i < obj.length; i++) {
+            let tempError = latest['errorList'];
 
             try {
                 var info = JSON.parse(fs.readFileSync(`./assets/${obj[i]['id']}/info.json`, 'utf8'));
@@ -229,60 +242,62 @@ const fetchAllTokens = async () => {
             }
             catch (e) {
                 console.log('\x1b[33m%s\x1b[0m', `fetching -> ${i}/${obj.length}`);
+
+                try {
+                    let coinData = await axios.get(`https://api.coingecko.com/api/v3/coins/${obj[i]['id']}?tickers=false&market_data=false&community_data=false&developer_data=false&sparkline=false`)
+
+                    let { id, name, symbol, description, links, image, detail_platforms } = coinData.data;
+                    await fs.promises.mkdir(`./assets/${id}`, { recursive: true })
+
+                    // write token info
+                    try {
+                        fs.writeFileSync(`./assets/${id}/info.json`, JSON.stringify({
+                            "name": name,
+                            "id": id,
+                            "symbol": symbol,
+                            "description": description.en.replace(/\s+/g, ' ').trim(),
+                            "links": links.homepage[0],
+                            "logo": `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${id}/logo.png`,
+                            "detail_platform": detail_platforms
+                        }));
+
+                        console.log('\x1b[33m%s\x1b[0m', `create token info -> ${obj[i]['id']}`);
+                    } catch (e) {
+                        fs.writeFileSync(`./assets/${id}/info.json`, JSON.stringify({
+                            "name": name,
+                            "id": id,
+                            "symbol": symbol,
+                            "description": description.en,
+                            "links": links.homepage[0],
+                            "logo": `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${id}/logo.png`,
+                            "detail_platform": detail_platforms
+                        }));
+                    }
+
+                    // download token image
+                    try {
+                        await downloadImage(image.large, `./assets/${id}/logo.png`);
+                    } catch (e) {
+                        console.log('missing image')
+                        await downloadImage("https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579", `./assets/${id}/logo.png`);
+                    }
+
+                    console.log('\x1b[33m%s\x1b[0m', `done -> ${i}/${obj.length}`);
+                    await sleeps()
+                } catch (e) {
+                    console.log(e.response.statusText);
+                    console.log(e.response.data.status);
+                    tempError.push({
+                        "id": obj[i]['id']
+                    })
+                    console.log('missing coin / token data')
+                }
             }
 
-            count++;
-            let coinData;
-            let tempError = [];
-
-            try {
-                coinData = await axios.get(`https://api.coingecko.com/api/v3/coins/${obj[i]['id']}?tickers=false&market_data=false&community_data=false&developer_data=false&sparkline=false`)
-            } catch (e) {
-                tempError = latest['errorList'];
-                tempError.push({
-                    "id": obj[i]['id']
-                })
-                console.log('missing coin / token data')
-                continue;
-            }
-            let { id, name, symbol, description, links, image, detail_platforms } = coinData.data;
-
-
-            await fs.promises.mkdir(`./assets/${id}`, { recursive: true })
             fs.writeFileSync('./record.json', JSON.stringify({
                 "latest_step": i,
                 "errorList": tempError
             }))
-
-            try {
-                fs.writeFileSync(`./assets/${id}/info.json`, JSON.stringify({
-                    "name": name,
-                    "id": id,
-                    "symbol": symbol,
-                    "description": description.en.replace(/\s+/g, ' ').trim(),
-                    "links": links.homepage[0],
-                    "logo": `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${id}/logo.png`,
-                    "detail_platform": detail_platforms
-                }));
-            } catch (e) {
-                fs.writeFileSync(`./assets/${id}/info.json`, JSON.stringify({
-                    "name": name,
-                    "id": id,
-                    "symbol": symbol,
-                    "description": description.en,
-                    "links": links.homepage[0],
-                    "logo": `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${id}/logo.png`,
-                    "detail_platform": detail_platforms
-                }));
-            }
-            try {
-                await downloadImage(image.large, `./assets/${id}/logo.png`);
-            } catch (e) {
-                console.log('missing  image')
-                await downloadImage("https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579", `./assets/${id}/logo.png`);
-            }
-            await sleeps()
-            console.log('\x1b[33m%s\x1b[0m', `done -> ${i}/${obj.length}`);
         }
 
         await fetchAllErrorTokenDetailData();
