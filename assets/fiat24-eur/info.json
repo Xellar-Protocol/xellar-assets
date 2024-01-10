@@ -1,0 +1,1 @@
+{"name":"Fiat24 EUR","id":"fiat24-eur","symbol":"eur24","description":"Fiat24 Tokenised Euro Deposit","links":"https://www.fiat24.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/fiat24-eur/logo.png","detail_platform":{"arbitrum-one":{"decimal_place":2,"contract_address":"0x2c5d06f591d0d8cd43ac232c2b654475a142c7da"}}}

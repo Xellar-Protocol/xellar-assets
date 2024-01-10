@@ -1,0 +1,1 @@
+{"name":"Tashi","id":"tashi","symbol":"tashi","description":"IBC and EVM compatible borrow lend protocol on Evmos","links":"https://tashi.finance/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/tashi/logo.png","detail_platform":{"evmos":{"decimal_place":18,"contract_address":"0x98fafd9f714ce0b4bb2870527076f2f314aaed82"}}}

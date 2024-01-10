@@ -1,0 +1,1 @@
+{"name":"Fiat24 CHF","id":"fiat24-chf","symbol":"chf24","description":"Fiat24 Tokenised CHF","links":"https://www.fiat24.com/","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/fiat24-chf/logo.png","detail_platform":{"arbitrum-one":{"decimal_place":2,"contract_address":"0xd41f1f0cf89fd239ca4c1f8e8ada46345c86b0a4"}}}
