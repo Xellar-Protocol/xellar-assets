@@ -311,7 +311,22 @@ const getIdList = async () => {
     await fs.writeFileSync('./idlist.json', JSON.stringify(result.data));
 }
 
-
+const rewrite = async () => {
+    const data = JSON.parse(fs.readFileSync('./tokenlist2.json', 'utf8'));
+    for (let i = 0; i < data.length; i++) {
+        const item = data[i];
+        const old = JSON.parse(fs.readFileSync(`./assets/${item.id}/info.json`, 'utf8'));
+        fs.writeFileSync(`./assets/${item.id}/info.json`, JSON.stringify({
+            "name": item.name,
+            "id": item.id,
+            "symbol": item.symbol,
+            "description": old.description,
+            "links": old.links,
+            "logo": `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${item.id}/logo.png`,
+            "detail_platform": item.detail_platform
+        }));
+    }
+}
 
 (async () => {
     // STEP //
@@ -319,8 +334,9 @@ const getIdList = async () => {
     // get idlist.json
     // fetchAllTokens
     // fetchAllErrorTokenDetailData -->> fill error data
-    await getIdList()
-    await fetchAllTokens();
+    // await getIdList()
+    // await fetchAllTokens();
+    await rewrite();
 })()
 
 
