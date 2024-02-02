@@ -336,7 +336,10 @@ const rewrite = async () => {
     // fetchAllErrorTokenDetailData -->> fill error data
     // await getIdList()
     // await fetchAllTokens();
-    await rewrite();
+    // await rewrite();
+    constructTokenList({
+        fileName: "tokenlist2.json"
+    })
 })()
 
 
