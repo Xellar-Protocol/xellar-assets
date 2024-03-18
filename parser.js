@@ -40,6 +40,11 @@ const downloadImage = async (url, image_path) => {
 const sleeps = async () => await new Promise(r => setTimeout(r, 10000));
 
 const nativeCurrency = {
+    'bitcoin': [
+        {
+            "network_id": "bitcoin"
+        },
+    ],
     'ethereum': [
         {
             "network_id": "ethereum"
@@ -73,9 +78,10 @@ const nativeCurrency = {
     ],
 }
 
-const supportedNetwork = ["ethereum", "polygon-pos", "binance-smart-chain", "avalanche", "fantom", "optimistic-ethereum", "arbitrum-one"]
+const supportedNetwork = ["bitcoin", "ethereum", "polygon-pos", "binance-smart-chain", "avalanche", "fantom", "optimistic-ethereum", "arbitrum-one"]
 
 const wrappedNative = {
+    "wrapped-bitcoin": "bitcoin",
     "wrapped-fantom": "fantom",
     "wrapped-avax": "avalanche-2",
     "wmatic": "matic-network",
@@ -84,7 +90,7 @@ const wrappedNative = {
 }
 
 const findNativeByID = (input) => {
-    let nativeList = ['ethereum', 'binancecoin', 'matic-network', 'avalanche-2', 'fantom'];
+    let nativeList = ["bitcoin", 'ethereum', 'binancecoin', 'matic-network', 'avalanche-2', 'fantom'];
     //'tomochain', 'harmony', 'moonbeam', 'moonriver', 'kucoin-shares', 'kava',
     return !isEmpty(nativeList.filter((x) => x == input))
 }
@@ -311,20 +317,40 @@ const getIdList = async () => {
     await fs.writeFileSync('./idlist.json', JSON.stringify(result.data));
 }
 
-const rewrite = async () => {
-    const data = JSON.parse(fs.readFileSync('./tokenlist2.json', 'utf8'));
-    for (let i = 0; i < data.length; i++) {
-        const item = data[i];
-        const old = JSON.parse(fs.readFileSync(`./assets/${item.id}/info.json`, 'utf8'));
-        fs.writeFileSync(`./assets/${item.id}/info.json`, JSON.stringify({
-            "name": item.name,
-            "id": item.id,
-            "symbol": item.symbol,
-            "description": old.description,
-            "links": old.links,
-            "logo": `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${item.id}/logo.png`,
-            "detail_platform": item.detail_platform
-        }));
+const rewrite = async (coin) => {
+    if (coin) {
+        const data = JSON.parse(fs.readFileSync("./tokenlist2.json", "utf8"));
+        const coindata = data.find((item) => {return item.id == coin});
+        const old = JSON.parse(
+            fs.readFileSync(`./assets/${coindata.id}/info.json`, "utf8")
+        );
+        fs.writeFileSync(
+            `./assets/${coindata.id}/info.json`,
+            JSON.stringify({
+                name: coindata.name,
+                id: coindata.id,
+                symbol: coindata.symbol,
+                description: old.description,
+                links: old.links,
+                logo: `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${coindata.id}/logo.png`,
+                detail_platform: coindata.detail_platform,
+            })
+        );
+    } else {
+        const data = JSON.parse(fs.readFileSync('./tokenlist2.json', 'utf8'));
+        for (let i = 0; i < data.length; i++) {
+            const item = data[i];
+            const old = JSON.parse(fs.readFileSync(`./assets/${item.id}/info.json`, 'utf8'));
+            fs.writeFileSync(`./assets/${item.id}/info.json`, JSON.stringify({
+                "name": item.name,
+                "id": item.id,
+                "symbol": item.symbol,
+                "description": old.description,
+                "links": old.links,
+                "logo": `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${item.id}/logo.png`,
+                "detail_platform": item.detail_platform
+            }));
+        }
     }
 }
 
@@ -336,7 +362,7 @@ const rewrite = async () => {
     // fetchAllErrorTokenDetailData -->> fill error data
     // await getIdList()
     // await fetchAllTokens();
-    // await rewrite();
+    // await rewrite('bitcoin');
     constructTokenList({
         fileName: "tokenlist2.json"
     })
