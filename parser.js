@@ -362,10 +362,10 @@ const rewrite = async (coin) => {
     // fetchAllErrorTokenDetailData -->> fill error data
     // await getIdList()
     // await fetchAllTokens();
-    // await rewrite('bitcoin');
-    constructTokenList({
-        fileName: "tokenlist2.json"
-    })
+    await rewrite('bitcoin');
+    // constructTokenList({
+    //     fileName: "tokenlist2.json"
+    // })
 })()
 
 
