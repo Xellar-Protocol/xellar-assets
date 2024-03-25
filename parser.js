@@ -55,34 +55,29 @@ const nativeCurrency = {
             "network_id": "arbitrum-one"
         }
     ],
-    'binancecoin': [
+    'binancecoin': 
         {
             "network_id": "binance-smart-chain"
-        }
-    ],
-    'matic-network': [
+        },
+    'matic-network': 
         {
             "network_id": "polygon-pos"
-        }
-    ],
-    'avalanche-2': [
+        },
+    'avalanche-2': 
         {
             "network_id": "avalanche"
-        }
-    ],
-    'fantom': [
+        },
+    'fantom': 
         {
             "network_id": "fantom"
-        }
-    ],
-    'solana': [
+        },
+    'solana': 
         {
             "network_id": "solana"
-        }
-    ],
+        },
 }
 
-const supportedNetwork = ["bitcoin", "ethereum", "polygon-pos", "binance-smart-chain", "avalanche", "fantom", "optimistic-ethereum", "arbitrum-one", "solana", '']
+const supportedNetwork = ["bitcoin", "ethereum", "polygon-pos", "binance-smart-chain", "avalanche", "fantom", "optimistic-ethereum", "arbitrum-one", "solana", '', 'native']
 
 const wrappedNative = {
     "wrapped-bitcoin": "bitcoin",
@@ -118,6 +113,10 @@ const constructTokenList = ({
 
             if (tokenNetwork.includes('')) {
                 delete info.detail_platform['']
+            }
+            
+            if (tokenNetwork.includes('native')) {
+                delete info.detail_platform['native']
             }
 
             let isNative = findNativeByID(info.id)
