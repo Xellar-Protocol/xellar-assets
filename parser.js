@@ -40,11 +40,10 @@ const downloadImage = async (url, image_path) => {
 const sleeps = async () => await new Promise(r => setTimeout(r, 10000));
 
 const nativeCurrency = {
-    'bitcoin': [
+    'bitcoin': 
         {
             "network_id": "bitcoin"
         },
-    ],
     'ethereum': [
         {
             "network_id": "ethereum"
@@ -76,13 +75,19 @@ const nativeCurrency = {
             "network_id": "fantom"
         }
     ],
+    'solana': [
+        {
+            "network_id": "solana"
+        }
+    ],
 }
 
-const supportedNetwork = ["bitcoin", "ethereum", "polygon-pos", "binance-smart-chain", "avalanche", "fantom", "optimistic-ethereum", "arbitrum-one"]
+const supportedNetwork = ["bitcoin", "ethereum", "polygon-pos", "binance-smart-chain", "avalanche", "fantom", "optimistic-ethereum", "arbitrum-one", "solana", '']
 
 const wrappedNative = {
     "wrapped-bitcoin": "bitcoin",
     "wrapped-fantom": "fantom",
+    "wrapped-solana": "solana",
     "wrapped-avax": "avalanche-2",
     "wmatic": "matic-network",
     "wbnb": "binancecoin",
@@ -90,7 +95,7 @@ const wrappedNative = {
 }
 
 const findNativeByID = (input) => {
-    let nativeList = ["bitcoin", 'ethereum', 'binancecoin', 'matic-network', 'avalanche-2', 'fantom'];
+    let nativeList = ["bitcoin", 'ethereum', 'binancecoin', 'matic-network', 'avalanche-2', 'fantom', 'solana'];
     //'tomochain', 'harmony', 'moonbeam', 'moonriver', 'kucoin-shares', 'kava',
     return !isEmpty(nativeList.filter((x) => x == input))
 }
@@ -109,6 +114,10 @@ const constructTokenList = ({
             if (intersection.length == 0) {
                 console.log('\x1b[33m%s\x1b[0m', `skip due to not supported network ${files[i]} -> ${i}/${files.length}`);
                 continue;
+            }
+
+            if (tokenNetwork.includes('')) {
+                delete info.detail_platform['']
             }
 
             let isNative = findNativeByID(info.id)
@@ -362,10 +371,10 @@ const rewrite = async (coin) => {
     // fetchAllErrorTokenDetailData -->> fill error data
     // await getIdList()
     // await fetchAllTokens();
-    await rewrite('bitcoin');
-    // constructTokenList({
-    //     fileName: "tokenlist2.json"
-    // })
+    // await rewrite('bitcoin');
+    constructTokenList({
+        fileName: "tokenlist2.json"
+    })
 })()
 
 
