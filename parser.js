@@ -361,6 +361,34 @@ const rewrite = async (coin) => {
         }
     }
 }
+const findEmptyDetailPlatform = () => {
+    const data = JSON.parse(fs.readFileSync('./tokenlist.json', 'utf8'));
+    const data2 = JSON.parse(fs.readFileSync('./tokenlist2.json', 'utf8'));
+    const arr = []
+    // const empty = data.filter((item) => {
+    //     return isEmpty(item.detail_platform)
+    // });
+
+    for (let item of data2) {
+        if (isEmpty(item.detail_platform)) {
+            const match = data.find((x) => x.id == item.id);
+            if (match) item.detail_platform = match.detail_platform;
+        }
+    }
+
+    fs.writeFileSync('./tokenlist2.json', JSON.stringify(data2));
+
+    // for (let i = 0; i < empty.length; i++) {
+    //     arr.push(empty[i].id)
+    // }
+
+    // console.log(arr);
+}
+
+const tokenlistLength = () => {
+    const data = JSON.parse(fs.readFileSync('./tokenlist2 copy.json', 'utf8'));
+    console.log(data.length);
+}
 
 (async () => {
     // STEP //
@@ -370,10 +398,12 @@ const rewrite = async (coin) => {
     // fetchAllErrorTokenDetailData -->> fill error data
     // await getIdList()
     // await fetchAllTokens();
-    // await rewrite('bitcoin');
-    constructTokenList({
-        fileName: "tokenlist2.json"
-    })
+    // await rewrite();
+    // constructTokenList({
+    //     fileName: "tokenlist2.json"
+    // })
+    findEmptyDetailPlatform()
+    // tokenlistLength()
 })()
 
 
