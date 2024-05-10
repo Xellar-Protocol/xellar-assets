@@ -7,10 +7,11 @@ const { default: axiosRetry } = require('axios-retry');
 axiosRetry(axios, { 
     retries: 10,
     retryDelay: (retryCount) => {
-        console.log('\x1b[31m%s\x1b[0m',`retry attempt: ${retryCount} || with delay: 10 seconds`);
-        return 10000;
+        console.log('\x1b[31m%s\x1b[0m',`retry attempt: ${retryCount} || with delay: 5 minutes`);
+        return 300000;
     },
     retryCondition: (error) => {
+        console.log(error.response);
         return error.response.status === 503 || error.response.status === 429;
     }
 });
@@ -37,7 +38,7 @@ const downloadImage = async (url, image_path) => {
 
 }
 
-const sleeps = async () => await new Promise(r => setTimeout(r, 10000));
+const sleeps = async () => await new Promise(r => setTimeout(r, 20000));
 
 const nativeCurrency = {
     'bitcoin': 
@@ -53,6 +54,9 @@ const nativeCurrency = {
         },
         {
             "network_id": "arbitrum-one"
+        },
+        {
+            "network_id": "base"
         }
     ],
     'binancecoin': 
@@ -77,7 +81,7 @@ const nativeCurrency = {
         },
 }
 
-const supportedNetwork = ["bitcoin", "ethereum", "polygon-pos", "binance-smart-chain", "avalanche", "fantom", "optimistic-ethereum", "arbitrum-one", "solana", '', 'native']
+const supportedNetwork = ["bitcoin", "ethereum", "polygon-pos", "binance-smart-chain", "avalanche", "fantom", "optimistic-ethereum", "arbitrum-one", "base", "solana", '', 'native']
 
 const wrappedNative = {
     "wrapped-bitcoin": "bitcoin",
@@ -184,10 +188,14 @@ const fetchAllErrorTokenDetailData = async () => {
             tempError = tempError.filter((x) => x.id != files[i].id);
             fs.rmSync(`./assets/${files[i].id}`, { force: true, recursive: true })
             tempError.push({
-                "id": files[i].id
+                "id": files[i].id,
+                "market_cap": files[i]['market_cap'],
+                "market_cap_rank": files[i]['market_cap_rank'],
             })
             tempNotFound.push({
-                "id": files[i].id
+                "id": files[i].id,
+                "market_cap": files[i]['market_cap'],
+                "market_cap_rank": files[i]['market_cap_rank'],
             })
             fs.writeFileSync('./record.json', JSON.stringify({
                 "latest_step": i,
@@ -210,6 +218,8 @@ const fetchAllErrorTokenDetailData = async () => {
             "symbol": symbol,
             "description": description.en.replace(/\s+/g, ' ').trim(),
             "links": links.homepage[0],
+            "market_cap": files[i]['market_cap'],
+            "market_cap_rank": files[i]['market_cap_rank'],
             "logo": `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${id}/logo.png`,
             "detail_platform": detail_platforms
         }));
@@ -243,7 +253,7 @@ async function doFetch(Coinid) {
 }
 
 const fetchAllTokens = async () => {
-    fs.readFile('./idlist.json', 'utf8', async function (err, data) {
+    fs.readFile('./data.json', 'utf8', async function (err, data) {
         const obj = JSON.parse(data);
         var latest = JSON.parse(fs.readFileSync('./record.json', 'utf8'));
 
@@ -251,17 +261,18 @@ const fetchAllTokens = async () => {
             let tempError = latest['errorList'];
 
             try {
-                var info = JSON.parse(fs.readFileSync(`./assets/${obj[i]['id']}/info.json`, 'utf8'));
-                console.log(`skip ${obj[i]['id']}`)
-            }
-            catch (e) {
+                // var info = JSON.parse(fs.readFileSync(`./assets/${obj[i]['id']}/info.json`, 'utf8'));
+                // console.log(`skip ${obj[i]['id']}`)
                 console.log('\x1b[33m%s\x1b[0m', `fetching -> ${i}/${obj.length}`);
 
                 try {
                     let coinData = await axios.get(`https://api.coingecko.com/api/v3/coins/${obj[i]['id']}?tickers=false&market_data=false&community_data=false&developer_data=false&sparkline=false`)
 
                     let { id, name, symbol, description, links, image, detail_platforms } = coinData.data;
-                    await fs.promises.mkdir(`./assets/${id}`, { recursive: true })
+                    // check if folder exist
+                    if (!fs.existsSync(`./assets/${id}`)) {
+                        await fs.promises.mkdir(`./assets/${id}`, { recursive: true })
+                    }
 
                     // write token info
                     try {
@@ -271,6 +282,8 @@ const fetchAllTokens = async () => {
                             "symbol": symbol,
                             "description": description.en.replace(/\s+/g, ' ').trim(),
                             "links": links.homepage[0],
+                            "market_cap": obj[i]['market_cap'],
+                            "market_cap_rank": obj[i]['market_cap_rank'],
                             "logo": `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${id}/logo.png`,
                             "detail_platform": detail_platforms
                         }));
@@ -283,17 +296,25 @@ const fetchAllTokens = async () => {
                             "symbol": symbol,
                             "description": description.en,
                             "links": links.homepage[0],
+                            "market_cap": obj[i]['market_cap'],
+                            "market_cap_rank": obj[i]['market_cap_rank'],
                             "logo": `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${id}/logo.png`,
                             "detail_platform": detail_platforms
                         }));
+
+                        console.log('\x1b[33m%s\x1b[0m', `retry create token info -> ${obj[i]['id']}`);
                     }
 
                     // download token image
-                    try {
-                        await downloadImage(image.large, `./assets/${id}/logo.png`);
-                    } catch (e) {
-                        console.log('missing image')
-                        await downloadImage("https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579", `./assets/${id}/logo.png`);
+                    // check if image is exist
+                    if (!fs.existsSync(`./assets/${id}/logo.png`)) {
+                        try {
+                            console.log('fetching image');
+                            await downloadImage(image.large, `./assets/${id}/logo.png`);
+                        } catch (e) {
+                            console.log('missing image')
+                            await downloadImage("https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579", `./assets/${id}/logo.png`);
+                        }
                     }
 
                     console.log('\x1b[33m%s\x1b[0m', `done -> ${i}/${obj.length}`);
@@ -302,10 +323,15 @@ const fetchAllTokens = async () => {
                     console.log(e.response.statusText);
                     console.log(e.response.data.status);
                     tempError.push({
-                        "id": obj[i]['id']
+                        "id": obj[i]['id'],
+                        "market_cap": obj[i]['market_cap'],
+                        "market_cap_rank": obj[i]['market_cap_rank'],
                     })
                     console.log('missing coin / token data')
                 }
+            } catch (e) {
+                console.log(e)
+                console.log('missing coin / token data')
             }
 
             fs.writeFileSync('./record.json', JSON.stringify({
@@ -321,9 +347,85 @@ const fetchAllTokens = async () => {
 
 
 const getIdList = async () => {
-    const result = await axios.get('https://api.coingecko.com/api/v3/coins/list');
+    const result = await axios.get('https://api.coingecko.com/api/v3/coins/list?include_platform=true');
     await fs.writeFileSync('./idlist.json', JSON.stringify(result.data));
 }
+
+const getCoinlistWithMarketCap = async (page) => {
+    for (let i = 1; i < page; i++) {
+        const result = await axios.get(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&per_page=250&page=${i}`);
+        try {
+            const existing = JSON.parse(fs.readFileSync(`./market.json`, 'utf8'));
+            existing.push(...result.data);
+            console.log('append to existing market file');
+            await fs.writeFileSync(`./market.json`, JSON.stringify(existing));
+        } catch (error) {
+            console.log('create new market file');
+            await fs.writeFileSync(`./market.json`, JSON.stringify(result.data));
+        }
+        const updated = JSON.parse(fs.readFileSync(`./market.json`, 'utf8'));
+        console.log(`done page ${i} with total data ${updated.length}`);
+        await sleeps()
+    }
+}
+
+const mergeIdlistWithMarketcap = () => {
+    const data = JSON.parse(fs.readFileSync('./idlist.json', 'utf8'));
+    const market = JSON.parse(fs.readFileSync('./market.json', 'utf8'));
+    const arr = [];
+    for (let i = 0; i < data.length; i++) {
+        const item = data[i];
+        const match = market.find((x) => x.id == item.id);
+        if (match) {
+            item.market_cap = match.market_cap;
+            item.market_cap_rank = match.market_cap_rank;
+            arr.push(item);
+        } else {
+            item.market_cap = 0;
+            item.market_cap_rank = null;
+            arr.push(item);
+        }
+    }
+    arr.sort((a, b) => a.market_cap - b.market_cap);
+    fs.writeFileSync('./data.json', JSON.stringify(arr));
+}
+
+const mergeWrappedCoinWithCoin = (filename) => {
+    const data = JSON.parse(fs.readFileSync(`./${filename}`, "utf8"));
+    const wrapped = [];
+    for (let i = 0; i < data.length; i++) {
+        const item = data[i];
+        if (item.id.startsWith("wrapped")) {
+            wrapped.push(item);
+        }
+    }
+    console.log("wrapped coin length -> ", wrapped.length);
+
+    const arr = [];
+    for (let i = 0; i < data.length; i++) {
+        const item = data[i];
+        const match = wrapped.find((x) => x.id == `wrapped-${item.id}`);
+        if (match) {
+            const index = wrapped.findIndex(
+                (x) => x.id == `wrapped-${item.id}`
+            );
+            wrapped.splice(index, 1);
+            item.platforms = { ...item.platforms, ...match.platforms };
+            arr.push(item);
+        } else {
+            if (item.id.startsWith("wrapped")) {
+                continue;
+            }
+            arr.push(item);
+        }
+    }
+    fs.writeFileSync("./mergedTokenlist.json", JSON.stringify(arr));
+    console.log("done combine -> ", arr.length);
+    fs.writeFileSync("./wrapped-left.json", JSON.stringify(wrapped));
+    console.log("wrapped left -> ", wrapped.length);
+};
+
+// 
 
 const rewrite = async (coin) => {
     if (coin) {
@@ -385,25 +487,27 @@ const findEmptyDetailPlatform = () => {
     // console.log(arr);
 }
 
-const tokenlistLength = () => {
-    const data = JSON.parse(fs.readFileSync('./tokenlist2 copy.json', 'utf8'));
-    console.log(data.length);
-}
-
 (async () => {
     // STEP //
     // 
     // get idlist.json
     // fetchAllTokens
     // fetchAllErrorTokenDetailData -->> fill error data
-    // await getIdList()
-    // await fetchAllTokens();
     // await rewrite();
+    // await getCoinlistWithMarketCap();
     // constructTokenList({
     //     fileName: "tokenlist2.json"
     // })
-    findEmptyDetailPlatform()
+    // findEmptyDetailPlatform()
     // tokenlistLength()
+    // getEmptyDetail()
+    // sort()
+    await getIdList()
+    await getCoinlistWithMarketCap(60)
+    mergeIdlistWithMarketcap()
+    await fetchAllTokens();
+    // last step
+    mergeWrappedCoinWithCoin('tokenlist2.json')
 })()
 
 
