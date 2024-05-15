@@ -410,7 +410,7 @@ const mergeWrappedCoinWithCoin = (filename) => {
                 (x) => x.id == `wrapped-${item.id}`
             );
             wrapped.splice(index, 1);
-            item.platforms = { ...item.platforms, ...match.platforms };
+            item.detail_platform = { ...item.detail_platform, ...match.detail_platform };
             arr.push(item);
         } else {
             if (item.id.startsWith("wrapped")) {
