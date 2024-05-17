@@ -464,6 +464,27 @@ const updateTokenlistUsingData = () => {
     fs.writeFileSync('./tokenlist2.json', JSON.stringify(data));
 }
 
+const markTokenIfNativeIsExisted = () => {
+    const data = JSON.parse(fs.readFileSync('./tokenlist2.json', 'utf8'));
+    for (let i = 0; i < data.length; i++) {
+        const item = data[i];
+        const isHaveNative = _.has(item.detail_platform, 'native')
+        if (isHaveNative) {
+
+            Object.keys(item.detail_platform).forEach(function (key, index) {
+                if (key != 'native') {
+                    item.detail_platform[key] = {
+                        ...item.detail_platform[key],
+                        wrapped: true
+                    }
+                }
+            });
+
+        }
+    }
+    fs.writeFileSync('./tokenlist2.json', JSON.stringify(data));
+}
+
 const rewrite = async (coin) => {
     if (coin) {
         const data = JSON.parse(fs.readFileSync("./tokenlist2.json", "utf8"));
@@ -516,13 +537,16 @@ const rewrite = async (coin) => {
     // tokenlistLength()
     // getEmptyDetail()
     // sort()
+    // // start
     // await getIdList()
     // await getCoinlistWithMarketCap(60)
     // mergeIdlistWithMarketcap()
     // await fetchAllTokens();
     // // last step
     // mergeWrappedCoinWithCoin('tokenlist2.json')
-    updateTokenlistUsingData()
+    // // additional step
+    // updateTokenlistUsingData()
+    markTokenIfNativeIsExisted()
 })()
 
 
