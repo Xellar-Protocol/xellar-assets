@@ -427,6 +427,43 @@ const mergeWrappedCoinWithCoin = (filename) => {
 
 // 
 
+const updateTokenlistUsingData = () => {
+    const data = JSON.parse(fs.readFileSync('./tokenlist2.json', 'utf8'));
+    for (let i = 0; i < data.length; i++) {
+        const item = data[i];
+        try {
+            const update = JSON.parse(fs.readFileSync(`./assets/${item.id}/info.json`, 'utf8'));
+            const existingDetail = item.detail_platform ? Object.keys(item.detail_platform) : [];
+            const updateDetail = update.detail_platform ? Object.keys(update.detail_platform) : [];
+    
+            if (updateDetail.includes('')) {
+                updateDetail.splice(updateDetail.indexOf(''), 1);
+            }
+            if (updateDetail.includes('native')) {
+                updateDetail.splice(updateDetail.indexOf('native'), 1);
+            }
+            
+            const notIncluded = updateDetail.filter(x => !existingDetail.includes(x));
+            if (notIncluded.length > 0) {
+                for (let j = 0; j < notIncluded.length; j++) {
+                    if (item.detail_platform == undefined) {
+                        item.detail_platform = {
+                            [notIncluded[j]]: update.detail_platform[notIncluded[j]]
+                        }
+                    } else item.detail_platform[notIncluded[j]] = update.detail_platform[notIncluded[j]];
+                }
+            } else {
+                if (item.detail_platform == undefined) {
+                    data.splice(i, 1);
+                }
+            }
+        } catch (error) {
+            console.log('not found ', item.id);
+        }
+    }
+    fs.writeFileSync('./tokenlist2.json', JSON.stringify(data));
+}
+
 const rewrite = async (coin) => {
     if (coin) {
         const data = JSON.parse(fs.readFileSync("./tokenlist2.json", "utf8"));
@@ -463,29 +500,6 @@ const rewrite = async (coin) => {
         }
     }
 }
-const findEmptyDetailPlatform = () => {
-    const data = JSON.parse(fs.readFileSync('./tokenlist.json', 'utf8'));
-    const data2 = JSON.parse(fs.readFileSync('./tokenlist2.json', 'utf8'));
-    const arr = []
-    // const empty = data.filter((item) => {
-    //     return isEmpty(item.detail_platform)
-    // });
-
-    for (let item of data2) {
-        if (isEmpty(item.detail_platform)) {
-            const match = data.find((x) => x.id == item.id);
-            if (match) item.detail_platform = match.detail_platform;
-        }
-    }
-
-    fs.writeFileSync('./tokenlist2.json', JSON.stringify(data2));
-
-    // for (let i = 0; i < empty.length; i++) {
-    //     arr.push(empty[i].id)
-    // }
-
-    // console.log(arr);
-}
 
 (async () => {
     // STEP //
@@ -502,12 +516,13 @@ const findEmptyDetailPlatform = () => {
     // tokenlistLength()
     // getEmptyDetail()
     // sort()
-    await getIdList()
-    await getCoinlistWithMarketCap(60)
-    mergeIdlistWithMarketcap()
-    await fetchAllTokens();
-    // last step
-    mergeWrappedCoinWithCoin('tokenlist2.json')
+    // await getIdList()
+    // await getCoinlistWithMarketCap(60)
+    // mergeIdlistWithMarketcap()
+    // await fetchAllTokens();
+    // // last step
+    // mergeWrappedCoinWithCoin('tokenlist2.json')
+    updateTokenlistUsingData()
 })()
 
 
