@@ -57,6 +57,9 @@ const nativeCurrency = {
         },
         {
             "network_id": "base"
+        },
+        {
+            "network_id": "lisk"
         }
     ],
     'binancecoin': 
@@ -79,22 +82,32 @@ const nativeCurrency = {
         {
             "network_id": "solana"
         },
+    'immutable-x': 
+        {
+            "network_id": "immutable"
+        },
+    'okb': 
+        {
+            "network_id": "x-layer"
+        },
 }
 
-const supportedNetwork = ["bitcoin", "ethereum", "polygon-pos", "binance-smart-chain", "avalanche", "fantom", "optimistic-ethereum", "arbitrum-one", "base", "solana", '', 'native']
+const supportedNetwork = ["bitcoin", "ethereum", "polygon-pos", "binance-smart-chain", "avalanche", "fantom", "optimistic-ethereum", "arbitrum-one", "base", "solana", "lisk", "immutable", "x-layer", '', 'native']
 
 const wrappedNative = {
     "wrapped-bitcoin": "bitcoin",
     "wrapped-fantom": "fantom",
     "wrapped-solana": "solana",
     "wrapped-avax": "avalanche-2",
+    "wrapped-immutable": "immutable-x",
+    "wrapped-okb": "okb",
     "wmatic": "matic-network",
     "wbnb": "binancecoin",
     "weth": "ethereum"
 }
 
 const findNativeByID = (input) => {
-    let nativeList = ["bitcoin", 'ethereum', 'binancecoin', 'matic-network', 'avalanche-2', 'fantom', 'solana'];
+    let nativeList = ["bitcoin", 'ethereum', 'binancecoin', 'matic-network', 'avalanche-2', 'fantom', 'solana', 'immutable-x', 'okb'];
     //'tomochain', 'harmony', 'moonbeam', 'moonriver', 'kucoin-shares', 'kava',
     return !isEmpty(nativeList.filter((x) => x == input))
 }
