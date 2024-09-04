@@ -540,15 +540,15 @@ const rewrite = async (coin) => {
     // STEP 1 (MANUAL)
     // delete market.json & edit record.json to {"latest_step": 0, "errorList": [], "notFound": []}
     // STEP 2
-    // await getIdList()
+    await getIdList()
     // STEP 3
-    // await getCoinlistWithMarketCap(60)
+    await getCoinlistWithMarketCap(60)
     // STEP 4
-    // mergeIdlistWithMarketcap()
+    mergeIdlistWithMarketcap()
     // STEP 5 (Biasanya lama)
-    // await fetchAllTokens();
+    await fetchAllTokens();
     // STEP 6
-    // mergeWrappedCoinWithCoin('tokenlist2.json')
+    mergeWrappedCoinWithCoin('tokenlist2.json')
     // STEP 7
     // MANUAL CHECK BETWEEN mergedTokenlist.json AND wrapped-left.json
     // COPY mergedTokenlist.json TO tokenlist2.json
