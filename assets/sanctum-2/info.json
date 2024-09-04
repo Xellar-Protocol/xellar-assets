@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"name":"Cloud","id":"sanctum-2","symbol":"cloud","description":"","links":"https://www.sanctum.so/","market_cap":33998998,"market_cap_rank":695,"logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/sanctum-2/logo.png","detail_platform":{"solana":{"decimal_place":9,"contract_address":"CLoUDKc4Ane7HeQcPpE3YHnznRxhMimJ4MyaUqyHFzAu"}}}
+=======
+{"name":"Cloud","id":"sanctum-2","symbol":"cloud","description":"","links":"https://www.sanctum.so/","market_cap":28916800,"market_cap_rank":711,"logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/sanctum-2/logo.png","detail_platform":{"solana":{"decimal_place":9,"contract_address":"CLoUDKc4Ane7HeQcPpE3YHnznRxhMimJ4MyaUqyHFzAu"}}}
+>>>>>>> 751f4e91abe454191d7cd1f023053b01f1d14f6e

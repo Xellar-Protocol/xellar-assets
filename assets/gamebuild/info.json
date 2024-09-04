@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"name":"GameBuild","id":"gamebuild","symbol":"game","description":"GameBuild is a next-generation game infrastructure with powerful toolkits, bringing a brand new economics and experience for Gamers, Developers and Advertisers.","links":"https://game.build","market_cap":52227174,"market_cap_rank":552,"logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/gamebuild/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x825459139c897d769339f295e962396c4f9e4a4d"}}}
+=======
+{"name":"GameBuild","id":"gamebuild","symbol":"game","description":"GameBuild is a next-generation game infrastructure with powerful toolkits, bringing a brand new economics and experience for Gamers, Developers and Advertisers.","links":"https://game.build","market_cap":43753946,"market_cap_rank":555,"logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/gamebuild/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x825459139c897d769339f295e962396c4f9e4a4d"}}}
+>>>>>>> 751f4e91abe454191d7cd1f023053b01f1d14f6e

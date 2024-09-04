@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"name":"Mother Iggy","id":"mother-iggy","symbol":"mother","description":"Don’t disappoint your mother","links":"https://x.com/IGGYAZALEA","market_cap":46054394,"market_cap_rank":597,"logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/mother-iggy/logo.png","detail_platform":{"solana":{"decimal_place":6,"contract_address":"3S8qX1MsMqRbiwKg2cQyx7nis1oHMgaCuc9c4VfvVdPN"}}}
+=======
+{"name":"Mother Iggy","id":"mother-iggy","symbol":"mother","description":"Don’t disappoint your mother","links":"https://x.com/IGGYAZALEA","market_cap":34808470,"market_cap_rank":646,"logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/mother-iggy/logo.png","detail_platform":{"solana":{"decimal_place":6,"contract_address":"3S8qX1MsMqRbiwKg2cQyx7nis1oHMgaCuc9c4VfvVdPN"}}}
+>>>>>>> 751f4e91abe454191d7cd1f023053b01f1d14f6e

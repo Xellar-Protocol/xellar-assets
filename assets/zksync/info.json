@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"name":"ZKsync","id":"zksync","symbol":"zk","description":"","links":"https://zksync.io/","market_cap":404311378,"market_cap_rank":141,"logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/zksync/logo.png","detail_platform":{"zksync":{"decimal_place":18,"contract_address":"0x5a7d6b2f92c77fad6ccabd7ee0624e64907eaf3e"}}}
+=======
+{"name":"ZKsync","id":"zksync","symbol":"zk","description":"","links":"https://zksync.io/","market_cap":335585651,"market_cap_rank":147,"logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/zksync/logo.png","detail_platform":{"zksync":{"decimal_place":18,"contract_address":"0x5a7d6b2f92c77fad6ccabd7ee0624e64907eaf3e"}}}
+>>>>>>> 751f4e91abe454191d7cd1f023053b01f1d14f6e

@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"name":"MEMES•GO•TO•THE•MOON (Runes)","id":"memes-go-to-the-moon","symbol":"memes","description":"MEMES lives on the Runes Protocol on Bitcoin and can be traded on Bitcoin L1, Bitcoin L2s.","links":"https://www.ord.io/MEMESGOTOTHEMOON","market_cap":34876897,"market_cap_rank":690,"logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/memes-go-to-the-moon/logo.png","detail_platform":{"ordinals":{"decimal_place":1,"contract_address":"b378208e486c7ebc3f0e538eac95235a5a818fd74bcbf79e9ee49d1dbc7af3fb"}}}
+=======
+{"name":"MEMES•GO•TO•THE•MOON (Runes)","id":"memes-go-to-the-moon","symbol":"memes","description":"MEMES lives on the Runes Protocol on Bitcoin and can be traded on Bitcoin L1, Bitcoin L2s.","links":"https://www.ord.io/MEMESGOTOTHEMOON","market_cap":34876897,"market_cap_rank":645,"logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/memes-go-to-the-moon/logo.png","detail_platform":{"ordinals":{"decimal_place":1,"contract_address":"b378208e486c7ebc3f0e538eac95235a5a818fd74bcbf79e9ee49d1dbc7af3fb"}}}
+>>>>>>> 751f4e91abe454191d7cd1f023053b01f1d14f6e

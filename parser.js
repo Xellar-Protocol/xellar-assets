@@ -536,30 +536,27 @@ const rewrite = async (coin) => {
 }
 
 (async () => {
-    // STEP //
-    // 
-    // get idlist.json
-    // fetchAllTokens
-    // fetchAllErrorTokenDetailData -->> fill error data
-    // await rewrite();
-    // await getCoinlistWithMarketCap();
-    // constructTokenList({
-    //     fileName: "tokenlist2.json"
-    // })
-    // findEmptyDetailPlatform()
-    // tokenlistLength()
-    // getEmptyDetail()
-    // sort()
-    // // start
-    // await getIdList()
-    // await getCoinlistWithMarketCap(60)
-    // mergeIdlistWithMarketcap()
-    // await fetchAllTokens();
-    // // last step
-    // mergeWrappedCoinWithCoin('tokenlist2.json')
-    // // additional step
+    // ----- START ----- //
+    // STEP 1 (MANUAL)
+    // delete market.json & edit record.json to {"latest_step": 0, "errorList": [], "notFound": []}
+    // STEP 2
+    await getIdList()
+    // STEP 3
+    await getCoinlistWithMarketCap(60)
+    // STEP 4
+    mergeIdlistWithMarketcap()
+    // STEP 5 (Biasanya lama)
+    await fetchAllTokens();
+    // STEP 6
+    mergeWrappedCoinWithCoin('tokenlist2.json')
+    // STEP 7
+    // MANUAL CHECK BETWEEN mergedTokenlist.json AND wrapped-left.json
+    // COPY mergedTokenlist.json TO tokenlist2.json
+    // LAST STEP
+    // markTokenIfNativeIsExisted()
+    // ----- END ----- //
+    // ADDITIONAL STEP
     // updateTokenlistUsingData()
-    markTokenIfNativeIsExisted()
 })()
 
 

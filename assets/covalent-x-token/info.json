@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"name":"Covalent X Token","id":"covalent-x-token","symbol":"cxt","description":"","links":"https://www.covalenthq.com/","market_cap":71040795,"market_cap_rank":464,"logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/covalent-x-token/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x7abc8a5768e6be61a6c693a6e4eacb5b60602c4d"}}}
+=======
+{"name":"Covalent X Token","id":"covalent-x-token","symbol":"cxt","description":"","links":"https://www.covalenthq.com/","market_cap":63624519,"market_cap_rank":458,"logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/covalent-x-token/logo.png","detail_platform":{"ethereum":{"decimal_place":18,"contract_address":"0x7abc8a5768e6be61a6c693a6e4eacb5b60602c4d"}}}
+>>>>>>> 751f4e91abe454191d7cd1f023053b01f1d14f6e
