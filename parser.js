@@ -546,14 +546,14 @@ const rewrite = async (coin) => {
     // STEP 4
     //mergeIdlistWithMarketcap()
     // STEP 5 (Biasanya lama)
-    await fetchAllTokens();
+    // await fetchAllTokens();
     // STEP 6
-    mergeWrappedCoinWithCoin('tokenlist2.json')
+    // mergeWrappedCoinWithCoin('tokenlist2.json')
     // STEP 7
     // MANUAL CHECK BETWEEN mergedTokenlist.json AND wrapped-left.json
     // COPY mergedTokenlist.json TO tokenlist2.json
     // LAST STEP
-    // markTokenIfNativeIsExisted()
+    markTokenIfNativeIsExisted()
     // ----- END ----- //
     // ADDITIONAL STEP
     // updateTokenlistUsingData()
