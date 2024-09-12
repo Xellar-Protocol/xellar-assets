@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-{"name":"Billy","id":"billy","symbol":"billy","description":"","links":"https://billysol.lol/","market_cap":69649126,"market_cap_rank":468,"logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/billy/logo.png","detail_platform":{"solana":{"decimal_place":6,"contract_address":"3B5wuUrMEi5yATD7on46hKfej3pfmd7t1RKgrsN3pump"}}}
-=======
-{"name":"Billy","id":"billy","symbol":"billy","description":"","links":"https://billysol.lol/","market_cap":45584712,"market_cap_rank":547,"logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/billy/logo.png","detail_platform":{"solana":{"decimal_place":6,"contract_address":"3B5wuUrMEi5yATD7on46hKfej3pfmd7t1RKgrsN3pump"}}}
->>>>>>> 751f4e91abe454191d7cd1f023053b01f1d14f6e
+{"name":"Billy","id":"billy","symbol":"billy","description":"","links":"https://billysol.lol/","market_cap":16732229,"market_cap_rank":1029,"logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/billy/logo.png","detail_platform":{"solana":{"decimal_place":6,"contract_address":"3B5wuUrMEi5yATD7on46hKfej3pfmd7t1RKgrsN3pump"}}}
