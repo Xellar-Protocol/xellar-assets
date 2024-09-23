@@ -66,7 +66,7 @@ const nativeCurrency = {
         {
             "network_id": "binance-smart-chain"
         },
-    'matic-network': 
+    'polygon-ecosystem-token': 
         {
             "network_id": "polygon-pos"
         },
@@ -107,7 +107,7 @@ const wrappedNative = {
 }
 
 const findNativeByID = (input) => {
-    let nativeList = ["bitcoin", 'ethereum', 'binancecoin', 'matic-network', 'avalanche-2', 'fantom', 'solana', 'immutable-x', 'okb'];
+    let nativeList = ["bitcoin", 'ethereum', 'binancecoin', 'polygon-ecosystem-token', 'avalanche-2', 'fantom', 'solana', 'immutable-x', 'okb'];
     //'tomochain', 'harmony', 'moonbeam', 'moonriver', 'kucoin-shares', 'kava',
     return !isEmpty(nativeList.filter((x) => x == input))
 }
