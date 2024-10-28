@@ -13,6 +13,58 @@
         }
     },
     {
+        "id": "wrapped-ada-21-co",
+        "name": "21.co Wrapped ADA",
+        "symbol": "21ada",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-ada-21-co/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "ethereum": {
+                "decimal_place": 6,
+                "contract_address": "0x9c05d54645306d4c4ead6f75846000e1554c0360"
+            }
+        }
+    },
+    {
+        "id": "wrapped-algo",
+        "name": "Wrapped ALGO",
+        "symbol": "xalgo",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-algo/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "solana": {
+                "decimal_place": 6,
+                "contract_address": "xALGoH1zUfRmpCriy94qbfoMXHtK6NDnMKzT4Xdvgms"
+            }
+        }
+    },
+    {
+        "id": "wrapped-anatha",
+        "name": "Wrapped ANATHA",
+        "symbol": "wanatha",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-anatha/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "ethereum": {
+                "decimal_place": 18,
+                "contract_address": "0x3383c5a8969dc413bfddc9656eb80a1408e4ba20"
+            }
+        }
+    },
+    {
+        "id": "wrapped-ar",
+        "name": "Wrapped AR",
+        "symbol": "war",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-ar/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "ethereum": {
+                "decimal_place": 12,
+                "contract_address": "0x4fadc7a98f2dc96510e42dd1a74141eeae0c1543"
+            }
+        }
+    },
+    {
         "id": "wrapped-avax-21-co",
         "name": "21.co Wrapped AVAX",
         "symbol": "21avax",
@@ -78,6 +130,36 @@
             "binance-smart-chain": {
                 "decimal_place": 18,
                 "contract_address": "0xa2e3356610840701bdf5611a53974510ae27e2e1"
+            }
+        }
+    },
+    {
+        "id": "wrapped-besc",
+        "name": "Wrapped BESC",
+        "symbol": "wbesc",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-besc/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "binance-smart-chain": {
+                "decimal_place": 18,
+                "contract_address": "0x5e3344216adb2c19caa7f3fe90078e7c4ac71bb6"
+            },
+            "ethereum": {
+                "decimal_place": 18,
+                "contract_address": "0xf89060c99853bb52eaf5f2247d007d73de660252"
+            }
+        }
+    },
+    {
+        "id": "wrapped-bind",
+        "name": "Wrapped BIND",
+        "symbol": "wbind",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-bind/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "ethereum": {
+                "decimal_place": 8,
+                "contract_address": "0x15334dcb171e8b65d6650321581dca83be870115"
             }
         }
     },
@@ -152,6 +234,10 @@
                 "decimal_place": 8,
                 "contract_address": "0x16a3fe59080d6944a42b441e44450432c1445372"
             },
+            "oasis": {
+                "decimal_place": 8,
+                "contract_address": "0xd43ce0aa2a29dcb75bdb83085703dc589de6c7eb"
+            },
             "polygon-pos": {
                 "decimal_place": 8,
                 "contract_address": "0x5d49c278340655b56609fdf8976eb0612af3a0c3"
@@ -160,13 +246,52 @@
                 "decimal_place": 8,
                 "contract_address": "0x027792d9fed7f9844eb4839566001bb6f6cb4804f66aa2da6fe1ee242d896881::coin::COIN"
             },
-            "oasis": {
-                "decimal_place": 8,
-                "contract_address": "0xd43ce0aa2a29dcb75bdb83085703dc589de6c7eb"
-            },
             "terra": {
                 "decimal_place": 8,
                 "contract_address": "terra1aa7upykmmqqc63l924l5qfap8mrmx5rfdm0v55"
+            }
+        }
+    },
+    {
+        "id": "wrapped-btt",
+        "name": "Wrapped BTT",
+        "symbol": "wbtt",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-btt/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "tron": {
+                "decimal_place": 6,
+                "contract_address": "TKfjV9RNKJJCqPvBtK8L7Knykh7DNWvnYt"
+            },
+            "bittorrent": {
+                "decimal_place": 18,
+                "contract_address": "0x23181f21dea5936e24163ffaba4ea3b316b57f3c"
+            }
+        }
+    },
+    {
+        "id": "wrapped-busd-allbridge-from-bsc",
+        "name": "Wrapped BUSD (Allbridge from BSC)",
+        "symbol": "abbusd",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-busd-allbridge-from-bsc/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "solana": {
+                "decimal_place": 9,
+                "contract_address": "6nuaX3ogrr2CaoAPjtaKHAoBNWok32BMcRozuf32s2QF"
+            }
+        }
+    },
+    {
+        "id": "wrapped-cryptokitties",
+        "name": "Wrapped CryptoKitties",
+        "symbol": "wck",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-cryptokitties/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "ethereum": {
+                "decimal_place": 18,
+                "contract_address": "0x09fe5f0236f0ea5d930197dce254d77b04128075"
             }
         }
     },
@@ -193,6 +318,19 @@
             "ethereum": {
                 "decimal_place": null,
                 "contract_address": "0xd2aee1ce2b4459de326971de036e82f1318270af"
+            }
+        }
+    },
+    {
+        "id": "wrapped-dot-21-co",
+        "name": "21.co Wrapped DOT",
+        "symbol": "21dot",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-dot-21-co/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "ethereum": {
+                "decimal_place": null,
+                "contract_address": "0xf4accd20bfed4dffe06d4c85a7f9924b1d5da819"
             }
         }
     },
@@ -252,6 +390,32 @@
         }
     },
     {
+        "id": "wrapped-fio",
+        "name": "Wrapped FIO",
+        "symbol": "wfio",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-fio/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "ethereum": {
+                "decimal_place": 9,
+                "contract_address": "0xbea269038eb75bdab47a9c04d0f5c572d94b93d5"
+            }
+        }
+    },
+    {
+        "id": "wrapped-gen-0-cryptokitties",
+        "name": "Wrapped Gen-0 CryptoKitties",
+        "symbol": "wg0",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-gen-0-cryptokitties/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "ethereum": {
+                "decimal_place": 18,
+                "contract_address": "0xa10740ff9ff6852eac84cdcff9184e1d6d27c057"
+            }
+        }
+    },
+    {
         "id": "wrapped-hec",
         "name": "Wrapped HEC",
         "symbol": "wshec",
@@ -276,6 +440,14 @@
                 "contract_address": "0x16a3543fa6b32cac3b0a755f64a729e84f89a75c"
             }
         }
+    },
+    {
+        "id": "wrapped-jbc",
+        "name": "JibSwap Wrapped JBC (Jibchain)",
+        "symbol": "wjbc",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-jbc/logo.png",
+        "is_native": false,
+        "detail_platform": {}
     },
     {
         "id": "wrapped-jones-aura",
@@ -331,13 +503,13 @@
                 "decimal_place": 18,
                 "contract_address": "0xddc0385169797937066bbd8ef409b5b3c0dfeb52"
             },
-            "ethereum": {
-                "decimal_place": 18,
-                "contract_address": "0x3b79a28264fc52c7b4cea90558aa0b162f7faf57"
-            },
             "arbitrum-one": {
                 "decimal_place": 18,
                 "contract_address": "0xecf2adaff1de8a512f6e8bfe67a2c836edb25da3"
+            },
+            "ethereum": {
+                "decimal_place": 18,
+                "contract_address": "0x3b79a28264fc52c7b4cea90558aa0b162f7faf57"
             }
         }
     },
@@ -381,6 +553,19 @@
             "base": {
                 "decimal_place": 2,
                 "contract_address": "0x3d2eba645c44bbd32a34b7c017667711eb5b173c"
+            }
+        }
+    },
+    {
+        "id": "wrapped-moon-cats",
+        "name": "Wrapped Moon Cats",
+        "symbol": "mcat20",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-moon-cats/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "ethereum": {
+                "decimal_place": 18,
+                "contract_address": "0xf961a1fa7c781ecd23689fe1d0b7f3b6cbb2f972"
             }
         }
     },
@@ -484,6 +669,19 @@
         }
     },
     {
+        "id": "wrapped-paycoin",
+        "name": "Wrapped Paycoin",
+        "symbol": "wpci",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-paycoin/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "ethereum": {
+                "decimal_place": 8,
+                "contract_address": "0x3c2a309d9005433c1bc2c92ef1be06489e5bf258"
+            }
+        }
+    },
+    {
         "id": "wrapped-pokt",
         "name": "Wrapped POKT",
         "symbol": "wpokt",
@@ -510,39 +708,15 @@
         }
     },
     {
-        "id": "wrapped-rseth",
-        "name": "Wrapped rsETH",
-        "symbol": "wrseth",
-        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-rseth/logo.png",
+        "id": "wrapped-sftw",
+        "name": "Wrapped sFTW",
+        "symbol": "wsftw",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-sftw/logo.png",
         "is_native": false,
         "detail_platform": {
-            "linea": {
-                "decimal_place": 18,
-                "contract_address": "0xd2671165570f41bbb3b0097893300b6eb6101e6c"
-            },
-            "blast": {
-                "decimal_place": 18,
-                "contract_address": "0xe7903b1f75c534dd8159b313d92cdcfbc62cb3cd"
-            },
-            "scroll": {
-                "decimal_place": 18,
-                "contract_address": "0xa25b25548b4c98b0c7d3d27dca5d5ca743d68b7f"
-            },
-            "optimistic-ethereum": {
-                "decimal_place": 18,
-                "contract_address": "0x87eee96d50fb761ad85b1c982d28a042169d61b1"
-            },
             "base": {
                 "decimal_place": 18,
-                "contract_address": "0xedfa23602d0ec14714057867a78d01e94176bea0"
-            },
-            "zksync": {
-                "decimal_place": 18,
-                "contract_address": "0xd4169e045bcf9a86cc00101225d9ed61d2f51af2"
-            },
-            "mode": {
-                "decimal_place": 18,
-                "contract_address": "0xe7903b1f75c534dd8159b313d92cdcfbc62cb3cd"
+                "contract_address": "0xe428c32fe2dfde4e25e9bb37c690ce22229f21ac"
             }
         }
     },
@@ -560,6 +734,19 @@
         }
     },
     {
+        "id": "wrapped-solana-universal",
+        "name": "Wrapped Solana (Universal)",
+        "symbol": "usol",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-solana-universal/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "base": {
+                "decimal_place": 18,
+                "contract_address": "0x9b8df6e244526ab5f6e6400d331db28c8fdddb55"
+            }
+        }
+    },
+    {
         "id": "wrapped-staked-link",
         "name": "Wrapped Staked LINK",
         "symbol": "wstlink",
@@ -573,6 +760,32 @@
             "ethereum": {
                 "decimal_place": 18,
                 "contract_address": "0x911d86c72155c33993d594b0ec7e6206b4c803da"
+            }
+        }
+    },
+    {
+        "id": "wrapped-staked-scr",
+        "name": "Wrapped Staked SCR",
+        "symbol": "wsscr",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-staked-scr/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "fantom": {
+                "decimal_place": 18,
+                "contract_address": "0xa7727db8db5afca6d88eb7fb9e8e322dc043325a"
+            }
+        }
+    },
+    {
+        "id": "wrapped-star",
+        "name": "Wrapped Star",
+        "symbol": "wstr",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-star/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "ethereum": {
+                "decimal_place": 18,
+                "contract_address": "0xf0dc76c22139ab22618ddfb498be1283254612b1"
             }
         }
     },
@@ -603,6 +816,10 @@
                 "decimal_place": 18,
                 "contract_address": "0x03b54a6e9a984069379fae1a4fc4dbae93b3bccd"
             },
+            "mantle": {
+                "decimal_place": 18,
+                "contract_address": "0x458ed78eb972a369799fb278c0243b25e5242a83"
+            },
             "base": {
                 "decimal_place": 18,
                 "contract_address": "0xc1cba3fcea344f92d9239c08c0568f6f2f0ee452"
@@ -610,10 +827,19 @@
             "linea": {
                 "decimal_place": 18,
                 "contract_address": "0xb5bedd42000b71fdde22d3ee8a79bd49a568fc8f"
-            },
-            "mantle": {
+            }
+        }
+    },
+    {
+        "id": "wrapped-strax",
+        "name": "Wrapped Strax",
+        "symbol": "wstrax",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-strax/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "ethereum": {
                 "decimal_place": 18,
-                "contract_address": "0x458ed78eb972a369799fb278c0243b25e5242a83"
+                "contract_address": "0xa3c22370de5f9544f0c4de126b1e46ceadf0a51b"
             }
         }
     },
@@ -629,6 +855,14 @@
                 "contract_address": "0x301595f6fd5f69fad7a488dacb8971e7c0c2f559"
             }
         }
+    },
+    {
+        "id": "wrapped-ton-crystal",
+        "name": "Wrapped TON Crystal",
+        "symbol": "wton",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-ton-crystal/logo.png",
+        "is_native": false,
+        "detail_platform": {}
     },
     {
         "id": "wrapped-trade-ai",
@@ -694,6 +928,19 @@
         }
     },
     {
+        "id": "wrapped-usdt-allbridge-from-polygon",
+        "name": "Bridged Tether (Allbridge)",
+        "symbol": "apusdt",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-usdt-allbridge-from-polygon/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "solana": {
+                "decimal_place": 6,
+                "contract_address": "DNhZkUaxHXYvpxZ7LNnHtss8sQgdAfd1ZYS1fB7LKWUZ"
+            }
+        }
+    },
+    {
         "id": "wrapped-ust",
         "name": "Wrapped USTC",
         "symbol": "ustc",
@@ -720,13 +967,13 @@
                 "decimal_place": 18,
                 "contract_address": "0x5ce9f0b6afb36135b5ddbf11705ceb65e634a9dc"
             },
-            "ethereum": {
-                "decimal_place": 18,
-                "contract_address": "0xa47c8bf37f92abed4a126bda807a7b7498661acd"
-            },
             "solana": {
                 "decimal_place": 9,
                 "contract_address": "CXLBjMMcwkc17GfJtBos6rQCo1ypeH6eDbB82Kby4MRm"
+            },
+            "ethereum": {
+                "decimal_place": 18,
+                "contract_address": "0xa47c8bf37f92abed4a126bda807a7b7498661acd"
             },
             "sora": {
                 "decimal_place": 18,
@@ -765,6 +1012,32 @@
             "ethereum": {
                 "decimal_place": 18,
                 "contract_address": "0x5592c5aa89492ea918d55b804e177b5ca7dccd5a"
+            }
+        }
+    },
+    {
+        "id": "wrapped-xmr-btse",
+        "name": "Wrapped XMR by BTSE",
+        "symbol": "wxmr",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-xmr-btse/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "ethereum": {
+                "decimal_place": 18,
+                "contract_address": "0x465e07d6028830124be2e4aa551fbe12805db0f5"
+            }
+        }
+    },
+    {
+        "id": "wrapped-xrp-21-co",
+        "name": "21.co Wrapped XRP",
+        "symbol": "21xrp",
+        "logo": "https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-xrp-21-co/logo.png",
+        "is_native": false,
+        "detail_platform": {
+            "ethereum": {
+                "decimal_place": 6,
+                "contract_address": "0x0d3bd40758df4f79aad316707fcb809cd4815ffe"
             }
         }
     },

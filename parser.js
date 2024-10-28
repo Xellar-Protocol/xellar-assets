@@ -99,16 +99,16 @@ const nativeCurrency = {
 const supportedNetwork = ["bitcoin", "ethereum", "polygon-pos", "binance-smart-chain", "avalanche", "fantom", "optimistic-ethereum", "arbitrum-one", "base", "solana", "lisk", "immutable", "x-layer", 'tron', '', 'native']
 
 const wrappedNative = {
-    "wrapped-bitcoin": "bitcoin",
-    "wrapped-fantom": "fantom",
-    "wrapped-solana": "solana",
-    "wrapped-avax": "avalanche-2",
-    "wrapped-immutable": "immutable-x",
-    "wrapped-okb": "okb",
-    "wrapped-tron": "tron",
-    "wmatic": "matic-network",
-    "wbnb": "binancecoin",
-    "weth": "ethereum"
+    "bitcoin": "wrapped-bitcoin",
+    "fantom": "wrapped-fantom",
+    "solana": "wrapped-solana",
+    "avalanche-2": "wrapped-avax",
+    "immutable-x": "wrapped-immutable",
+    "okb": "wrapped-okb",
+    "tron": "wrapped-tron",
+    "matic-network": "wmatic",
+    "binancecoin": "wbnb",
+    "ethereum": "weth"
 }
 
 const findNativeByID = (input) => {
@@ -127,6 +127,11 @@ const constructTokenList = ({
     for (var i = 0; i < files.length; i++) {
         try {
             var info = JSON.parse(fs.readFileSync(`./assets/${files[i]}/info${isTop50 ? '-new' : ''}.json`, 'utf8'));
+            if (Object.values(wrappedNative).includes(info.id)) {
+                console.log('\x1b[33m%s\x1b[0m', `skip wrapped coin ${files[i]} -> ${i}/${files.length}`);
+                continue;
+            }
+            
             let tokenNetwork = Object.keys(info.detail_platform)
             let intersection = supportedNetwork.filter(x => tokenNetwork.includes(x));
             if (intersection.length == 0) {
@@ -149,10 +154,11 @@ const constructTokenList = ({
                 nativeCurrencyIndex[info.id] = i;
             }
 
-            if (wrappedNative[info.id]) {
-                constructJSON[nativeCurrencyIndex[wrappedNative[info.id]]]['detail_platform'] = {
-                    ...constructJSON[nativeCurrencyIndex[wrappedNative[info.id]]]['detail_platform'],
-                    ...info.detail_platform
+            if (wrappedNative[info.id] !== undefined) {
+                let wrapped = JSON.parse(fs.readFileSync(`./assets/${wrappedNative[info.id]}/info.json`, 'utf8'));
+                info.detail_platform = {
+                    ...info.detail_platform,
+                    ...(wrapped.detail_platform ?? {})
                 }
             }
 
@@ -566,17 +572,17 @@ const removeMarketAndResetRecord = () => {
     // STEP 1 (MANUAL)
     // delete market.json & edit record.json to {"latest_step": 0, "errorList": [], "notFound": []}
     // STEP 1 (AUTO) comment if want to continue from previous fetch
-    removeMarketAndResetRecord()
+    // removeMarketAndResetRecord()
     // STEP 2
-    await getIdList()
+    // await getIdList()
     // STEP 3
-    await getCoinlistWithMarketCap(60)
+    // await getCoinlistWithMarketCap(60)
     // STEP 4
-    mergeIdlistWithMarketcap()
+    // mergeIdlistWithMarketcap()
     // STEP 5 (Biasanya lama)
-    await fetchAllTokens();
+    // await fetchAllTokens();
     // STEP 6
-    mergeWrappedCoinWithCoin('tokenlist2.json')
+    // mergeWrappedCoinWithCoin('tokenlist2.json')
     // STEP 7
     // MANUAL CHECK BETWEEN mergedTokenlist.json AND wrapped-left.json
     // COPY mergedTokenlist.json TO tokenlist2.json
