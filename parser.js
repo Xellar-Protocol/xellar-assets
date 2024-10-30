@@ -154,6 +154,11 @@ const constructTokenList = ({
                 nativeCurrencyIndex[info.id] = i;
             }
 
+            if (!isNative && Object.keys(info.detail_platform).length == 0) {
+                console.log('\x1b[33m%s\x1b[0m', `skip due to not supported network ${files[i]} -> ${i}/${files.length}`);
+                continue;
+            }
+
             if (wrappedNative[info.id] !== undefined) {
                 let wrapped = JSON.parse(fs.readFileSync(`./assets/${wrappedNative[info.id]}/info.json`, 'utf8'));
                 info.detail_platform = {
