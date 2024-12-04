@@ -523,6 +523,7 @@ const markTokenIfNativeIsExisted = () => {
         }
     }
     fs.writeFileSync('./tokenlist2.json', JSON.stringify(data));
+    console.log('process done');
 }
 
 const rewrite = async (coin) => {
