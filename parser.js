@@ -200,71 +200,84 @@ const constructTokenList = ({
 }
 
 const fetchAllErrorTokenDetailData = async () => {
-    // const files = fs.readdirSync('./assets')
-
     var latest = JSON.parse(fs.readFileSync('./record.json', 'utf8'));
-    const files = latest['errorList']
+    const files = latest['errorList'] || [];
+    let tempError = latest['errorList'] || [];
+    let tempNotFound = latest['notFound'] || [];
 
     for (var i = 0; i < files.length; i++) {
-        var record = JSON.parse(fs.readFileSync('./record.json', 'utf8'));
-        let coinData;
-        let tempError = record['errorList'];
-        let tempNotFound = record['notFound'];
         try {
-            coinData = await doFetch(files[i].id)
-        } catch (e) {
-            console.log(`missing coin / token data ${files[i].id}`)
-            console.log(e)
+            const coinData = await doFetch(files[i].id);
             tempError = tempError.filter((x) => x.id != files[i].id);
-            fs.rmSync(`./assets/${files[i].id}`, { force: true, recursive: true })
-            tempError.push({
-                "id": files[i].id,
-                "market_cap": files[i]['market_cap'],
-                "market_cap_rank": files[i]['market_cap_rank'],
-            })
-            tempNotFound.push({
-                "id": files[i].id,
-                "market_cap": files[i]['market_cap'],
-                "market_cap_rank": files[i]['market_cap_rank'],
-            })
+            
+            const { id, name, symbol, description, links, image, detail_platforms } = coinData;
+            const market_cap_rank = files[i].market_cap_rank;
+
             fs.writeFileSync('./record.json', JSON.stringify({
                 "latest_step": i,
                 "errorList": tempError,
                 "notFound": tempNotFound
-            }))
-            await sleeps()
+            }));
+
+            if (!fs.existsSync(`./assets/${id}`)) {
+                await fs.promises.mkdir(`./assets/${id}`, { recursive: true });
+            }
+
+            fs.writeFileSync(`./assets/${id}/info${market_cap_rank <= 50 ? '-new' : ''}.json`, JSON.stringify({
+                "name": name,
+                "id": id,
+                "symbol": symbol,
+                "description": description.en.replace(/\s+/g, ' ').trim(),
+                "links": links.homepage[0],
+                "market_cap": files[i].market_cap,
+                "market_cap_rank": files[i].market_cap_rank,
+                "logo": `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${id}/logo.png`,
+                "detail_platform": detail_platforms
+            }));
+
+            console.log('\x1b[33m%s\x1b[0m', `done ${id} -> ${i}/${files.length}`);
+            await sleeps();
+
+        } catch (e) {
+            console.log(`missing coin / token data ${files[i].id}`);
+            console.log(e);
+            
+            tempError = tempError.filter((x) => x.id != files[i].id) ?? [];
+            
+            fs.rmSync(`./assets/${files[i].id}`, { force: true, recursive: true });
+            
+            tempError.push({
+                "id": files[i].id,
+                "market_cap": files[i].market_cap,
+                "market_cap_rank": files[i].market_cap_rank,
+            });
+            
+            tempNotFound.push({
+                "id": files[i].id,
+                "market_cap": files[i].market_cap,
+                "market_cap_rank": files[i].market_cap_rank,
+            });
+
+            fs.writeFileSync('./record.json', JSON.stringify({
+                "latest_step": i,
+                "errorList": tempError,
+                "notFound": tempNotFound
+            }));
+
+            await sleeps();
             continue;
         }
-        tempError = tempError.filter((x) => x.id != files[i].id);
-        let { id, name, symbol, description, links, image, detail_platforms } = coinData;
-        fs.writeFileSync('./record.json', JSON.stringify({
-            "latest_step": i,
-            "errorList": tempError,
-            "notFound": tempNotFound
-        }))
-        fs.writeFileSync(`./assets/${id}/info${market_cap_rank <= 50 ? '-new' : ''}.json`, JSON.stringify({
-            "name": name,
-            "id": id,
-            "symbol": symbol,
-            "description": description.en.replace(/\s+/g, ' ').trim(),
-            "links": links.homepage[0],
-            "market_cap": files[i]['market_cap'],
-            "market_cap_rank": files[i]['market_cap_rank'],
-            "logo": `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${id}/logo.png`,
-            "detail_platform": detail_platforms
-        }));
-        console.log('\x1b[33m%s\x1b[0m', `done ${id} -> ${i}/${files.length}`);
-        await sleeps()
     }
 
     constructTokenList({
         fileName: "tokenlist2.json",
         isTop50: false
-    })
+    });
+    
     constructTokenList({
         fileName: "tokenlist2-new-top50.json",
         isTop50: true
-    })
+    });
 }
 
 async function doFetch(Coinid) {
