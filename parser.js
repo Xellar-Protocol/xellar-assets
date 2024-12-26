@@ -126,11 +126,14 @@ const constructTokenList = ({
     const files = fs.readdirSync('./assets')
     for (var i = 0; i < files.length; i++) {
         try {
-            var info = JSON.parse(fs.readFileSync(`./assets/${files[i]}/info${isTop50 ? '-new' : ''}.json`, 'utf8'));
-            if (Object.values(wrappedNative).includes(info.id)) {
-                console.log('\x1b[33m%s\x1b[0m', `skip wrapped coin ${files[i]} -> ${i}/${files.length}`);
-                continue;
-            }
+            // check if file info-new.json is exist, if not use info.json
+            var info = JSON.parse(fs.readFileSync(`./assets/${files[i]}/info${fs.existsSync(`./assets/${files[i]}/info-new.json`) ? '-new' : ''}.json`, 'utf8'));
+
+            // var info = JSON.parse(fs.readFileSync(`./assets/${files[i]}/info${isTop50 ? '-new' : ''}.json`, 'utf8'));
+            // if (Object.values(wrappedNative).includes(info.id)) {
+            //     console.log('\x1b[33m%s\x1b[0m', `skip wrapped coin ${files[i]} -> ${i}/${files.length}`);
+            //     continue;
+            // }
             
             let tokenNetwork = Object.keys(info.detail_platform)
             let intersection = supportedNetwork.filter(x => tokenNetwork.includes(x));
@@ -159,13 +162,13 @@ const constructTokenList = ({
                 continue;
             }
 
-            if (wrappedNative[info.id] !== undefined) {
-                let wrapped = JSON.parse(fs.readFileSync(`./assets/${wrappedNative[info.id]}/info.json`, 'utf8'));
-                info.detail_platform = {
-                    ...info.detail_platform,
-                    ...(wrapped.detail_platform ?? {})
-                }
-            }
+            // if (wrappedNative[info.id] !== undefined) {
+            //     let wrapped = JSON.parse(fs.readFileSync(`./assets/${wrappedNative[info.id]}/info.json`, 'utf8'));
+            //     info.detail_platform = {
+            //         ...info.detail_platform,
+            //         ...(wrapped.detail_platform ?? {})
+            //     }
+            // }
 
             const isHaveNative = _.has(info.detail_platform, 'native')
             if (isHaveNative) {
@@ -274,10 +277,10 @@ const fetchAllErrorTokenDetailData = async () => {
         isTop50: false
     });
     
-    constructTokenList({
-        fileName: "tokenlist2-new-top50.json",
-        isTop50: true
-    });
+    // constructTokenList({
+    //     fileName: "tokenlist2-new-top50.json",
+    //     isTop50: true
+    // });
 }
 
 async function doFetch(Coinid) {
@@ -591,15 +594,15 @@ const removeMarketAndResetRecord = () => {
     // STEP 1 (MANUAL)
     // delete market.json & edit record.json to {"latest_step": 0, "errorList": [], "notFound": []}
     // STEP 1 (AUTO) comment if want to continue from previous fetch
-    removeMarketAndResetRecord()
+    // removeMarketAndResetRecord()
     // STEP 2
-    await getIdList()
+    // await getIdList()
     // STEP 3
-    await getCoinlistWithMarketCap(60)
+    // await getCoinlistWithMarketCap(60)
     // STEP 4
-    mergeIdlistWithMarketcap()
+    // mergeIdlistWithMarketcap()
     // STEP 5 (Biasanya lama)
-    await fetchAllTokens();
+    // await fetchAllTokens();
     // STEP 6
     // mergeWrappedCoinWithCoin('tokenlist2.json')
     // STEP 7
