@@ -1,5 +1,6 @@
 const fs = require('fs')
 const axios = require('axios');
+const pm2 = require('pm2');
 const { resolve } = require('path');
 const { isEmpty, _ } = require('lodash');
 const { default: axiosRetry } = require('axios-retry');
@@ -127,18 +128,18 @@ const constructTokenList = ({
     for (var i = 0; i < files.length; i++) {
         try {
             // check if file info-new.json is exist, if not use info.json
-            var info = JSON.parse(fs.readFileSync(`./assets/${files[i]}/info${fs.existsSync(`./assets/${files[i]}/info-new.json`) ? '-new' : ''}.json`, 'utf8'));
+            var info = JSON.parse(fs.readFileSync(`./assets/${files[i]}/info.json`, 'utf8'));
 
             // var info = JSON.parse(fs.readFileSync(`./assets/${files[i]}/info${isTop50 ? '-new' : ''}.json`, 'utf8'));
             // if (Object.values(wrappedNative).includes(info.id)) {
-            //     console.log('\x1b[33m%s\x1b[0m', `skip wrapped coin ${files[i]} -> ${i}/${files.length}`);
+            //     console.log('\x1b[33m%s\x1b[0m', `skip wrapped coin ${files[i]} -> ${i + 1}/${files.length}`);
             //     continue;
             // }
             
             let tokenNetwork = Object.keys(info.detail_platform)
             let intersection = supportedNetwork.filter(x => tokenNetwork.includes(x));
             if (intersection.length == 0) {
-                console.log('\x1b[33m%s\x1b[0m', `skip due to not supported network ${files[i]} -> ${i}/${files.length}`);
+                console.log('\x1b[33m%s\x1b[0m', `skip due to not supported network ${files[i]} -> ${i + 1}/${files.length}`);
                 continue;
             }
 
@@ -158,7 +159,7 @@ const constructTokenList = ({
             }
 
             if (!isNative && Object.keys(info.detail_platform).length == 0) {
-                console.log('\x1b[33m%s\x1b[0m', `skip due to not supported network ${files[i]} -> ${i}/${files.length}`);
+                console.log('\x1b[33m%s\x1b[0m', `skip due to not supported network ${files[i]} -> ${i + 1}/${files.length}`);
                 continue;
             }
 
@@ -193,13 +194,14 @@ const constructTokenList = ({
                 "is_native": isNative,
                 "detail_platform": info.detail_platform
             })
-            console.log('\x1b[33m%s\x1b[0m', `done ${files[i]} -> ${i}/${files.length}`);
+            console.log('\x1b[33m%s\x1b[0m', `done ${files[i]} -> ${i + 1}/${files.length}`);
         } catch (e) {
             console.log(e)
             continue;
         }
     }
     fs.writeFileSync(`./${fileName}`, JSON.stringify(constructJSON))
+    markTokenIfNativeIsExisted()
 }
 
 const fetchAllErrorTokenDetailData = async () => {
@@ -226,7 +228,7 @@ const fetchAllErrorTokenDetailData = async () => {
                 await fs.promises.mkdir(`./assets/${id}`, { recursive: true });
             }
 
-            fs.writeFileSync(`./assets/${id}/info${market_cap_rank <= 50 ? '-new' : ''}.json`, JSON.stringify({
+            fs.writeFileSync(`./assets/${id}/info.json`, JSON.stringify({
                 "name": name,
                 "id": id,
                 "symbol": symbol,
@@ -238,7 +240,7 @@ const fetchAllErrorTokenDetailData = async () => {
                 "detail_platform": detail_platforms
             }));
 
-            console.log('\x1b[33m%s\x1b[0m', `done ${id} -> ${i}/${files.length}`);
+            console.log('\x1b[33m%s\x1b[0m', `done ${id} -> ${i + 1}/${files.length}`);
             await sleeps();
 
         } catch (e) {
@@ -315,7 +317,7 @@ const fetchAllTokens = async () => {
             try {
                 // var info = JSON.parse(fs.readFileSync(`./assets/${obj[i]['id']}/info.json`, 'utf8'));
                 // console.log(`skip ${obj[i]['id']}`)
-                console.log('\x1b[33m%s\x1b[0m', `fetching -> ${i}/${obj.length}`);
+                console.log('\x1b[33m%s\x1b[0m', `fetching -> ${i + 1}/${obj.length}`);
 
                 try {
                     let market_cap_rank = obj[i]['market_cap_rank'];
@@ -328,7 +330,7 @@ const fetchAllTokens = async () => {
 
                     // write token info
                     try {
-                        fs.writeFileSync(`./assets/${id}/info${market_cap_rank <= 50 ? '-new' : ''}.json`, JSON.stringify({
+                        fs.writeFileSync(`./assets/${id}/info.json`, JSON.stringify({
                             "name": name,
                             "id": id,
                             "symbol": symbol,
@@ -342,7 +344,7 @@ const fetchAllTokens = async () => {
 
                         console.log('\x1b[33m%s\x1b[0m', `create token info -> ${obj[i]['id']}`);
                     } catch (e) {
-                        fs.writeFileSync(`./assets/${id}/info${market_cap_rank <= 50 ? '-new' : ''}.json`, JSON.stringify({
+                        fs.writeFileSync(`./assets/${id}/info.json`, JSON.stringify({
                             "name": name,
                             "id": id,
                             "symbol": symbol,
@@ -359,17 +361,17 @@ const fetchAllTokens = async () => {
 
                     // download token image
                     // check if image is exist
-                    if (!fs.existsSync(`./assets/${id}/logo${market_cap_rank <= 50 ? '-new' : ''}.png`)) {
+                    if (!fs.existsSync(`./assets/${id}/logo.png`)) {
                         try {
                             console.log('fetching image');
-                            await downloadImage(image.large, `./assets/${id}/logo${market_cap_rank <= 50 ? '-new' : ''}.png`);
+                            await downloadImage(image.large, `./assets/${id}/logo.png`);
                         } catch (e) {
                             console.log('missing image')
                             // await downloadImage("https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579", `./assets/${id}/logo.png`);
                         }
                     }
 
-                    console.log('\x1b[33m%s\x1b[0m', `done -> ${i}/${obj.length}`);
+                    console.log('\x1b[33m%s\x1b[0m', `done -> ${i + 1}/${obj.length}`);
                     await sleeps()
                 } catch (e) {
                     console.log(e.response.statusText);
@@ -539,6 +541,12 @@ const markTokenIfNativeIsExisted = () => {
         }
     }
     fs.writeFileSync('./tokenlist2.json', JSON.stringify(data));
+    pm2.stop('parser', (err, proc) => {
+        if (err) {
+            console.log(err);
+        }
+        console.log('stop parser');
+    });
     console.log('process done');
 }
 
@@ -594,22 +602,22 @@ const removeMarketAndResetRecord = () => {
     // STEP 1 (MANUAL)
     // delete market.json & edit record.json to {"latest_step": 0, "errorList": [], "notFound": []}
     // STEP 1 (AUTO) comment if want to continue from previous fetch
-    // removeMarketAndResetRecord()
+    removeMarketAndResetRecord()
     // STEP 2
-    // await getIdList()
+    await getIdList()
     // STEP 3
-    // await getCoinlistWithMarketCap(60)
+    await getCoinlistWithMarketCap(60)
     // STEP 4
-    // mergeIdlistWithMarketcap()
+    mergeIdlistWithMarketcap()
     // STEP 5 (Biasanya lama)
-    // await fetchAllTokens();
+    await fetchAllTokens();
     // STEP 6
     // mergeWrappedCoinWithCoin('tokenlist2.json')
     // STEP 7
     // MANUAL CHECK BETWEEN mergedTokenlist.json AND wrapped-left.json
     // COPY mergedTokenlist.json TO tokenlist2.json
     // LAST STEP
-    markTokenIfNativeIsExisted()
+    // markTokenIfNativeIsExisted()
     // ----- END ----- //
     // ADDITIONAL STEP
     // updateTokenlistUsingData()
