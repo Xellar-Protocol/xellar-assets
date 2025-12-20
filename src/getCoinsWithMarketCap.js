@@ -57,7 +57,7 @@ const mergeIdlistWithMarketcap = (data, market) => {
 export const getCoinsWithMarketCap = async () => {
     const coinIds = await getIdList();
     const pageLength = Math.ceil(coinIds.length / 250);
-    const coinsMarket = await getCoinlistWithMarketCap(1);
+    const coinsMarket = await getCoinlistWithMarketCap(pageLength);
     console.log('coins with market cap length:', coinsMarket.length);
     const coins = mergeIdlistWithMarketcap(coinIds, coinsMarket);
     console.log('final coins length:', coins.length);
