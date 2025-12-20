@@ -1,7 +1,9 @@
 {
+  "type": "module",
   "dependencies": {
     "axios": "^1.2.6",
     "axios-retry": "^4.0.0",
+    "dotenv": "^17.2.3",
     "lodash": "^4.17.21",
     "pm2": "^5.2.2"
   }
