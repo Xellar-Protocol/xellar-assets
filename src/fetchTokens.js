@@ -332,7 +332,8 @@ const seperateTokenPerNetwork = (token) => {
                     const nativeNetwork = nativeCurrencyData.network_id;
                     tokens.push({
                         ...token,
-                        id: token.id === nativeNetwork ? token.id : `${token.id}_${nativeNetwork}`,
+                        id: token.id,
+                        // id: token.id === nativeNetwork ? token.id : `${token.id}_${nativeNetwork}`,
                         is_native: true,
                         detail_platform: {
                             native: nativeCurrencyData
