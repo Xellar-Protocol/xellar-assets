@@ -34,7 +34,7 @@ export const constructTokenList = ({
             //     console.log('\x1b[33m%s\x1b[0m', `skip wrapped coin ${files[i]} -> ${i + 1}/${files.length}`);
             //     continue;
             // }
-            
+
             // let tokenNetwork = Object.keys(info.detail_platform)
             // let intersection = supportedNetwork.filter(x => tokenNetwork.includes(x));
             // if (intersection.length == 0) {
@@ -45,7 +45,7 @@ export const constructTokenList = ({
             // if (tokenNetwork.includes('')) {
             //     delete info.detail_platform['']
             // }
-            
+
             // if (tokenNetwork.includes('native')) {
             //     delete info.detail_platform['native']
             // }
@@ -90,7 +90,8 @@ export const constructTokenList = ({
                 "name": info.name,
                 "symbol": info.symbol,
                 "logo": info.logo,
-                "is_native": isNative,
+                "is_native": info.detail_platform.native !== undefined,
+                "usd_market_cap": info.market_cap,
                 "detail_platform": info.detail_platform
             })
             console.log('\x1b[33m%s\x1b[0m', `done ${files[i]} -> ${i + 1}/${files.length}`);
