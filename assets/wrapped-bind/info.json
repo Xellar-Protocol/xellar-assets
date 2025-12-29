@@ -1,1 +1,0 @@
-{"name":"Wrapped BIND","id":"wrapped-bind","symbol":"wbind","description":"ERC20 wrapped token for Compendia BIND","links":"https://compendia.org","logo":"https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/wrapped-bind/logo.png","detail_platform":{"ethereum":{"decimal_place":8,"contract_address":"0x15334dcb171e8b65d6650321581dca83be870115"}}}
