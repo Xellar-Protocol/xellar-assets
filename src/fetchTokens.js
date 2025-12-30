@@ -63,6 +63,7 @@ export const fetchTokens = async (coins) => {
                     if (!fs.existsSync(`./assets/${asset.id}`)) {
                         await fs.promises.mkdir(`./assets/${asset.id}`, { recursive: true })
                     }
+                    asset['logo'] = `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${asset.id}/logo.png`
 
                     // write token info
                     try {
@@ -175,6 +176,8 @@ const fetchAllErrorTokenDetailData = async (latest) => {
                 if (!fs.existsSync(`./assets/${asset.id}`)) {
                     await fs.promises.mkdir(`./assets/${asset.id}`, { recursive: true })
                 }
+                asset['logo'] = `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${asset.id}/logo.png`
+
                 // write token info
                 try {
                     fs.writeFileSync(`./assets/${asset.id}/info.json`, JSON.stringify(asset));

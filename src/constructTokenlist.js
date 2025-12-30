@@ -84,6 +84,8 @@ export const constructTokenList = ({
 
             // }
 
+            // info.logo = `https://raw.githubusercontent.com/Xellar-Protocol/xellar-assets/master/assets/${info.id}/logo.png`
+            // fs.writeFileSync(`./assets/${info.id}/info.json`, JSON.stringify(info));
 
             constructJSON.push({
                 "id": info.id,
